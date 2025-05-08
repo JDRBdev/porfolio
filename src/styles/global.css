@@ -1,9 +1,41 @@
 @import "tailwindcss";
 
-
+/* Fuente */
 .onest-regular {
     font-family: "Onest", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
   }
+
+.word {
+  animation: spin_4991 8s infinite;
+}
+
+@keyframes spin_4991 {
+  0%, 10% {
+    transform: translateY(0%);
+  }
+
+  20%, 30% {
+    transform: translateY(-100%);
+  }
+
+  40%, 50% {
+    transform: translateY(-200%);
+  }
+
+  60%, 70% {
+    transform: translateY(-300%);
+  }
+
+  80%, 90% {
+    transform: translateY(-400%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+

@@ -1,3 +1,5 @@
+/* átomo encargado de mostrar con una animación de escritura las capacidades */
+
 import Typewriter from 'typewriter-effect';
 
 function TypewriterText({ className = '' }) {

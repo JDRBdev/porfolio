@@ -2,6 +2,7 @@
 import "../styles/global.css"
 import Layout from '../layouts/Layout.astro';
 import TypewriterText from '../components/type-writer-text';
+import Habilities from "../components/atoms/habilities.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -9,4 +10,5 @@ import TypewriterText from '../components/type-writer-text';
 
 <Layout ClassName="onest-regular">
 	<TypewriterText className="flex justify-center" client:load/>
+	<Habilities />
 </Layout>
