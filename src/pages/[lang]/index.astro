@@ -1,0 +1,17 @@
+---
+import "../../styles/global.css";
+import Layout from '../../layouts/Layout.astro';
+import TypewriterText from '../../components/atoms/type-writer-text';
+import Habilities from "../../components/atoms/habilities.astro";
+import { Navbar } from "../../components/organism/navbar";
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout ClassName="onest-regular" client:load>
+  <Navbar client:only />
+  {/* <TypewriterText className="flex justify-center" client:load/> */}
+  {/* <Habilities /> */}
+</Layout>
