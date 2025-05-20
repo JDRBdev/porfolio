@@ -79,23 +79,6 @@
   gap: var(--list-btn-gap);
 }
 
-/* Show the appropriate icon based on radio selection */
-#default:checked ~ .language-selector__button .default-icon,
-#spanish:checked ~ .language-selector__button .spanish-icon,
-#english:checked ~ .language-selector__button .english-icon {
-  display: block;
-}
-
-/* Hide all other icons */
-#default:checked ~ .language-selector__button .spanish-icon,
-#default:checked ~ .language-selector__button .english-icon,
-#spanish:checked ~ .language-selector__button .default-icon,
-#spanish:checked ~ .language-selector__button .english-icon,
-#english:checked ~ .language-selector__button .default-icon,
-#english:checked ~ .language-selector__button .spanish-icon {
-  display: none;
-}
-
 /* Dropdown visibility */
 #language-checkbox:checked ~ .language-selector__list-container {
   display: block;

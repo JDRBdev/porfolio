@@ -17,7 +17,7 @@ export const ui = {
             techstack: 'Tech Stack',
             projects: 'Projects',
             contact: 'Contact',
-            languages: "English"
+            languages: "Language"
         }
     },
     es: {
@@ -27,7 +27,7 @@ export const ui = {
             techstack: 'Conocimientos',
             projects: 'Proyectos',
             contact: 'Contacto',
-            languages: "Español"
+            languages: "Idioma"
         }
     },
     fr: {
@@ -37,7 +37,7 @@ export const ui = {
             techstack: 'Technologies',
             projects: 'Projets',
             contact: 'Contact',
-            languages: "Français"
+            languages: "Langue"
         }
     },
     de: {
@@ -47,7 +47,7 @@ export const ui = {
             techstack: 'Technologie-Stack',
             projects: 'Projekte',
             contact: 'Kontakt',
-            languages: "Deutsch"
+            languages: "Sprache"
         }
     }
 } as const;

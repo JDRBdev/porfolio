@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { languages, ui, defaultLang } from '../../i18n/ui';
 import { useTranslations, type AvailableLang } from '../../i18n/utils';
 import { LanguageSelector } from "../atoms/language-selector";
+import Menu from "../atoms/icons/menu";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,9 +24,9 @@ export function Navbar() {
   const t = useTranslations(currentLang);
 
   return (
-    <nav className="fixed w-full z-20 top-0 start-0">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4">
-        <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+    <nav className="fixed w-full z-20 top-0">
+      <div className="flex flex-wrap items-center mx-auto p-4 max-w-[720px] w-full justify-center">
+        <div className="flex md:order-2 space-x-3 md:space-x-0 ltr:space-x">
           <button
             onClick={toggleMenu}
             type="button"
@@ -34,70 +35,31 @@ export function Navbar() {
             aria-expanded={isOpen}
           >
             <span className="sr-only">Open main menu</span>
-            <svg
-              className="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14"
-            >
-              <path
-                stroke="white"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
-            </svg>
+            <Menu />
           </button>
         </div>
         <div
-          className={`items-center justify-center w-full md:flex md:w-auto md:order-1 ${
-            isOpen ? "flex" : "hidden"
-          }`}
+          className={`items-center justify-center w-full md:flex md:w-auto md:order-1 ${isOpen ? "flex" : "hidden"
+            }`}
           id="navbar-sticky"
         >
-          <ul className="flex flex-col md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 items-center">
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-white rounded-sm md:hover:text-blue-700 md:p-0"
-              >
-                {t("navbar.home")}
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-white rounded-sm md:hover:text-blue-700 md:p-0"
-              >
-                {t("navbar.about")}
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-white rounded-sm md:hover:text-blue-700 md:p-0"
-              >
-                {t("navbar.techstack")}
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-white rounded-sm md:hover:text-blue-700 md:p-0"
-              >
-                {t("navbar.projects")}
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-white rounded-sm md:hover:text-blue-700 md:p-0"
-              >
-                {t("navbar.contact")}
-              </a>
-            </li>
+          <ul className="flex flex-col md:p-0 mt-4 font-medium md:space-x-8 ltr:space-x md:flex-row md:mt-0 md:border-0 items-center w-full justify-between gap-5 md:gap-0">
+            {[
+              { key: "home", label: t("navbar.home") },
+              { key: "about", label: t("navbar.about") },
+              { key: "techstack", label: t("navbar.techstack") },
+              { key: "projects", label: t("navbar.projects") },
+              { key: "contact", label: t("navbar.contact") },
+            ].map(item => (
+              <li key={item.key}>
+                <a
+                  href="#"
+                  className="py-2 px-3 text-white rounded-sm md:p-0 w-full"
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
             <LanguageSelector className="ml-3 md:m-0" />
           </ul>
         </div>

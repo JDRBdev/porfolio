@@ -36,15 +36,15 @@ export function LanguageSelector({ className = "" }) {
 
       <label
         htmlFor="language-checkbox"
-        className="language-selector__button inline-flex items-center border-0 leading-8 gap-1.5 cursor-pointer"
+        className="language-selector__button inline-flex items-center border-0 leading-8 gap-2 cursor-pointer"
       >
-        <span>{languageLabel}</span>
-        <span className="language-selector__icon-container w-4 h-4 flex justify-center items-center transition-transform transform-gpu group-hover:translate-x-3 duration-500">
+        <span className="language-selector__icon-container w-4 h-4 flex justify-center items-center transition-transform transform-gpu group-hover:translate-x-3 duration-500 mb-0.5">
           <i className="fa-solid fa-globe default-icon"></i>
           {iconsMap[currentLang] && (
             React.createElement(iconsMap[currentLang], { className: "rounded-xl w-4 h-4 absolute" })
           )}
         </span>
+        <span className='min-w-18.25'>{languageLabel}</span>
       </label>
 
       <div className="language-selector__list-container absolute left-0 mt-2 z-10 hidden">
@@ -54,8 +54,8 @@ export function LanguageSelector({ className = "" }) {
             return (
               <li key={lang}>
                 <a href={`/${lang}/`} className="flex items-center gap-2">
-                  <span className="min-w-18.25">{label}</span>
                   {IconComponent && <IconComponent className="rounded-xl w-4 h-4" />}
+                  <span className="min-w-18.25">{label}</span>
                 </a>
               </li>
             );
