@@ -2,9 +2,9 @@
 import { getLangFromUrl } from '../i18n/utils';
 
 interface Props {
-  ClassName?: string;
+  className?: string;
 }
-const { ClassName = '' } = Astro.props as Props;
+const { className = '' } = Astro.props as Props;
 const lang = getLangFromUrl(Astro.url);
 ---
 
@@ -21,7 +21,7 @@ const lang = getLangFromUrl(Astro.url);
     <meta name="generator" content="{Astro.generator}" />
     <title>Astro Basics</title>
   </head>
-  <body class={`${ClassName}`}>
+  <body class={`${className}`}>
     <div class='absolute h-full w-full bg-slate-950 overflow-hidden -z-10'>
       <div class="absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[80vh] w-[80vh] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
       <div class="absolute bottom-0 right-[-20%] top-[-10%] h-[80vh] w-[80vh] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>

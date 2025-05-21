@@ -1,0 +1,15 @@
+---
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+import TypewriterText from "../atoms/type-writer-text";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<div class="w-full flex flex-col items-center"> 
+    <h1 class="md:text-5xl font-extrabold dark:text-white flex gap-2 items-end">
+        <small class="ms-2 font-semibold text-gray-500 dark:text-gray-400"
+            >{t("header.title")}</small
+        >
+        <TypewriterText className="items-end" client:load />
+    </h1>
+</div>

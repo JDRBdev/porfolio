@@ -6,5 +6,8 @@
     "projects": "Projets",
     "contact": "Contact",
     "languages": "Langue"
+  },
+  "header": {
+    "title": "Hola, soy"
   }
 }

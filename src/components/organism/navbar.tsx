@@ -1,30 +1,19 @@
-import React, { useEffect, useState } from "react";
-import { languages, ui, defaultLang } from '../../i18n/ui';
-import { useTranslations, type AvailableLang } from '../../i18n/utils';
+import { useState } from "react";
 import { LanguageSelector } from "../atoms/language-selector";
+import { useLanguage } from "../../hooks/useLanguage";
 import Menu from "../atoms/icons/menu";
 
-export function Navbar() {
+export function Navbar({className = ""}) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  const [currentLang, setCurrentLang] = useState<AvailableLang>(defaultLang);
-
-  useEffect(() => {
-    // Extraer el idioma de la URL cuando el componente se monta
-    const pathSegments = window.location.pathname.split('/').filter(Boolean);
-    const urlLang = pathSegments[0] as AvailableLang;
-    const detectedLang = languages[urlLang] ? urlLang : defaultLang;
-    setCurrentLang(detectedLang);
-  }, []);
-
-  const t = useTranslations(currentLang);
+  const { lang, t } = useLanguage();
 
   return (
-    <nav className="fixed w-full z-20 top-0">
+    <nav className="fixed w-full z-20 top-6">
       <div className="flex flex-wrap items-center mx-auto p-4 w-full justify-center">
         <div className="flex md:order-2 space-x-3 md:space-x-0 ltr:space-x">
           <button
@@ -39,31 +28,32 @@ export function Navbar() {
           </button>
         </div>
         <div
-          className={`items-center justify-center w-full md:flex md:w-auto md:order-1 ${isOpen ? "flex" : "hidden"
-            }`}
+          className={`items-start md:items-center w-full md:flex md:w-auto md:order-1 h-18 ${
+            isOpen ? "flex max-md:min-h-[550px] mt-4 max-md:border-2 max-md:border-white rounded-md max-md:bg-white/10 max-md:backdrop-blur-sm p-4" : "hidden max-h-0"
+          }`}
           id="navbar-sticky"
         >
-          <ul className="flex flex-col md:p-0 mt-4 font-medium md:space-x-8 ltr:space-x md:flex-row md:mt-0 md:border-0 items-center w-full justify-between gap-5 md:gap-0">
-            {[
-              { key: "home", label: t("navbar.home") },
-              { key: "about", label: t("navbar.about") },
-              { key: "techstack", label: t("navbar.techstack") },
-              { key: "projects", label: t("navbar.projects") },
-              { key: "contact", label: t("navbar.contact") },
-            ].map(item => (
-              <li key={item.key}>
-                <a
-                  href="#"
-                  className="py-2 px-3 text-white rounded-sm md:p-0 w-full 
-                  relative after:absolute after:bottom-0 after:left-0 after:h-[2px] 
-                  after:w-0 after:bg-white after:transition-all after:duration-300 
-                  hover:after:w-full"
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))}
-            <LanguageSelector className="ml-3 md:m-0" />
+          <ul className="flex flex-col md:p-0 font-medium md:space-x-8 ltr:space-x md:flex-row md:mt-0 md:border-0 items-center w-full justify-between gap-5 md:gap-0">
+                {[
+                  { key: "home", label: t("navbar.home") },
+                  { key: "about", label: t("navbar.about") },
+                  { key: "techstack", label: t("navbar.techstack") },
+                  { key: "projects", label: t("navbar.projects") },
+                  { key: "contact", label: t("navbar.contact") },
+                ].map(item => (
+                  <li key={item.key}>
+                    <a
+                      href="#"
+                      className="language-selector__button text-white inline-flex items-center border-0 leading-8 gap-2 cursor-pointer 
+                      relative after:absolute after:-bottom-1.5 after:left-0 after:h-[2px] 
+                      after:w-0 after:bg-white after:transition-all after:duration-300 
+                      hover:after:w-full"
+                    >
+                      {item.label}
+                    </a>
+                  </li>
+                ))}
+                <LanguageSelector className="ml-3 md:m-0" />
           </ul>
         </div>
       </div>
