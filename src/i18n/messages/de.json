@@ -1,0 +1,10 @@
+{
+  "navbar": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "techstack": "Technologie-Stack",
+    "projects": "Projekte",
+    "contact": "Kontakt",
+    "languages": "Sprache"
+  }
+}

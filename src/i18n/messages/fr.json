@@ -1,0 +1,10 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "about": "À propos",
+    "techstack": "Technologies",
+    "projects": "Projets",
+    "contact": "Contact",
+    "languages": "Langue"
+  }
+}

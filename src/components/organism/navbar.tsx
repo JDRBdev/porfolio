@@ -25,7 +25,7 @@ export function Navbar() {
 
   return (
     <nav className="fixed w-full z-20 top-0">
-      <div className="flex flex-wrap items-center mx-auto p-4 max-w-[720px] w-full justify-center">
+      <div className="flex flex-wrap items-center mx-auto p-4 w-full justify-center">
         <div className="flex md:order-2 space-x-3 md:space-x-0 ltr:space-x">
           <button
             onClick={toggleMenu}
@@ -54,7 +54,10 @@ export function Navbar() {
               <li key={item.key}>
                 <a
                   href="#"
-                  className="py-2 px-3 text-white rounded-sm md:p-0 w-full"
+                  className="py-2 px-3 text-white rounded-sm md:p-0 w-full 
+                  relative after:absolute after:bottom-0 after:left-0 after:h-[2px] 
+                  after:w-0 after:bg-white after:transition-all after:duration-300 
+                  hover:after:w-full"
                 >
                   {item.label}
                 </a>
