@@ -8,6 +8,11 @@
     "languages": "Langue"
   },
   "header": {
-    "title": "Hola, soy"
+    "title": "Bonjour, je suis"
+  },
+  "typewriter": {
+    "web_developer": "Développeur Web",
+    "web_designer": "Designer Web",
+    "programmer": "Programmeur"
   }
 }

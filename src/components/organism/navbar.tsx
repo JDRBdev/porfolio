@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { LanguageSelector } from "../atoms/language-selector";
 import { useLanguage } from "../../hooks/useLanguage";
+import { Matter } from "../atoms/text/matter";
+import { Caslon } from "../atoms/text/caslon";
 import Menu from "../atoms/icons/menu";
 
 export function Navbar({className = ""}) {
@@ -43,13 +45,16 @@ export function Navbar({className = ""}) {
                 ].map(item => (
                   <li key={item.key}>
                     <a
-                      href="#"
+                      href={`#${item.key}`}
                       className="language-selector__button text-white inline-flex items-center border-0 leading-8 gap-2 cursor-pointer 
-                      relative after:absolute after:-bottom-1.5 after:left-0 after:h-[2px] 
+                      relative after:absolute after:-bottom-3 after:left-0 after:h-[2px] 
                       after:w-0 after:bg-white after:transition-all after:duration-300 
                       hover:after:w-full"
                     >
-                      {item.label}
+                      <Matter
+                        text={item.label}
+                        size="20|24"
+                      />
                     </a>
                   </li>
                 ))}

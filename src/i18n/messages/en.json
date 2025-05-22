@@ -9,5 +9,10 @@
   },
   "header": {
     "title": "Hello, I am"
+  },
+  "typewriter": {
+    "web_developer": "Web Developer",
+    "web_designer": "Web Designer",
+    "programmer": "Programmer"
   }
 }

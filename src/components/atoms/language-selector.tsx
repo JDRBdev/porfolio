@@ -5,6 +5,7 @@ import SpanishIcon from "./icons/spain";
 import FrenchIcon from "./icons/french";
 import GermanIcon from "./icons/germany";
 import { useLanguage } from '../../hooks/useLanguage';
+import { Matter } from './text/matter';
 
 const iconsMap = {
   en: EnglishIcon,
@@ -29,7 +30,13 @@ export function LanguageSelector({ className = "" }) {
             React.createElement(iconsMap[lang as keyof typeof iconsMap], { className: "rounded-xl w-4 h-4 absolute" })
           )}
         </span>
-        <span className='min-w-18.25 text-white'>{t("navbar.languages")}</span>
+        <span className='py-1 min-w-18.25'>
+          <Matter
+            text={t("navbar.languages")}
+            size="16|16"
+            className="text-white text-start"
+          />
+        </span>
       </button>
 
       {isOpen && (
@@ -41,7 +48,12 @@ export function LanguageSelector({ className = "" }) {
                 <li key={lang} className="hover:bg-white/20 transition-colors duration-200">
                   <a href={`/${lang}/`} className="flex items-center gap-2 px-3 py-2 text-white whitespace-nowrap">
                     {IconComponent && <IconComponent className="rounded-xl w-4 h-4" />}
-                    <span className="min-w-18.25">{label}</span>
+                    <span className="min-w-18.25">
+                      <Matter
+                        text={label}
+                        size='14|16'
+                      />
+                    </span>
                   </a>
                 </li>
               );

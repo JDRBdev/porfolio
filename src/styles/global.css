@@ -15,13 +15,63 @@
   transition: all 1s ease-in-out;
 }
 
-/* Fuente */
-.onest-regular {
-    font-family: "Onest", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-  }
+/* ====================
+   Matter font
+==================== */
+@font-face {
+  font-family: 'matter';
+  src: url('/fonts/matter-regular.ttf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.matter {
+  font-family: 'matter', sans-serif;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'matter-medium';
+  src: url('/fonts/matter-medium.ttf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+.matter-medium {
+  font-family: 'matter-medium', sans-serif;
+  font-weight: 500;
+}
+
+/* ====================
+   Caslon font
+==================== */
+@font-face {
+  font-family: 'caslon';
+  src: url('/fonts/caslon-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.caslon {
+  font-family: 'caslon', serif;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'caslon-bold';
+  src: url('/fonts/caslon-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.caslon-bold {
+  font-family: 'caslon-bold', serif;
+  font-weight: 700;
+}
 
 .word {
   animation: spin_4991 8s infinite;
