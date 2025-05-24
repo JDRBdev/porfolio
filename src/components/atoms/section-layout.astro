@@ -1,0 +1,20 @@
+---
+interface Props {
+  className?: string;
+  id?: string;
+  noPadding?: boolean;
+}
+
+const { className, id, noPadding } = Astro.props;
+---
+
+<section
+	id={id}
+	class={`flex w-full h-fit mx-auto max-w-9xl onHover ${
+		noPadding
+			? "px-0"
+			: "px-4 lg:px-10 xl:px-16 min-[1592px]:px-0"
+	} ${className && className}`}
+>
+	<slot />
+</section>

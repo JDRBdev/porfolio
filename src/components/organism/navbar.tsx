@@ -53,7 +53,7 @@ export function Navbar({className = ""}) {
                     >
                       <Matter
                         text={item.label}
-                        size="20|24"
+                        size="16|16"
                       />
                     </a>
                   </li>

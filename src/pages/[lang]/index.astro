@@ -9,7 +9,7 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<Layout className="onest-regular flex flex-col w-full h-full" client:load>
+<Layout className="onest-regular flex w-full h-fit mx-auto max-w-9xl onHover justify-center" client:load>
   <Navbar client:only/>
   <main class="mt-[150px] justify-items-center">
     <Header/>
