@@ -9,7 +9,7 @@ const t = useTranslations(lang);
 ---
 
 <SectionLayout className="flex flex-col lg:flex-row justify-center max-w-[1512px]">
-    <div class="w-full flex justify-center gap-4 max-h-[64px]"> 
+    <div class="w-full flex justify-center gap-4 max-h-[64px] mt-10"> 
         <h1 class="md:text-5xl font-extrabold dark:text-white flex">
             <small class="ms-2 font-semibold text-gray-500 dark:text-gray-400">
                 <Matter
@@ -21,7 +21,7 @@ const t = useTranslations(lang);
         </h1>
         <TypewriterText className="md:min-w-[380px] min-w-[150px] md:leading-6 leading-8" client:load />
     </div>
-    <div>
+    <div class="justify-items-center mt-10 lg:mt-0">
         <Image
             src="/images/imagen-personal.avif"
             alt={t("header.title")}
