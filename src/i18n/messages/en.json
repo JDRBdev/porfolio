@@ -8,7 +8,8 @@
     "languages": "Language"
   },
   "header": {
-    "title": "Hello, I am"
+    "title": "Hello, I am",
+    "subtitle": "Un apasionado del desarrollo web, con ganas de aprender y aportar mis conocimientos y hablidades creando soluciones para digitalizar negocios e ideas."
   },
   "typewriter": {
     "web_developer": "Web Developer",

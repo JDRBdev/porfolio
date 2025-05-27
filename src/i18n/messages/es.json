@@ -8,7 +8,8 @@
     "languages": "Idioma"
   },
   "header": {
-    "title": "Hola, soy"
+    "title": "Hola, soy",
+    "subtitle": "Un apasionado del <span class='font-bold text-white'>desarrollo web</span>, con ganas de <span class='font-bold text-white'>aprender y aportar</span> mis conocimientos y hablidades creando <span class='font-bold text-white'>soluciones para digitalizar</span> negocios e ideas."
   },
   "typewriter": {
     "web_developer": "Desarrollador Web",

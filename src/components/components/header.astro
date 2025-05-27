@@ -8,18 +8,25 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<SectionLayout className="flex flex-col lg:flex-row justify-center max-w-[1512px]">
-    <div class="w-full flex justify-center gap-4 max-h-[64px] mt-10"> 
-        <h1 class="md:text-5xl font-extrabold dark:text-white flex">
-            <small class="ms-2 font-semibold text-gray-500 dark:text-gray-400">
-                <Matter
-                    text={t("header.title")}
-                    size="24|32"
-                    className="leading-2"
-                />
-            </small>
-        </h1>
-        <TypewriterText className="md:min-w-[380px] min-w-[150px] md:leading-6 leading-8" client:load />
+<SectionLayout className="flex flex-col lg:flex-row justify-center w-full">
+    <div class="flex flex-col gap-2 max-w-[620px] self-center">
+        <div class="w-full flex gap-4 max-h-[64px] mt-10"> 
+            <h1 class="md:text-5xl font-extrabold dark:text-white flex">
+                <small class="font-semibold text-gray-500 dark:text-gray-400">
+                    <Matter
+                        text={t("header.title")}
+                        size="24|32"
+                        className="leading-2"
+                    />
+                </small>
+            </h1>
+            <TypewriterText className="md:min-w-[380px] min-w-[150px] md:leading-6 leading-8" client:load />
+        </div>
+        <Matter
+            text={t("header.subtitle")}
+            size="16|20"
+            className="text-white/70 leading-6!"
+        />
     </div>
     <div class="justify-items-center mt-10 lg:mt-0">
         <Image

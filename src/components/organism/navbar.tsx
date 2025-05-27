@@ -15,7 +15,7 @@ export function Navbar({className = ""}) {
   const { lang, t } = useLanguage();
 
   return (
-    <nav className="fixed w-full z-20 top-6">
+    <nav className="fixed w-full z-20 top-6 max-w-[1512px]">
       <div className="flex flex-wrap items-center mx-auto p-4 w-full justify-center">
         <div className="flex md:order-2 space-x-3 md:space-x-0 ltr:space-x">
           <button
