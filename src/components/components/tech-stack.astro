@@ -1,0 +1,15 @@
+---
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+import { Caslon } from "../atoms/text/caslon";
+import Image from "astro/components/Image.astro";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<div>
+    <Caslon
+        text={t("techstack.title")}
+        size="32|64"
+        className="text-white"
+    />
+</div>

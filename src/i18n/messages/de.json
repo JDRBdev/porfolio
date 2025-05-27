@@ -15,5 +15,8 @@
     "web_developer": "Webentwickler",
     "web_designer": "Webdesigner",
     "programmer": "Programmierer"
+  },
+  "techstack":{
+    "title": "Conocimientos"
   }
 }

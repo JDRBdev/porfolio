@@ -4,6 +4,7 @@ import Layout from '../../layouts/Layout.astro';
 import { Navbar } from "../../components/organism/navbar";
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 import Header from "../../components/components/header.astro";
+import TechStack from "../../components/components/tech-stack.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -13,5 +14,6 @@ const t = useTranslations(lang);
   <Navbar client:only/>
   <main class="mt-[150px] justify-items-center max-w-[1512px]">
     <Header/>
+    <TechStack/>
   </main>
 </Layout>
