@@ -1,15 +1,76 @@
 ---
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 import { Caslon } from "../atoms/text/caslon";
-import Image from "astro/components/Image.astro";
+import AstroIcon from "../atoms/icons/astro-icon.astro";
+import Bootstrap from "../atoms/icons/bootstrap.astro"
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<div>
-    <Caslon
-        text={t("techstack.title")}
-        size="32|64"
-        className="text-white"
-    />
+<div class="flex flex-col">
+  <Caslon
+    text={t("techstack.title")}
+    size="32|64"
+    className="text-white mb-16 md:mb-24 self-center"
+  />
+
+  <div class="splide w-full cursor-pointer" aria-label="Tech Stack Logos">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide w-[96px]!"><AstroIcon className="w-full h-24"/></li>
+        <li class="splide__slide w-[96px]!"><Bootstrap className="w-full h-24"/></li>
+      </ul>
+    </div>
+  </div>
 </div>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+/>
+
+<script type="module">
+  import Splide from 'https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/+esm';
+  import { AutoScroll } from 'https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.4.0/+esm';
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const splide = new Splide('.splide', {
+      type: 'loop',
+      drag: 'free',
+      focus: 'center',
+      perPage: 7,
+      gap: '20rem',
+      breakpoints: {
+        768: {
+          perPage: 2,
+        },
+        480: {
+          perPage: 1,
+        },
+      },
+      pagination: false,
+      arrows: false,
+      autoScroll: {
+        speed: 1,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+      },
+      extensions: { AutoScroll },
+    });
+
+    splide.mount({ AutoScroll });
+  });
+</script>
+
+<style>
+  .splide__slide {
+    color: white;
+    border-radius: 1rem;
+    justify-items: center;
+    font-size: 1.25rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
