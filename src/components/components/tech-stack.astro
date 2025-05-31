@@ -3,23 +3,104 @@ import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 import { Caslon } from "../atoms/text/caslon";
 import AstroIcon from "../atoms/icons/astro-icon.astro";
 import Bootstrap from "../atoms/icons/bootstrap.astro"
+import Tailwindcss from "../atoms/icons/tailwindcss.astro";
+import Nextjs from "../atoms/icons/nextjs.astro";
+import Html5 from "../atoms/icons/html5.astro";
+import Css from "../atoms/icons/css.astro";
+import Javascript from "../atoms/icons/javascript.astro";
+import Python from "../atoms/icons/python.astro";
+import Mysql from "../atoms/icons/mysql.astro";
+import Php from "../atoms/icons/php.astro";
+import Laravel from "../atoms/icons/laravel.astro";
+import React from "../atoms/icons/react.astro";
+
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
+// Agrupamos las tecnologías por categorías
+const frontendTechs = [
+  { component: Html5, name: "HTML5" },
+  { component: Css, name: "CSS" },
+  { component: Javascript, name: "JavaScript" },
+  { component: React, name: "React" },
+  { component: Nextjs, name: "Next.js" },
+];
+
+const backendTechs = [
+  { component: Python, name: "Python" },
+  { component: Php, name: "PHP" },
+  { component: Laravel, name: "Laravel" },
+  { component: Mysql, name: "MySQL" },
+];
+
+const toolsTechs = [
+  { component: AstroIcon, name: "Astro" },
+  { component: Bootstrap, name: "Bootstrap" },
+  { component: Tailwindcss, name: "Tailwind CSS" },
+];
 ---
 
-<div class="flex flex-col">
+<div class="flex flex-col gap-16 md:gap-24">
   <Caslon
     text={t("techstack.title")}
     size="32|64"
-    className="text-white mb-16 md:mb-24 self-center"
+    className="text-white mb-8 md:mb-12 self-center"
   />
 
-  <div class="splide w-full cursor-pointer" aria-label="Tech Stack Logos">
-    <div class="splide__track">
-      <ul class="splide__list">
-        <li class="splide__slide w-[96px]!"><AstroIcon className="w-full h-24"/></li>
-        <li class="splide__slide w-[96px]!"><Bootstrap className="w-full h-24"/></li>
-      </ul>
+  <!-- Carrusel 1: Frontend (se mueve a la derecha) -->
+  <div class="flex flex-col gap-4">
+    <h3 class="text-white text-xl md:text-2xl text-center">Frontend</h3>
+    <div class="splide splide-frontend w-full cursor-pointer">
+      <div class="splide__track">
+        <ul class="splide__list h-50! items-center!">
+          {frontendTechs.map((tech) => (
+            <li class="splide__slide h-[96px]! w-[100px]! md:w-[300px]! lg:w-[400px]! flex flex-col items-center gap-2 group relative">
+              <tech.component className="w-full! h-full! max-h-[96px]! object-cover transition-transform duration-300 group-hover:scale-110"/>
+              <span class="absolute bottom-full mb-6 hidden group-hover:block bg-gray-800 text-white text-sm px-2 py-1 rounded whitespace-nowrap">
+                {tech.name}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carrusel 2: Backend (se mueve a la izquierda) -->
+  <div class="flex flex-col gap-4">
+    <h3 class="text-white text-xl md:text-2xl text-center">Backend</h3>
+    <div class="splide splide-backend w-full cursor-pointer">
+      <div class="splide__track">
+        <ul class="splide__list h-50! items-center!">
+          {backendTechs.map((tech) => (
+            <li class="splide__slide h-[96px]! w-[100px]! md:w-[300px]! lg:w-[400px]! flex flex-col items-center gap-2 group relative">
+              <tech.component className="w-full! h-full! max-h-[96px]! object-cover transition-transform duration-300 group-hover:scale-110"/>
+              <span class="absolute bottom-full mb-6 hidden group-hover:block bg-gray-800 text-white text-sm px-2 py-1 rounded whitespace-nowrap">
+                {tech.name}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carrusel 3: Herramientas (se mueve más rápido y en zigzag) -->
+  <div class="flex flex-col gap-4">
+    <h3 class="text-white text-xl md:text-2xl text-center">Herramientas</h3>
+    <div class="splide splide-tools w-full cursor-pointer">
+      <div class="splide__track">
+        <ul class="splide__list h-50! items-center!">
+          {toolsTechs.map((tech) => (
+            <li class="splide__slide h-[96px]! w-[100px]! md:w-[300px]! lg:w-[400px]! flex flex-col items-center gap-2 group relative">
+              <tech.component className="w-full! h-full! max-h-[96px]! object-cover transition-transform duration-300 group-hover:scale-110"/>
+              <span class="absolute bottom-full mb-6 hidden group-hover:block bg-gray-800 text-white text-sm px-2 py-1 rounded whitespace-nowrap text-center">
+                {tech.name}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   </div>
 </div>
@@ -34,20 +115,14 @@ const t = useTranslations(lang);
   import { AutoScroll } from 'https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.4.0/+esm';
 
   document.addEventListener('DOMContentLoaded', () => {
-    const splide = new Splide('.splide', {
+    // Configuración para el carrusel de Frontend (derecha)
+    const splideFrontend = new Splide('.splide-frontend', {
       type: 'loop',
+      direction: 'ltr',
       drag: 'free',
       focus: 'center',
-      perPage: 7,
-      gap: '20rem',
-      breakpoints: {
-        768: {
-          perPage: 2,
-        },
-        480: {
-          perPage: 1,
-        },
-      },
+      perPage: 5,
+      gap: '4rem',
       pagination: false,
       arrows: false,
       autoScroll: {
@@ -58,7 +133,45 @@ const t = useTranslations(lang);
       extensions: { AutoScroll },
     });
 
-    splide.mount({ AutoScroll });
+    // Configuración para el carrusel de Backend (izquierda)
+    const splideBackend = new Splide('.splide-backend', {
+      type: 'loop',
+      direction: 'rtl',
+      drag: 'free',
+      focus: 'center',
+      perPage: 4,
+      gap: '4rem',
+      pagination: false,
+      arrows: false,
+      autoScroll: {
+        speed: 1,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+      },
+      extensions: { AutoScroll },
+    });
+
+    // Configuración para el carrusel de Herramientas (más rápido y alterna dirección)
+    const splideTools = new Splide('.splide-tools', {
+      type: 'loop',
+      direction: 'ltr',
+      drag: 'free',
+      focus: 'center',
+      perPage: 3,
+      gap: '4rem',
+      pagination: false,
+      arrows: false,
+      autoScroll: {
+        speed: 1,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+      },
+      extensions: { AutoScroll },
+    });
+
+    splideFrontend.mount({ AutoScroll });
+    splideBackend.mount({ AutoScroll });
+    splideTools.mount({ AutoScroll });
   });
 </script>
 
@@ -72,5 +185,14 @@ const t = useTranslations(lang);
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .splide-frontend, .splide-backend, .splide-tools {
+      .splide__list {
+        gap: 2rem;
+      }
+    }
   }
 </style>
