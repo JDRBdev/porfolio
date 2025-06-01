@@ -17,6 +17,14 @@
     "programmer": "Programador"
   },
   "techstack":{
-    "title": "Conocimientos"
+    "title": "Conocimientos",
+    "tools": "Herramientas"
+  },
+  "habilities":{
+    "passionate": "Apasionado",
+    "creative": "Creativo",
+    "proactive": "Proactivo",
+    "cooperative": "Cooperativo",
+    "responsible": "Responsable"
   }
 }

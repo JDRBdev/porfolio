@@ -1,5 +1,6 @@
 ---
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+import Habilities from "../atoms/habilities.astro";
 import SectionLayout from "../atoms/section-layout.astro";
 import { Matter } from "../atoms/text/matter";
 import TypewriterText from "../atoms/type-writer-text";
@@ -10,17 +11,17 @@ const t = useTranslations(lang);
 
 <SectionLayout className="flex flex-col lg:flex-row justify-center w-full gap-4 mb-20 md:mb-24">
     <div class="flex flex-col gap-2 max-w-[620px] self-center">
-        <div class="w-full flex gap-4 max-h-[64px] mt-10"> 
+        <div class="w-full flex gap-2 md:gap-4 max-h-[64px]"> 
             <h1 class="md:text-5xl font-extrabold dark:text-white flex">
-                <small class="font-semibold text-gray-500 dark:text-gray-400">
+                <small class="font-semibold text-gray-500 dark:text-gray-400 content-end">
                     <Matter
                         text={t("header.title")}
-                        size="24|32"
+                        size="16|32"
                         className="leading-2"
                     />
                 </small>
             </h1>
-            <TypewriterText className="md:min-w-[380px] min-w-[150px] md:leading-6 leading-8" client:load />
+            <TypewriterText className="md:min-w-[380px] min-w-[150px] leading-4 md:leading-8" client:load />
         </div>
         <Matter
             text={t("header.subtitle")}
@@ -37,6 +38,7 @@ const t = useTranslations(lang);
             class="w-full max-w-[350px]"
             style="mask-image: linear-gradient(black 50%, transparent)",
         />
+        <Habilities/>
     </div>
 </SectionLayout>
 

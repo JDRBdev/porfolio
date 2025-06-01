@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { LanguageSelector } from "../atoms/language-selector";
 import { useLanguage } from "../../hooks/useLanguage";
 import { Matter } from "../atoms/text/matter";
@@ -7,6 +7,20 @@ import Menu from "../atoms/icons/menu";
 
 export function Navbar({className = ""}) {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -15,13 +29,13 @@ export function Navbar({className = ""}) {
   const { lang, t } = useLanguage();
 
   return (
-    <nav className="fixed w-full z-20 top-6 max-w-[1512px]">
+    <nav className={`fixed w-full z-20 top-0 max-w-[1512px] transition-all duration-300 ${scrolled ? "md:bg-white/10 md:backdrop-blur-sm md:py-6" : "py-6"}`}>
       <div className="flex flex-wrap items-center mx-auto p-4 w-full justify-center">
         <div className="flex md:order-2 space-x-3 md:space-x-0 ltr:space-x">
           <button
             onClick={toggleMenu}
             type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 md:hidden focus:outline-none"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 md:hidden focus:outline-none border-white border-2 rounded-full px-3 py-1 bg-white/10 backdrop-blur-sm"
             aria-controls="navbar-sticky"
             aria-expanded={isOpen}
           >

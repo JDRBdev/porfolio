@@ -1,22 +1,30 @@
 {
   "navbar": {
     "home": "Accueil",
-    "about": "À propos",
-    "techstack": "Technologies",
+    "about": "À propos de moi",
+    "techstack": "Compétences",
     "projects": "Projets",
     "contact": "Contact",
     "languages": "Langue"
   },
   "header": {
     "title": "Bonjour, je suis",
-    "subtitle": "Un apasionado del desarrollo web, con ganas de aprender y aportar mis conocimientos y hablidades creando soluciones para digitalizar negocios e ideas."
+    "subtitle": "Passionné par le <span class='font-bold text-white'>développement web</span>, désireux <span class='font-bold text-white'>d'apprendre et de partager</span> mes connaissances et compétences en créant <span class='font-bold text-white'>des solutions pour digitaliser</span> des entreprises et des idées."
   },
   "typewriter": {
     "web_developer": "Développeur Web",
     "web_designer": "Designer Web",
     "programmer": "Programmeur"
   },
-  "techstack":{
-    "title": "Conocimientos"
+  "techstack": {
+    "title": "Compétences",
+    "tools": "Outils"
+  },
+  "habilities": {
+    "passionate": "Passionné",
+    "creative": "Créatif",
+    "proactive": "Proactif",
+    "cooperative": "Coopératif",
+    "responsible": "Responsable"
   }
 }

@@ -1,22 +1,30 @@
 {
   "navbar": {
     "home": "Home",
-    "about": "About",
+    "about": "About Me",
     "techstack": "Tech Stack",
     "projects": "Projects",
     "contact": "Contact",
     "languages": "Language"
   },
   "header": {
-    "title": "Hello, I am",
-    "subtitle": "Un apasionado del desarrollo web, con ganas de aprender y aportar mis conocimientos y hablidades creando soluciones para digitalizar negocios e ideas."
+    "title": "Hi, I'm",
+    "subtitle": "A passionate <span class='font-bold text-white'>web developer</span>, eager to <span class='font-bold text-white'>learn and contribute</span> my knowledge and skills by creating <span class='font-bold text-white'>solutions to digitalize</span> businesses and ideas."
   },
   "typewriter": {
     "web_developer": "Web Developer",
     "web_designer": "Web Designer",
     "programmer": "Programmer"
   },
-  "techstack":{
-    "title": "Conocimientos"
+  "techstack": {
+    "title": "Tech Stack",
+    "tools": "Tools"
+  },
+  "habilities": {
+    "passionate": "Passionate",
+    "creative": "Creative",
+    "proactive": "Proactive",
+    "cooperative": "Cooperative",
+    "responsible": "Responsible"
   }
 }

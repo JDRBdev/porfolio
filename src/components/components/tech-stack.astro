@@ -13,6 +13,7 @@ import Mysql from "../atoms/icons/mysql.astro";
 import Php from "../atoms/icons/php.astro";
 import Laravel from "../atoms/icons/laravel.astro";
 import React from "../atoms/icons/react.astro";
+import { Matter } from "../atoms/text/matter";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -40,7 +41,7 @@ const toolsTechs = [
 ];
 ---
 
-<div class="flex flex-col gap-16 md:gap-24">
+<div class="flex flex-col gap-8 md:gap-16">
   <Caslon
     text={t("techstack.title")}
     size="32|64"
@@ -49,14 +50,19 @@ const toolsTechs = [
 
   <!-- Carrusel 1: Frontend (se mueve a la derecha) -->
   <div class="flex flex-col gap-4">
-    <h3 class="text-white text-xl md:text-2xl text-center">Frontend</h3>
+    <Matter
+      text="Frontend"
+      size="16|32" 
+      className="text-white text-xl md:text-2xl text-center"
+      tag="h3"
+    />
     <div class="splide splide-frontend w-full cursor-pointer">
       <div class="splide__track">
-        <ul class="splide__list h-50! items-center!">
+        <ul class="splide__list h-52! items-center!">
           {frontendTechs.map((tech) => (
             <li class="splide__slide h-[96px]! w-[100px]! md:w-[300px]! lg:w-[400px]! flex flex-col items-center gap-2 group relative">
               <tech.component className="w-full! h-full! max-h-[96px]! object-cover transition-transform duration-300 group-hover:scale-110"/>
-              <span class="absolute bottom-full mb-6 hidden group-hover:block bg-gray-800 text-white text-sm px-2 py-1 rounded whitespace-nowrap">
+              <span class="absolute bottom-full mb-6 hidden group-hover:block border-white border-2 bg-white/10 backdrop-blur-sm text-white text-sm px-2 py-1 rounded whitespace-nowrap">
                 {tech.name}
               </span>
             </li>
@@ -68,14 +74,19 @@ const toolsTechs = [
 
   <!-- Carrusel 2: Backend (se mueve a la izquierda) -->
   <div class="flex flex-col gap-4">
-    <h3 class="text-white text-xl md:text-2xl text-center">Backend</h3>
+    <Matter
+      text="Backend"
+      size="16|32" 
+      className="text-white text-xl md:text-2xl text-center"
+      tag="h3"
+    />
     <div class="splide splide-backend w-full cursor-pointer">
       <div class="splide__track">
-        <ul class="splide__list h-50! items-center!">
+        <ul class="splide__list h-52! items-center!">
           {backendTechs.map((tech) => (
             <li class="splide__slide h-[96px]! w-[100px]! md:w-[300px]! lg:w-[400px]! flex flex-col items-center gap-2 group relative">
               <tech.component className="w-full! h-full! max-h-[96px]! object-cover transition-transform duration-300 group-hover:scale-110"/>
-              <span class="absolute bottom-full mb-6 hidden group-hover:block bg-gray-800 text-white text-sm px-2 py-1 rounded whitespace-nowrap">
+              <span class="absolute bottom-full mb-6 hidden group-hover:block border-white border-2 bg-white/10 backdrop-blur-sm text-white text-sm px-2 py-1 rounded whitespace-nowrap">
                 {tech.name}
               </span>
             </li>
@@ -87,14 +98,19 @@ const toolsTechs = [
 
   <!-- Carrusel 3: Herramientas (se mueve más rápido y en zigzag) -->
   <div class="flex flex-col gap-4">
-    <h3 class="text-white text-xl md:text-2xl text-center">Herramientas</h3>
+    <Matter
+      text={t("techstack.tools")}
+      size="16|32" 
+      className="text-white text-xl md:text-2xl text-center"
+      tag="h3"
+    />
     <div class="splide splide-tools w-full cursor-pointer">
       <div class="splide__track">
-        <ul class="splide__list h-50! items-center!">
+        <ul class="splide__list h-52! items-center!">
           {toolsTechs.map((tech) => (
             <li class="splide__slide h-[96px]! w-[100px]! md:w-[300px]! lg:w-[400px]! flex flex-col items-center gap-2 group relative">
               <tech.component className="w-full! h-full! max-h-[96px]! object-cover transition-transform duration-300 group-hover:scale-110"/>
-              <span class="absolute bottom-full mb-6 hidden group-hover:block bg-gray-800 text-white text-sm px-2 py-1 rounded whitespace-nowrap text-center">
+              <span class="absolute bottom-full mb-6 hidden group-hover:block border-white border-2 bg-white/10 backdrop-blur-sm text-white text-sm px-2 py-1 rounded whitespace-nowrap">
                 {tech.name}
               </span>
             </li>

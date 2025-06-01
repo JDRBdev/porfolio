@@ -2,21 +2,29 @@
   "navbar": {
     "home": "Startseite",
     "about": "Über mich",
-    "techstack": "Technologie-Stack",
+    "techstack": "Kenntnisse",
     "projects": "Projekte",
     "contact": "Kontakt",
     "languages": "Sprache"
   },
   "header": {
     "title": "Hallo, ich bin",
-    "subtitle": "Un apasionado del desarrollo web, con ganas de aprender y aportar mis conocimientos y hablidades creando soluciones para digitalizar negocios e ideas."
+    "subtitle": "Ein leidenschaftlicher <span class='font-bold text-white'>Webentwickler</span>, der bereit ist, <span class='font-bold text-white'>zu lernen und beizutragen</span> und sein Wissen und seine Fähigkeiten einsetzt, um <span class='font-bold text-white'>Lösungen zur Digitalisierung</span> von Unternehmen und Ideen zu schaffen."
   },
   "typewriter": {
     "web_developer": "Webentwickler",
     "web_designer": "Webdesigner",
     "programmer": "Programmierer"
   },
-  "techstack":{
-    "title": "Conocimientos"
+  "techstack": {
+    "title": "Kenntnisse",
+    "tools": "Werkzeuge"
+  },
+  "habilities": {
+    "passionate": "Leidenschaftlich",
+    "creative": "Kreativ",
+    "proactive": "Proaktiv",
+    "cooperative": "Kooperativ",
+    "responsible": "Verantwortungsbewusst"
   }
 }

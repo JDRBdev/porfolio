@@ -6,6 +6,7 @@ type Size =
   | '14|16'
   | '16|16'
   | '16|20'
+  | '16|32'
   | '20|24'
   | '24|32'
   | '32|52'
@@ -39,6 +40,8 @@ export const Matter: React.FC<Props> = ({
         return 'text-[16px] leading-[150%] md:leading-[19px] -tracking-[0.02em]';
       case '16|20':
         return 'text-[16px] md:text-[20px] leading-[130%] md:leading-[19px] -tracking-[0.02em]';
+      case '16|32':
+        return 'text-[16px] md:text-[32px] leading-[130%] md:leading-[34px] -tracking-[0.02em]';
       case '20|24':
         return 'text-[20px] md:text-[24px] leading-[130%] md:leading-[19px] -tracking-[0.02em]';
       case '24|32':
