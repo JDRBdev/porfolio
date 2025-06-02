@@ -1,7 +1,11 @@
 ---
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 import Habilities from "../atoms/habilities.astro";
+import Email from "../atoms/icons/email.astro";
+import Github from "../atoms/icons/github.astro";
+import Linkedin from "../atoms/icons/linkedin.astro";
 import SectionLayout from "../atoms/section-layout.astro";
+import SocialPill from "../atoms/social-pill.astro";
 import { Matter } from "../atoms/text/matter";
 import TypewriterText from "../atoms/type-writer-text";
 import Image from "astro/components/Image.astro";
@@ -9,36 +13,65 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<SectionLayout className="flex flex-col lg:flex-row justify-center w-full gap-4 mb-20 md:mb-24">
-    <div class="flex flex-col gap-2 max-w-[620px] self-center">
-        <div class="w-full flex gap-2 md:gap-4 max-h-[64px]"> 
-            <h1 class="md:text-5xl font-extrabold dark:text-white flex">
-                <small class="font-semibold text-gray-500 dark:text-gray-400 content-end">
-                    <Matter
-                        text={t("header.title")}
-                        size="16|32"
-                        className="leading-2"
-                    />
-                </small>
-            </h1>
-            <TypewriterText className="md:min-w-[380px] min-w-[150px] leading-4 md:leading-8" client:load />
-        </div>
+<SectionLayout
+  className="flex flex-col lg:flex-row justify-center w-full gap-4 mb-20 md:mb-24"
+>
+  <div class="flex flex-col gap-2 max-w-[620px] self-center">
+    <div class="w-full flex gap-2 md:gap-4 max-h-[64px]">
+      <h1 class="md:text-5xl font-extrabold dark:text-white flex">
+        <small
+          class="font-semibold text-gray-500 dark:text-gray-400 content-end"
+        >
+          <Matter text={t("header.title")} size="16|32" className="leading-2" />
+        </small>
+      </h1>
+      <TypewriterText
+        className="md:min-w-[380px] min-w-[150px] leading-4 md:leading-8"
+        client:load
+      />
+    </div>
+    <Matter
+      text={t("header.subtitle")}
+      size="16|20"
+      className="text-white/70 leading-6!"
+    />
+    <div class="flex flex-wrap gap-3 mt-2 w-full">
+      <SocialPill href="https://github.com/JoseDavid-2daw">
+        <Github className="size-6"/>
         <Matter
-            text={t("header.subtitle")}
-            size="16|20"
-            className="text-white/70 leading-6!"
+          text="Github"
+          size="16|16"
+          className="text-white"
         />
-    </div>
-    <div class="justify-items-center mt-10 lg:mt-0">
-        <Image
-            src="/images/imagen-personal.avif"
-            alt={t("header.title")}
-            width={500}
-            height={500}
-            class="w-full max-w-[350px]"
-            style="mask-image: linear-gradient(black 50%, transparent)",
+      </SocialPill>
+      <SocialPill>
+        <Linkedin className="size-6"/>
+        <Matter
+          text="Linkedin"
+          size="16|16"
+          className="text-white"
         />
-        <Habilities/>
+      </SocialPill>
+      <SocialPill>
+        <Email className="size-6"/>
+        <Matter
+          text="email"
+          size="16|16"
+          className="text-white"
+        />
+      </SocialPill>
     </div>
+  </div>
+  <div class="justify-items-center mt-10 lg:mt-0">
+    <Image
+      src="/images/imagen-personal.avif"
+      alt={t("header.title")}
+      width={500}
+      height={500}
+      class="w-full max-w-[350px]"
+      style="mask-image: linear-gradient(black 50%, transparent)"
+      ,
+    />
+    <Habilities />
+  </div>
 </SectionLayout>
-

@@ -2,7 +2,7 @@
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 import { Caslon } from "../atoms/text/caslon";
 import AstroIcon from "../atoms/icons/astro-icon.astro";
-import Bootstrap from "../atoms/icons/bootstrap.astro"
+import Bootstrap from "../atoms/icons/bootstrap.astro";
 import Tailwindcss from "../atoms/icons/tailwindcss.astro";
 import Nextjs from "../atoms/icons/nextjs.astro";
 import Html5 from "../atoms/icons/html5.astro";
@@ -52,21 +52,23 @@ const toolsTechs = [
   <div class="flex flex-col gap-4">
     <Matter
       text="Frontend"
-      size="16|32" 
+      size="16|32"
       className="text-white text-xl md:text-2xl text-center"
       tag="h3"
     />
     <div class="splide splide-frontend w-full cursor-pointer">
       <div class="splide__track">
         <ul class="splide__list h-52! items-center!">
-          {frontendTechs.map((tech) => (
-            <li class="splide__slide h-[96px]! w-[100px]! md:w-[300px]! lg:w-[400px]! flex flex-col items-center gap-2 group relative">
-              <tech.component className="w-full! h-full! max-h-[96px]! object-cover transition-transform duration-300 group-hover:scale-110"/>
-              <span class="absolute bottom-full mb-6 hidden group-hover:block border-white border-2 bg-white/10 backdrop-blur-sm text-white text-sm px-2 py-1 rounded whitespace-nowrap">
-                {tech.name}
-              </span>
-            </li>
-          ))}
+          {
+            frontendTechs.map((tech) => (
+              <li class="splide__slide h-[96px]! w-[100px]! md:w-[300px]! lg:w-[400px]! flex flex-col items-center gap-2 group relative">
+                <tech.component className="w-full! h-full! max-h-[96px]! object-cover transition-transform duration-300 group-hover:scale-110" />
+                <span class="absolute bottom-full mb-6 hidden group-hover:block border-white border-2 bg-white/10 backdrop-blur-sm text-white text-sm px-2 py-1 rounded whitespace-nowrap">
+                  {tech.name}
+                </span>
+              </li>
+            ))
+          }
         </ul>
       </div>
     </div>
@@ -76,21 +78,23 @@ const toolsTechs = [
   <div class="flex flex-col gap-4">
     <Matter
       text="Backend"
-      size="16|32" 
+      size="16|32"
       className="text-white text-xl md:text-2xl text-center"
       tag="h3"
     />
     <div class="splide splide-backend w-full cursor-pointer">
       <div class="splide__track">
         <ul class="splide__list h-52! items-center!">
-          {backendTechs.map((tech) => (
-            <li class="splide__slide h-[96px]! w-[100px]! md:w-[300px]! lg:w-[400px]! flex flex-col items-center gap-2 group relative">
-              <tech.component className="w-full! h-full! max-h-[96px]! object-cover transition-transform duration-300 group-hover:scale-110"/>
-              <span class="absolute bottom-full mb-6 hidden group-hover:block border-white border-2 bg-white/10 backdrop-blur-sm text-white text-sm px-2 py-1 rounded whitespace-nowrap">
-                {tech.name}
-              </span>
-            </li>
-          ))}
+          {
+            backendTechs.map((tech) => (
+              <li class="splide__slide h-[96px]! w-[100px]! md:w-[300px]! lg:w-[400px]! flex flex-col items-center gap-2 group relative">
+                <tech.component className="w-full! h-full! max-h-[96px]! object-cover transition-transform duration-300 group-hover:scale-110" />
+                <span class="absolute bottom-full mb-6 hidden group-hover:block border-white border-2 bg-white/10 backdrop-blur-sm text-white text-sm px-2 py-1 rounded whitespace-nowrap">
+                  {tech.name}
+                </span>
+              </li>
+            ))
+          }
         </ul>
       </div>
     </div>
@@ -100,21 +104,23 @@ const toolsTechs = [
   <div class="flex flex-col gap-4">
     <Matter
       text={t("techstack.tools")}
-      size="16|32" 
+      size="16|32"
       className="text-white text-xl md:text-2xl text-center"
       tag="h3"
     />
     <div class="splide splide-tools w-full cursor-pointer">
       <div class="splide__track">
         <ul class="splide__list h-52! items-center!">
-          {toolsTechs.map((tech) => (
-            <li class="splide__slide h-[96px]! w-[100px]! md:w-[300px]! lg:w-[400px]! flex flex-col items-center gap-2 group relative">
-              <tech.component className="w-full! h-full! max-h-[96px]! object-cover transition-transform duration-300 group-hover:scale-110"/>
-              <span class="absolute bottom-full mb-6 hidden group-hover:block border-white border-2 bg-white/10 backdrop-blur-sm text-white text-sm px-2 py-1 rounded whitespace-nowrap">
-                {tech.name}
-              </span>
-            </li>
-          ))}
+          {
+            toolsTechs.map((tech) => (
+              <li class="splide__slide h-[96px]! w-[100px]! md:w-[300px]! lg:w-[400px]! flex flex-col items-center gap-2 group relative">
+                <tech.component className="w-full! h-full! max-h-[96px]! object-cover transition-transform duration-300 group-hover:scale-110" />
+                <span class="absolute bottom-full mb-6 hidden group-hover:block border-white border-2 bg-white/10 backdrop-blur-sm text-white text-sm px-2 py-1 rounded whitespace-nowrap">
+                  {tech.name}
+                </span>
+              </li>
+            ))
+          }
         </ul>
       </div>
     </div>
@@ -127,18 +133,18 @@ const toolsTechs = [
 />
 
 <script type="module">
-  import Splide from 'https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/+esm';
-  import { AutoScroll } from 'https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.4.0/+esm';
+  import Splide from "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/+esm";
+  import { AutoScroll } from "https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.4.0/+esm";
 
-  document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener("DOMContentLoaded", () => {
     // Configuración para el carrusel de Frontend (derecha)
-    const splideFrontend = new Splide('.splide-frontend', {
-      type: 'loop',
-      direction: 'ltr',
-      drag: 'free',
-      focus: 'center',
+    const splideFrontend = new Splide(".splide-frontend", {
+      type: "loop",
+      direction: "ltr",
+      drag: "free",
+      focus: "center",
       perPage: 5,
-      gap: '4rem',
+      gap: "4rem",
       pagination: false,
       arrows: false,
       autoScroll: {
@@ -150,13 +156,13 @@ const toolsTechs = [
     });
 
     // Configuración para el carrusel de Backend (izquierda)
-    const splideBackend = new Splide('.splide-backend', {
-      type: 'loop',
-      direction: 'rtl',
-      drag: 'free',
-      focus: 'center',
+    const splideBackend = new Splide(".splide-backend", {
+      type: "loop",
+      direction: "rtl",
+      drag: "free",
+      focus: "center",
       perPage: 4,
-      gap: '4rem',
+      gap: "4rem",
       pagination: false,
       arrows: false,
       autoScroll: {
@@ -168,13 +174,13 @@ const toolsTechs = [
     });
 
     // Configuración para el carrusel de Herramientas (más rápido y alterna dirección)
-    const splideTools = new Splide('.splide-tools', {
-      type: 'loop',
-      direction: 'ltr',
-      drag: 'free',
-      focus: 'center',
+    const splideTools = new Splide(".splide-tools", {
+      type: "loop",
+      direction: "ltr",
+      drag: "free",
+      focus: "center",
       perPage: 3,
-      gap: '4rem',
+      gap: "4rem",
       pagination: false,
       arrows: false,
       autoScroll: {
@@ -202,10 +208,12 @@ const toolsTechs = [
     align-items: center;
     justify-content: center;
   }
-  
+
   /* Estilos responsivos */
   @media (max-width: 768px) {
-    .splide-frontend, .splide-backend, .splide-tools {
+    .splide-frontend,
+    .splide-backend,
+    .splide-tools {
       .splide__list {
         gap: 2rem;
       }

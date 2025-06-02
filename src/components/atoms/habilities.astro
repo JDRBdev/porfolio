@@ -1,6 +1,6 @@
 ---
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
-import { Caslon } from "./text/caslon"
+import { Caslon } from "./text/caslon";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
@@ -14,22 +14,22 @@ const t = useTranslations(lang);
         size="20|24"
         className="word block h-full px-[6px] text-yellow-300 brightness-125 font-black text-center"
       />
-      <Caslon 
+      <Caslon
         text={t("habilities.creative")}
         size="20|24"
         className="word block h-full px-[6px] text-green-300 brightness-125 font-black text-center"
       />
-      <Caslon 
+      <Caslon
         text={t("habilities.proactive")}
         size="20|24"
         className="word block h-full px-[6px] text-red-300 brightness-125 font-black text-center"
       />
-      <Caslon 
+      <Caslon
         text={t("habilities.cooperative")}
         size="20|24"
         className="word block h-full px-[6px] text-purple-300 brightness-125 font-black text-center"
       />
-      <Caslon 
+      <Caslon
         text={t("habilities.responsible")}
         size="20|24"
         className="word block h-full px-[6px] text-blue-300 brightness-125 font-black text-center"

@@ -4,10 +4,10 @@ import fr from './messages/fr.json';
 import de from './messages/de.json';
 
 export const languages = {
-  en: 'English',
-  es: 'Español',
-  fr: 'Français',
-  de: 'Deutsch',
+  en: 'EN',
+  es: 'ES',
+  fr: 'FR',
+  de: 'DE',
 };
 
 export const defaultLang = 'en';

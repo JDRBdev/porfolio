@@ -1,6 +1,6 @@
 ---
 import "../../styles/global.css";
-import Layout from '../../layouts/Layout.astro';
+import Layout from "../../layouts/Layout.astro";
 import { Navbar } from "../../components/organism/navbar";
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 import Header from "../../components/components/header.astro";
@@ -10,10 +10,13 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<Layout className="onest-regular flex flex-col w-full h-fit mx-auto max-w-9xl onHover items-center overflow-x-hidden" client:load>
-  <Navbar client:only/>
+<Layout
+  className="onest-regular flex flex-col w-full h-fit mx-auto max-w-9xl onHover items-center overflow-x-hidden"
+  client:load
+>
+  <Navbar client:only />
   <main class="mt-[150px] justify-items-center max-w-[1512px] px-10">
-    <Header/>
+    <Header />
   </main>
-  <TechStack client:load/>
+  <TechStack client:load />
 </Layout>
