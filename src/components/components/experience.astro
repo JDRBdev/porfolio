@@ -1,0 +1,40 @@
+---
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+import SearchingJob from "../atoms/icons/searching-job.astro"
+import WorkingBag from "../atoms/icons/working-bag.astro"
+import SectionLayout from "../atoms/section-layout.astro"
+import { Caslon } from "../atoms/text/caslon"
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+<SectionLayout className="flex flex-col justify-center justify-items-center max-w-[1512px] px-10">
+    <Caslon
+        text={t("experience.title")}
+        size="32|64"
+        className="text-white mb-8 md:mb-12 self-center text-center"
+        tag="h2"
+    />
+    <ol class="relative border-s border-gray-200">                  
+        <li class="mb-10 ms-4">
+            <span class="absolute -start-4 -top-1 size-8 rounded-full bg-white flex items-center justify-center">
+                <WorkingBag className="size-6" />
+            </span>
+            <div class="hover:bg-white/10 hover:backdrop-blur p-3 rounded ml-3">
+                <time class="mb-1 text-sm font-normal leading-none text-white">{t("experience.marketec360.date")}</time>
+                <h3 class="text-lg font-semibold text-white/90">{t("experience.marketec360.title")}</h3>
+                <p class="text-base font-normal text-white/80">{t("experience.marketec360.description")}</p>
+            </div>
+        </li>
+        <li class="mb-10 ms-4">
+            <span class="absolute -start-4 size-8 rounded-full bg-white flex items-center justify-center">
+                <SearchingJob className="size-6" />
+            </span>
+            <div class="hover:bg-white/10 hover:backdrop-blur p-3 rounded ml-3">
+                <time class="mb-1 text-sm font-normal leading-none text-white">{t("experience.searching.date")}</time>
+                <h3 class="text-lg font-semibold text-white/90">{t("experience.searching.title")}</h3>
+                <p class="text-base font-normal text-white/80">{t("experience.searching.description")}</p>
+            </div>
+        </li>
+    </ol>
+</SectionLayout>
+

@@ -5,6 +5,7 @@ import { Navbar } from "../../components/organism/navbar";
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 import Header from "../../components/components/header.astro";
 import TechStack from "../../components/components/tech-stack.astro";
+import Experience from "../../components/components/experience.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -19,4 +20,5 @@ const t = useTranslations(lang);
     <Header />
   </main>
   <TechStack client:load />
+  <Experience />
 </Layout>

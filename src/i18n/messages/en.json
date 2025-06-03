@@ -26,5 +26,18 @@
     "proactive": "Proactive",
     "cooperative": "Cooperative",
     "responsible": "Responsible"
+  },
+  "experience": {
+    "title": "Experience",
+    "marketec360": {
+      "date": "March 2025",
+      "title": "Frontend Developer",
+      "description": "Frontend developer at Marketec360, where I have worked on the development of web applications using modern technologies such as React, TypeScript, and Tailwind CSS. I have collaborated on large-scale projects, improving user experience and building responsive and accessible interfaces."
+    },
+    "searching": {
+      "date": "Currently",
+      "title": "Looking for new opportunities",
+      "description": "I am currently looking for new job opportunities where I can apply my skills and continue to grow professionally. I am open to challenging projects that allow me to learn and contribute to the team's success."
+    }
   }
 }
