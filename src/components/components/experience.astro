@@ -7,7 +7,7 @@ import { Caslon } from "../atoms/text/caslon"
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
-<SectionLayout className="flex flex-col justify-center justify-items-center max-w-[1512px] px-10">
+<div class="flex flex-col justify-center justify-items-center max-w-[1512px] px-10 mb-24" style="mask-image: linear-gradient(black 90%, transparent)">
     <Caslon
         text={t("experience.title")}
         size="32|64"
@@ -36,5 +36,4 @@ const t = useTranslations(lang);
             </div>
         </li>
     </ol>
-</SectionLayout>
-
+</div>

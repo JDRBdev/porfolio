@@ -1,0 +1,82 @@
+---
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+import { Caslon } from "../atoms/text/caslon";
+import AstroIcon from "../atoms/icons/astro-icon.astro";
+import Bootstrap from "../atoms/icons/bootstrap.astro";
+import Tailwindcss from "../atoms/icons/tailwindcss.astro";
+import Nextjs from "../atoms/icons/nextjs.astro";
+import Html5 from "../atoms/icons/html5.astro";
+import Css from "../atoms/icons/css.astro";
+import Javascript from "../atoms/icons/javascript.astro";
+import Python from "../atoms/icons/python.astro";
+import Mysql from "../atoms/icons/mysql.astro";
+import Php from "../atoms/icons/php.astro";
+import Laravel from "../atoms/icons/laravel.astro";
+import React from "../atoms/icons/react.astro";
+import { Matter } from "../atoms/text/matter";
+import Image from "astro/components/Image.astro";
+import SectionLayout from "../atoms/section-layout.astro";
+import SocialPill from "../atoms/social-pill.astro";
+import Github from "../atoms/icons/github.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<SectionLayout className="flex flex-col max-w-[1512px] gap-8 md:gap-16 mb-24">
+  <Caslon
+    text={t("projects.title")}
+    size="32|64"
+    className="text-white self-center"
+  />
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-items-center">
+    <div>
+      <Image
+        src={"/images/GymTinajo.avif"}
+        alt={"Gym Tinajo Project"}
+        width={600}
+        height={600}
+        class={"w-full md:max-w-[700px]"}
+      />
+      <div class="px-4 justify-between flex">
+        <div class="flex flex-wrap gap-2">
+          <Html5 className="size-8 md:size-10"/>
+          <Css className="size-8 md:size-10"/>
+          <Laravel className="size-8 md:size-10"/>
+          <Php className="size-8 md:size-10"/>
+          <Javascript className="size-8 md:size-10"/>
+          <Mysql className="size-8 md:size-10"/>
+        </div>
+        <div>
+          <SocialPill href="https://github.com/tomasvillani/Proyecto-final-DAW">
+            <Github className="size-6"/>
+          </SocialPill>
+        </div>
+      </div>
+    </div>
+    <div>
+      <Image
+        src={"/images/GymTinajo.avif"}
+        alt={"Gym Tinajo Project"}
+        width={600}
+        height={600}
+        class={"w-full md:max-w-[700px]"}
+      />
+      <div class="px-4 justify-between flex">
+        <div class="flex flex-wrap gap-2">
+          <Html5 className="size-8 md:size-10"/>
+          <Css className="size-8 md:size-10"/>
+          <Laravel className="size-8 md:size-10"/>
+          <Php className="size-8 md:size-10"/>
+          <Javascript className="size-8 md:size-10"/>
+          <Mysql className="size-8 md:size-10"/>
+        </div>
+        <div>
+          <SocialPill href="https://github.com/tomasvillani/Proyecto-final-DAW">
+            <Github className="size-6"/>
+          </SocialPill>
+        </div>
+      </div>
+    </div>
+  </div>
+</SectionLayout>

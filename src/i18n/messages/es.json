@@ -39,5 +39,8 @@
       "title": "Buscando nuevas oportunidades",
       "description": "Actualmente estoy buscando nuevas oportunidades laborales donde pueda aplicar mis habilidades y seguir creciendo profesionalmente. Estoy abierto a proyectos desafiantes que me permitan aprender y contribuir al éxito del equipo."
     }
+  },
+  "projects": {
+    "title": "Proyectos"
   }
 }
