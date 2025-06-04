@@ -23,37 +23,13 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<SectionLayout className="flex flex-col max-w-[1512px] gap-8 md:gap-16 mb-24">
+<SectionLayout className="flex flex-col max-w-[1512px] gap-8 md:gap-16 mb-24" id="projects">
   <Caslon
     text={t("projects.title")}
     size="32|64"
     className="text-white self-center"
   />
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-items-center">
-    <div>
-      <Image
-        src={"/images/GymTinajo.avif"}
-        alt={"Gym Tinajo Project"}
-        width={600}
-        height={600}
-        class={"w-full md:max-w-[700px]"}
-      />
-      <div class="px-4 justify-between flex">
-        <div class="flex flex-wrap gap-2">
-          <Html5 className="size-8 md:size-10"/>
-          <Css className="size-8 md:size-10"/>
-          <Laravel className="size-8 md:size-10"/>
-          <Php className="size-8 md:size-10"/>
-          <Javascript className="size-8 md:size-10"/>
-          <Mysql className="size-8 md:size-10"/>
-        </div>
-        <div>
-          <SocialPill href="https://github.com/tomasvillani/Proyecto-final-DAW">
-            <Github className="size-6"/>
-          </SocialPill>
-        </div>
-      </div>
-    </div>
+  <div class={`grid gap-8 justify-items-center ${1 === 1 ? "grid-cols-1" : "lg:grid-cols-2"}`}>
     <div>
       <Image
         src={"/images/GymTinajo.avif"}

@@ -59,13 +59,20 @@ export function Navbar({ className = "" }) {
             {[
               { key: "home", label: t("navbar.home") },
               { key: "about", label: t("navbar.about") },
-              { key: "techstack", label: t("navbar.techstack") },
+              { key: "tech-stack", label: t("navbar.techstack") },
+              { key: "experience", label: t("navbar.experience") },
               { key: "projects", label: t("navbar.projects") },
-              { key: "contact", label: t("navbar.contact") },
             ].map((item) => (
               <li key={item.key}>
                 <a
-                  href={`#${item.key}`}
+                  href={item.key === "home" ? "/" : undefined}
+                  onClick={item.key !== "home" ? (e) => {
+                    e.preventDefault();
+                    const section = document.getElementById(item.key);
+                    if (section) {
+                      section.scrollIntoView({ behavior: "smooth" });
+                    }
+                  } : undefined}
                   className="language-selector__button text-white inline-flex items-center border-0 leading-8 gap-2 cursor-pointer 
                       relative after:absolute after:-bottom-3 after:left-0 after:h-[2px] 
                       after:w-0 after:bg-white after:transition-all after:duration-300 

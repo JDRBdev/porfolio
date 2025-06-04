@@ -4,18 +4,18 @@ import { useLanguage } from "../../hooks/useLanguage";
 import { Matter } from "./text/matter";
 
 export function LanguageSelector({ className = "" }) {
-  const { lang, t } = useLanguage();
+  const { lang, t, setLang } = useLanguage();
 
   return (
     <div className={`flex border-2 border-white rounded-xl select-none text-white ${className}`}>
       {Object.entries(languages).map(([languageCode, label], index) => {
-        // Determine rounded corners based on position
-        const roundedClass = index === 0 
-          ? "rounded-l-lg" 
-          : index === Object.entries(languages).length - 1 
-            ? "rounded-r-lg" 
+        const roundedClass =
+          index === 0
+            ? "rounded-l-lg"
+            : index === Object.entries(languages).length - 1
+            ? "rounded-r-lg"
             : "";
-        
+
         return (
           <label
             key={languageCode}
@@ -27,18 +27,17 @@ export function LanguageSelector({ className = "" }) {
               value={languageCode}
               className="peer hidden"
               checked={lang === languageCode}
-              onChange={() => {}}
+              onChange={() => setLang(languageCode as "en" | "es" | "fr" | "de")}
             />
-            <a
-              href={`/${languageCode}/`}
+            <span
               className={`tracking-widest bg-white/10 text-white peer-checked:bg-black/10 p-3 ${roundedClass}`}
             >
-              <Matter 
-                text={label} 
-                size="14|16" 
+              <Matter
+                text={label}
+                size="14|16"
                 className="text-white"
               />
-            </a>
+            </span>
           </label>
         );
       })}

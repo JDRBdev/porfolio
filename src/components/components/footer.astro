@@ -1,0 +1,79 @@
+---
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+import { Caslon } from "../atoms/text/caslon";
+import React from "../atoms/icons/react.astro";
+import { Matter } from "../atoms/text/matter";
+import Image from "astro/components/Image.astro";
+import Code from "../atoms/icons/code.astro";
+import SectionLayout from "../atoms/section-layout.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<SectionLayout className="flex flex-col max-w-[1512px] mb-10">
+    <footer>
+        <div class="w-full">
+            <div class="md:flex md:justify-between">
+            <div class="mb-6 md:mb-0">
+                <a href="https://flowbite.com/" class="flex items-center gap-2">
+                    <Code className="size-8"/>
+                    <Matter
+                        text="José David Rodríguez Betancor" 
+                        className="self-center text-2xl font-semibold whitespace-nowrap text-white"
+                    />
+                </a>
+            </div>
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-white uppercase">Built with</h2>
+                    <ul class="text-white font-medium">
+                        <li class="mb-4">
+                            <a href="https://astro.build/" target="_blank" rel="noopener noreferrer" class="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Astro</a>
+                        </li>
+                        <li>
+                            <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" class="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Tailwind CSS</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Follow me</h2>
+                    <ul class="text-white dark:text-gray-400 font-medium">
+                        <li class="mb-4">
+                            <a
+                                href="https://github.com/JoseDavid-2daw"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+                            >
+                                Github
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://discord.gg/4eeurUVvTy"
+                            target="_blank"
+                            rel="noopener noreferrer" 
+                            class="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Linkedin</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Legal</h2>
+                    <ul class="text-white dark:text-gray-400 font-medium">
+                        <li class="mb-4">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Terms &amp; Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-center">
+            <span class="text-sm text-white sm:text-center dark:text-gray-400">© 2025 <a href="https://github.com/JoseDavid-2daw" target="_blank" rel="noopener noreferrer" class="hover:underline">José David Rodríguez Betancor</a>. All Rights Reserved.
+            </span>
+        </div>
+    </footer>
+</SectionLayout>
