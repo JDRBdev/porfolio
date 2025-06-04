@@ -42,5 +42,38 @@
   },
   "projects": {
     "title": "Projets"
+  },
+  "footer": {
+    "builtWith": "Développé avec",
+    "followMe": "Suivez-moi",
+    "legal": "Mentions légales",
+    "privacyPolicy": "Politique de confidentialité",
+    "termsAndConditions": "Termes et conditions",
+    "allRightsReserved": "Tous droits réservés."
+  },
+  "terms": {
+    "title": "Politica de Privacidad",
+    "lastUpdate": "Última actualización: 4 de junio de 2025",
+    "intro": "Al acceder a este sitio web, aceptas los siguientes términos y condiciones. Si no estás de acuerdo con alguno de ellos, por favor no utilices el sitio.",
+    "section1": {
+      "title": "1. Propiedad intelectual",
+      "content": "Todo el contenido de este sitio (textos, imágenes, diseños, código, etc.) es propiedad del autor del portafolio, salvo que se indique lo contrario. No está permitida su reproducción sin autorización previa."
+    },
+    "section2": {
+      "title": "2. Uso del sitio",
+      "content": "Este sitio tiene fines informativos y profesionales. Está prohibido usarlo para actividades ilegales o que infrinjan los derechos de terceros."
+    },
+    "section3": {
+      "title": "3. Enlaces externos",
+      "content": "El sitio puede contener enlaces a otros sitios web. No me hago responsable del contenido o políticas de privacidad de esos sitios."
+    },
+    "section4": {
+      "title": "4. Exclusión de responsabilidad",
+      "content": "Este sitio se ofrece \"tal cual\", sin garantías de disponibilidad, exactitud o funcionamiento ininterrumpido."
+    },
+    "section5": {
+      "title": "5. Modificaciones",
+      "content": "Los términos aquí expuestos pueden cambiar sin previo aviso. El uso continuado del sitio implica la aceptación de dichos cambios."
+    }
   }
 }

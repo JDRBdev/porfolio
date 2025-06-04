@@ -1,0 +1,83 @@
+---
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+import SectionLayout from "../atoms/section-layout.astro";
+import { Caslon } from "../atoms/text/caslon";
+import { Matter } from "../atoms/text/matter";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<SectionLayout className="flex flex-col text-white justify-center w-full mb-24">
+  <Caslon
+    text={t("terms.title")}
+    size="32|64"
+    className="text-white mb-8 md:mb-12 self-center text-center"
+    tag="h1"
+  />
+  <Caslon
+    text={t("terms.lastUpdate")}
+    tag="p"
+    className="mb-4"
+  />
+
+  <Caslon
+    text={t("terms.intro")}
+    tag="p"
+    className="mb-4"
+  />
+
+  <Caslon
+    text={t("terms.section1.title")}
+    tag="h2"
+    className="mb-1"
+  />
+  <Caslon
+    text={t("terms.section1.content")}
+    tag="p"
+    className="mb-4"
+  />
+
+  <Caslon
+    text={t("terms.section2.title")}
+    tag="h2"
+    className="mb-1"
+  />
+  <Caslon
+    text={t("terms.section2.content")}
+    tag="p"
+    className="mb-4"
+  />
+
+  <Caslon
+    text={t("terms.section3.title")}
+    tag="h2"
+    className="mb-1"
+  />
+  <Caslon
+    text={t("terms.section3.content")}
+    tag="p"
+    className="mb-4"
+  />
+
+  <Caslon
+    text={t("terms.section4.title")}
+    tag="h2"
+    className="mb-1"
+  />
+  <Caslon
+    text={t("terms.section4.content")}
+    tag="p"
+    className="mb-4"
+  />
+
+  <Caslon
+    text={t("terms.section5.title")}
+    tag="h2"
+    className="mb-1"
+  />
+  <Caslon
+    text={t("terms.section5.content")}
+    tag="p"
+    className="mb-4"
+  />
+</SectionLayout>

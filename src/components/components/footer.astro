@@ -14,66 +14,119 @@ const t = useTranslations(lang);
 <SectionLayout className="flex flex-col max-w-[1512px] mb-10">
     <footer>
         <div class="w-full">
-            <div class="md:flex md:justify-between">
-            <div class="mb-6 md:mb-0">
-                <a href="https://flowbite.com/" class="flex items-center gap-2">
-                    <Code className="size-8"/>
+            <div class="md:flex md:justify-between gap-10">
+                <div class="mb-6 md:mb-0 flex gap-2">
+                    <Code className="size-5 md:size-6 self-center md:self-start"/>
                     <Matter
-                        text="José David Rodríguez Betancor" 
-                        className="self-center text-2xl font-semibold whitespace-nowrap text-white"
+                        text="José David Rodríguez Betancor"
+                        size="16|20"
+                        className="font-semibold whitespace-nowrap text-white uppercase leading-7!"
                     />
-                </a>
-            </div>
-            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-                <div>
-                    <h2 class="mb-6 text-sm font-semibold text-white uppercase">Built with</h2>
+                </div>
+                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                    <div>
+                    <Matter
+                        text={t("footer.builtWith")}
+                        size="16|16"
+                        className="mb-2 font-semibold text-white uppercase"
+                        tag="h2"
+                    />
                     <ul class="text-white font-medium">
-                        <li class="mb-4">
-                            <a href="https://astro.build/" target="_blank" rel="noopener noreferrer" class="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Astro</a>
+                        <li class="mb-2">
+                        <a href="https://astro.build/" target="_blank" rel="noopener noreferrer">
+                            <Matter 
+                                text="Astro"
+                                size="14|16"
+                                className="mt-4 w-fit relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+                            />
+                        </a>
                         </li>
                         <li>
-                            <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" class="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Tailwind CSS</a>
+                        <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">
+                            <Matter
+                                text="Tailwind CSS"
+                                size="14|16"
+                                className="mt-4 w-fit relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+                            />
+                        </a>
                         </li>
                     </ul>
-                </div>
-                <div>
-                    <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Follow me</h2>
+                    </div>
+                    <div>
+                    <Matter
+                        text={t("footer.followMe")}
+                        size="16|16"
+                        className="mb-2 font-semibold text-white uppercase"
+                        tag="h2"
+                    />
                     <ul class="text-white dark:text-gray-400 font-medium">
-                        <li class="mb-4">
-                            <a
-                                href="https://github.com/JoseDavid-2daw"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
-                            >
-                                Github
-                            </a>
+                        <li class="mb-2">
+                        <a
+                            href="https://github.com/JDRBdev"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        
+                        >
+                            <Matter
+                                text="Github"
+                                className="mt-4 w-fit relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+                                size="14|16"
+                            />
+                        </a>
                         </li>
                         <li>
-                            <a href="https://discord.gg/4eeurUVvTy"
+                        <a href="https://www.linkedin.com/in/josé-david-rodríguez-betancor-8019ba369"
                             target="_blank"
                             rel="noopener noreferrer" 
-                            class="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Linkedin</a>
+                        >
+                            <Matter
+                                text="Linkedin"
+                                size="14|16"
+                                className="mt-4 w-fit relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+                            />
+                        </a>
                         </li>
                     </ul>
-                </div>
-                <div>
-                    <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Legal</h2>
+                    </div>
+                    <div>
+                    <Matter
+                        text={t("footer.legal")}
+                        size="16|16"
+                        className="mb-2 font-semibold text-white uppercase"
+                        tag="h2"
+                    />
                     <ul class="text-white dark:text-gray-400 font-medium">
-                        <li class="mb-4">
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Privacy Policy</a>
+                        <li class="mb-2">
+                        <a href="politica-de-privacidad" class="">
+                            <Matter 
+                                text={t("footer.privacyPolicy")}
+                                size="14|16"
+                                className="mt-4 w-fit relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+                            />
+                        </a>
                         </li>
                         <li>
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Terms &amp; Conditions</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <Matter
+                                text={t("footer.termsAndConditions")}
+                                size="14|16"
+                                className="mt-4 w-fit relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+                            />
+                        </a>
                         </li>
                     </ul>
+                    </div>
                 </div>
             </div>
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div class="sm:flex sm:items-center sm:justify-center">
-            <span class="text-sm text-white sm:text-center dark:text-gray-400">© 2025 <a href="https://github.com/JoseDavid-2daw" target="_blank" rel="noopener noreferrer" class="hover:underline">José David Rodríguez Betancor</a>. All Rights Reserved.
-            </span>
+            <Caslon
+                text={
+                    `© 2025 <a href='https://github.com/JDRBdev' target='_blank' rel='noopener noreferrer' class='hover:underline'>José David Rodríguez Betancor</a>. ${t("footer.allRightsReserved")}`
+                }
+                className="text-white sm:text-center dark:text-gray-400"
+            />
         </div>
     </footer>
 </SectionLayout>
