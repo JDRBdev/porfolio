@@ -51,29 +51,58 @@
     "termsAndConditions": "Termes et conditions",
     "allRightsReserved": "Tous droits réservés."
   },
-  "terms": {
-    "title": "Politica de Privacidad",
-    "lastUpdate": "Última actualización: 4 de junio de 2025",
-    "intro": "Al acceder a este sitio web, aceptas los siguientes términos y condiciones. Si no estás de acuerdo con alguno de ellos, por favor no utilices el sitio.",
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "lastUpdate": "Dernière mise à jour : 4 juin 2025",
+    "intro": "Cette politique de confidentialité explique comment les informations des utilisateurs visitant ce site web sont collectées, utilisées et protégées.",
     "section1": {
-      "title": "1. Propiedad intelectual",
-      "content": "Todo el contenido de este sitio (textos, imágenes, diseños, código, etc.) es propiedad del autor del portafolio, salvo que se indique lo contrario. No está permitida su reproducción sin autorización previa."
+      "title": "1. Informations collectées",
+      "content": "Données personnelles que vous fournissez via le formulaire de contact (comme votre nom et votre adresse e-mail). Données collectées automatiquement via des outils comme Google Analytics (par exemple, votre adresse IP, navigateur, pages visitées et temps de navigation)."
     },
     "section2": {
-      "title": "2. Uso del sitio",
-      "content": "Este sitio tiene fines informativos y profesionales. Está prohibido usarlo para actividades ilegales o que infrinjan los derechos de terceros."
+      "title": "2. Utilisation des informations",
+      "content": "Les informations collectées sont utilisées exclusivement pour répondre aux demandes envoyées via le formulaire et pour améliorer l'expérience utilisateur sur le site."
     },
     "section3": {
-      "title": "3. Enlaces externos",
-      "content": "El sitio puede contener enlaces a otros sitios web. No me hago responsable del contenido o políticas de privacidad de esos sitios."
+      "title": "3. Partage des données avec des tiers",
+      "content": "Vos informations personnelles ne sont ni vendues, ni échangées, ni partagées avec des tiers, sauf pour l'utilisation de services d'analyse comme Google Analytics."
     },
     "section4": {
-      "title": "4. Exclusión de responsabilidad",
-      "content": "Este sitio se ofrece \"tal cual\", sin garantías de disponibilidad, exactitud o funcionamiento ininterrumpido."
+      "title": "4. Cookies",
+      "content": "Ce site peut utiliser des cookies pour collecter des données statistiques anonymes. Vous pouvez désactiver les cookies dans les paramètres de votre navigateur."
     },
     "section5": {
-      "title": "5. Modificaciones",
-      "content": "Los términos aquí expuestos pueden cambiar sin previo aviso. El uso continuado del sitio implica la aceptación de dichos cambios."
+      "title": "5. Droits de l'utilisateur",
+      "content": "Vous avez le droit d'accéder, de rectifier ou de supprimer vos données personnelles à tout moment. Pour cela, vous pouvez écrire à : [votreemail@exemple.com]"
+    },
+    "section6": {
+      "title": "6. Modifications de cette politique",
+      "content": "Cette politique peut être mise à jour occasionnellement. Il est recommandé de la consulter régulièrement."
+    }
+  },
+  "terms": {
+    "title": "Conditions générales d'utilisation",
+    "lastUpdate": "Dernière mise à jour : 4 juin 2025",
+    "intro": "En accédant à ce site web, vous acceptez les présentes conditions générales d'utilisation. Si vous n'êtes pas d'accord avec l'une d'entre elles, veuillez ne pas utiliser le site.",
+    "section1": {
+      "title": "1. Propriété intellectuelle",
+      "content": "Tout le contenu de ce site (textes, images, designs, code, etc.) est la propriété de l'auteur du portfolio, sauf indication contraire. Sa reproduction n'est pas autorisée sans autorisation préalable."
+    },
+    "section2": {
+      "title": "2. Utilisation du site",
+      "content": "Ce site a des fins informatives et professionnelles. Il est interdit de l'utiliser pour des activités illégales ou portant atteinte aux droits de tiers."
+    },
+    "section3": {
+      "title": "3. Liens externes",
+      "content": "Le site peut contenir des liens vers d'autres sites web. Je ne suis pas responsable du contenu ou des politiques de confidentialité de ces sites."
+    },
+    "section4": {
+      "title": "4. Exclusion de responsabilité",
+      "content": "Ce site est fourni \"tel quel\", sans garantie de disponibilité, d'exactitude ou de fonctionnement ininterrompu."
+    },
+    "section5": {
+      "title": "5. Modifications",
+      "content": "Les conditions exposées ici peuvent être modifiées sans préavis. L'utilisation continue du site implique l'acceptation de ces modifications."
     }
   }
 }

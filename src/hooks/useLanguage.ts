@@ -12,12 +12,21 @@ export const useLanguage = () => {
     const pathSegments = window.location.pathname.split("/").filter(Boolean);
     const urlLang = pathSegments[0] as AvailableLang;
 
-    const detectedLang =
-      storedLang && languages[storedLang]
-        ? storedLang
-        : languages[urlLang]
-        ? urlLang
-        : defaultLang;
+    let detectedLang: AvailableLang;
+
+    if (storedLang && languages[storedLang]) {
+      detectedLang = storedLang;
+      if (urlLang !== storedLang) {
+      window.location.href = `/${storedLang}/`;
+      return;
+      }
+    } else if (languages[urlLang]) {
+      detectedLang = urlLang;
+    } else {
+      detectedLang = defaultLang;
+      window.location.href = `/${defaultLang}/`;
+      return;
+    }
 
     setLang(detectedLang);
     localStorage.setItem("preferredLanguage", detectedLang);
@@ -27,7 +36,13 @@ export const useLanguage = () => {
     if (languages[newLang]) {
       setLang(newLang);
       localStorage.setItem("preferredLanguage", newLang);
-      window.location.href = `/${newLang}/`;
+      // Get current path without the language segment
+      const pathSegments = window.location.pathname.split("/").filter(Boolean);
+      // Remove the first segment (current language)
+      const restPath = pathSegments.slice(1).join("/");
+      // Build new URL
+      const newUrl = `/${newLang}${restPath ? "/" + restPath : "/"}`;
+      window.location.href = newUrl;
     }
   };
 

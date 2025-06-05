@@ -4,7 +4,7 @@ import Layout from "../../layouts/Layout.astro";
 import { Navbar } from "../../components/organism/navbar";
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 import Footer from "../../components/components/footer.astro";
-import PoliticaDePrivacidadContent from "../../components/components/politica-de-privacidad-content.astro";
+import TerminosCondicionesContent from "../../components/components/terminos-condiciones-content.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -16,7 +16,7 @@ const t = useTranslations(lang);
 >
   <Navbar client:only />
   <main class="mt-[150px] justify-items-center max-w-[1512px] px-10 min-h-[72vh]">
-    <PoliticaDePrivacidadContent/>
+    <TerminosCondicionesContent/>
   </main>
   <Footer style="position: fixed; bottom: 0; left: 0; width: 100%;" />
 </Layout>

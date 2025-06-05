@@ -51,29 +51,58 @@
     "termsAndConditions": "Términos y Condiciones",
     "allRightsReserved": "Todos los derechos reservados."
   },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "lastUpdate": "Última actualización: 4 de junio de 2025",
+    "intro": "Esta política de privacidad explica cómo se recopila, utiliza y protege la información de los usuarios que visitan este sitio web.",
+    "section1": {
+      "title": "1. Información recopilada",
+      "content": "Datos personales que proporcionas a través del formulario de contacto (como tu nombre y dirección de correo electrónico). Datos recopilados automáticamente mediante herramientas como Google Analytics (por ejemplo, tu dirección IP, navegador, páginas visitadas y tiempo de navegación)."
+    },
+    "section2": {
+      "title": "2. Uso de la información",
+      "content": "La información recopilada se utiliza exclusivamente para responder a las solicitudes enviadas a través del formulario y para mejorar la experiencia del usuario en el sitio."
+    },
+    "section3": {
+      "title": "3. Compartición de datos con terceros",
+      "content": "Tu información personal no se vende, intercambia ni comparte con terceros, salvo para el uso de servicios de análisis como Google Analytics."
+    },
+    "section4": {
+      "title": "4. Cookies",
+      "content": "Este sitio puede utilizar cookies para recopilar datos estadísticos anónimos. Puedes desactivar las cookies en la configuración de tu navegador."
+    },
+    "section5": {
+      "title": "5. Derechos del usuario",
+      "content": "Tienes derecho a acceder, rectificar o eliminar tus datos personales en cualquier momento. Para ello, puedes escribir a: [tucorreo@ejemplo.com]"
+    },
+    "section6": {
+      "title": "6. Modificaciones de esta política",
+      "content": "Esta política puede actualizarse ocasionalmente. Se recomienda consultarla regularmente."
+    }
+  },
   "terms": {
-    "title": "Politica de Privacidad",
+    "title": "Términos y Condiciones",
     "lastUpdate": "Última actualización: 4 de junio de 2025",
     "intro": "Al acceder a este sitio web, aceptas los siguientes términos y condiciones. Si no estás de acuerdo con alguno de ellos, por favor no utilices el sitio.",
     "section1": {
       "title": "1. Propiedad intelectual",
-      "content": "Todo el contenido de este sitio (textos, imágenes, diseños, código, etc.) es propiedad del autor del portafolio, salvo que se indique lo contrario. No está permitida su reproducción sin autorización previa."
+      "content": "Todo el contenido de este sitio (textos, imágenes, diseños, código, etc.) es propiedad del autor del portafolio, salvo que se indique lo contrario. No se permite su reproducción sin autorización previa."
     },
     "section2": {
       "title": "2. Uso del sitio",
-      "content": "Este sitio tiene fines informativos y profesionales. Está prohibido usarlo para actividades ilegales o que infrinjan los derechos de terceros."
+      "content": "Este sitio es para fines informativos y profesionales. Está prohibido utilizarlo para actividades ilegales o que infrinjan los derechos de terceros."
     },
     "section3": {
       "title": "3. Enlaces externos",
-      "content": "El sitio puede contener enlaces a otros sitios web. No me hago responsable del contenido o políticas de privacidad de esos sitios."
+      "content": "El sitio puede contener enlaces a otros sitios web. No me hago responsable del contenido ni de las políticas de privacidad de dichos sitios."
     },
     "section4": {
-      "title": "4. Exclusión de responsabilidad",
-      "content": "Este sitio se ofrece \"tal cual\", sin garantías de disponibilidad, exactitud o funcionamiento ininterrumpido."
+      "title": "4. Exención de responsabilidad",
+      "content": "Este sitio se proporciona \"tal cual\", sin garantías de disponibilidad, exactitud o funcionamiento ininterrumpido."
     },
     "section5": {
       "title": "5. Modificaciones",
-      "content": "Los términos aquí expuestos pueden cambiar sin previo aviso. El uso continuado del sitio implica la aceptación de dichos cambios."
+      "content": "Los términos aquí establecidos pueden cambiar sin previo aviso. El uso continuado del sitio implica la aceptación de dichos cambios."
     }
   }
 }

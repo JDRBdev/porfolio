@@ -18,11 +18,13 @@ const t = useTranslations(lang);
   client:load
 >
   <Navbar client:only />
-  <main class="mt-[150px] justify-items-center max-w-[1512px] px-10">
+  <section class="mt-[150px] justify-items-center px-10 flex flex-col mx-auto w-full">
     <Header />
-  </main>
-  <TechStack client:load />
-  <Experience />
-  <Projects/>
+  </section>
+    <TechStack client:load />
+  <section class="mt-[150px] justify-items-center px-10 flex flex-col mx-auto w-full">
+    <Experience />
+    <Projects/>
+  </section>
   <Footer/>
 </Layout>

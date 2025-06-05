@@ -6,6 +6,7 @@ type Size =
   | "10|10"
   | "14|14"
   | "16|16"
+  | "16|20"
   | "18|20"
   | "20|24"
   | "24|32"
@@ -40,6 +41,8 @@ export const Caslon: React.FC<Props> = ({
         return "text-[0.875rem]";
       case "16|16":
         return "text-[1rem]";
+      case "16|20":
+        return "text-[1rem] md:text-[1.25rem]";
       case "18|20":
         return "text-[1.125rem] md:text-[1.25rem]";
       case "20|24":

@@ -51,29 +51,58 @@
     "termsAndConditions": "Allgemeine Geschäftsbedingungen",
     "allRightsReserved": "Alle Rechte vorbehalten."
   },
-  "terms": {
-    "title": "Politica de Privacidad",
-    "lastUpdate": "Última actualización: 4 de junio de 2025",
-    "intro": "Al acceder a este sitio web, aceptas los siguientes términos y condiciones. Si no estás de acuerdo con alguno de ellos, por favor no utilices el sitio.",
+    "privacy": {
+    "title": "Datenschutzerklärung",
+    "lastUpdate": "Letzte Aktualisierung: 4. Juni 2025",
+    "intro": "Diese Datenschutzerklärung erklärt, wie die Informationen der Nutzer, die diese Website besuchen, gesammelt, verwendet und geschützt werden.",
     "section1": {
-      "title": "1. Propiedad intelectual",
-      "content": "Todo el contenido de este sitio (textos, imágenes, diseños, código, etc.) es propiedad del autor del portafolio, salvo que se indique lo contrario. No está permitida su reproducción sin autorización previa."
+      "title": "1. Erhobene Informationen",
+      "content": "Personenbezogene Daten, die du über das Kontaktformular angibst (wie dein Name und deine E-Mail-Adresse). Automatisch erfasste Daten durch Tools wie Google Analytics (z. B. deine IP-Adresse, Browser, besuchte Seiten und Verweildauer)."
     },
     "section2": {
-      "title": "2. Uso del sitio",
-      "content": "Este sitio tiene fines informativos y profesionales. Está prohibido usarlo para actividades ilegales o que infrinjan los derechos de terceros."
+      "title": "2. Verwendung der Informationen",
+      "content": "Die gesammelten Informationen werden ausschließlich dazu verwendet, auf über das Formular gesendete Anfragen zu antworten und die Nutzererfahrung auf der Website zu verbessern."
     },
     "section3": {
-      "title": "3. Enlaces externos",
-      "content": "El sitio puede contener enlaces a otros sitios web. No me hago responsable del contenido o políticas de privacidad de esos sitios."
+      "title": "3. Weitergabe von Daten an Dritte",
+      "content": "Deine persönlichen Daten werden nicht verkauft, getauscht oder an Dritte weitergegeben, außer für die Nutzung von Analysediensten wie Google Analytics."
     },
     "section4": {
-      "title": "4. Exclusión de responsabilidad",
-      "content": "Este sitio se ofrece \"tal cual\", sin garantías de disponibilidad, exactitud o funcionamiento ininterrumpido."
+      "title": "4. Cookies",
+      "content": "Diese Website kann Cookies verwenden, um anonyme statistische Daten zu sammeln. Du kannst Cookies in den Einstellungen deines Browsers deaktivieren."
     },
     "section5": {
-      "title": "5. Modificaciones",
-      "content": "Los términos aquí expuestos pueden cambiar sin previo aviso. El uso continuado del sitio implica la aceptación de dichos cambios."
+      "title": "5. Rechte der Nutzer",
+      "content": "Du hast das Recht, jederzeit auf deine personenbezogenen Daten zuzugreifen, sie zu berichtigen oder zu löschen. Schreibe dazu an: [deinemail@beispiel.com]"
+    },
+    "section6": {
+      "title": "6. Änderungen dieser Richtlinie",
+      "content": "Diese Richtlinie kann gelegentlich aktualisiert werden. Es wird empfohlen, sie regelmäßig zu überprüfen."
+    }
+    },
+  "terms": {
+    "title": "Allgemeine Geschäftsbedingungen",
+    "lastUpdate": "Letzte Aktualisierung: 4. Juni 2025",
+    "intro": "Mit dem Zugriff auf diese Website akzeptierst du die folgenden allgemeinen Geschäftsbedingungen. Wenn du mit einem dieser Punkte nicht einverstanden bist, nutze die Website bitte nicht.",
+    "section1": {
+      "title": "1. Geistiges Eigentum",
+      "content": "Alle Inhalte dieser Website (Texte, Bilder, Designs, Code usw.) sind Eigentum des Autors des Portfolios, sofern nicht anders angegeben. Eine Vervielfältigung ohne vorherige Genehmigung ist nicht gestattet."
+    },
+    "section2": {
+      "title": "2. Nutzung der Website",
+      "content": "Diese Website dient Informations- und Berufs­zwecken. Es ist untersagt, sie für illegale Aktivitäten oder zur Verletzung der Rechte Dritter zu nutzen."
+    },
+    "section3": {
+      "title": "3. Externe Links",
+      "content": "Die Website kann Links zu anderen Websites enthalten. Für deren Inhalte oder Datenschutzrichtlinien übernehme ich keine Verantwortung."
+    },
+    "section4": {
+      "title": "4. Haftungsausschluss",
+      "content": "Diese Website wird \"wie besehen\" bereitgestellt, ohne Gewähr für Verfügbarkeit, Genauigkeit oder unterbrechungsfreien Betrieb."
+    },
+    "section5": {
+      "title": "5. Änderungen",
+      "content": "Die hier aufgeführten Bedingungen können ohne vorherige Ankündigung geändert werden. Die fortgesetzte Nutzung der Website gilt als Zustimmung zu diesen Änderungen."
     }
   }
 }
