@@ -4,10 +4,14 @@ import { useLanguage } from "../../hooks/useLanguage";
 import { Matter } from "../atoms/text/matter";
 import Menu from "../atoms/icons/menu";
 
+// Componente Navbar que muestra la barra de navegación principal
 export function Navbar({ className = "" }) {
+  // Estado para controlar si el menú móvil está abierto
   const [isOpen, setIsOpen] = useState(false);
+  // Estado para saber si la página ha sido desplazada (scroll)
   const [scrolled, setScrolled] = useState(false);
 
+  // Efecto para cambiar el estado 'scrolled' al hacer scroll
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
@@ -21,19 +25,23 @@ export function Navbar({ className = "" }) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Función para alternar el menú móvil
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  // Hook personalizado para el idioma y las traducciones
   const { lang, t } = useLanguage();
 
   return (
     <nav
+      // Clases dinámicas según el scroll
       className={`fixed w-full z-20 top-0 max-w-[1512px] transition-all duration-300 md:pt-10 ${
         scrolled ? "bg-white/10 backdrop-blur-sm md:py-6 rounded-b-xl" : "py-3"
       }`}
     >
       <div className="flex flex-col md:flex-wrap gap-4 md:gap-0 items-center mx-auto p-4 w-full justify-center">
+        {/* Botón para abrir/cerrar el menú en móvil */}
         <div className="flex md:order-2 space-x-3 md:space-x-0 ltr:space-x">
           <button
             onClick={toggleMenu}
@@ -46,7 +54,9 @@ export function Navbar({ className = "" }) {
             <Menu />
           </button>
         </div>
+        {/* Selector de idioma visible solo en móvil */}
         <LanguageSelector className="md:hidden"/>
+        {/* Menú de navegación */}
         <div
           className={`items-start md:items-center w-full md:flex md:w-auto md:order-1 h-18 ${
             isOpen
@@ -56,36 +66,57 @@ export function Navbar({ className = "" }) {
           id="navbar-sticky"
         >
           <ul className="flex flex-col md:p-0 font-medium md:space-x-8 ltr:space-x md:flex-row md:mt-0 md:border-0 items-center w-full justify-between gap-5 md:gap-0">
-            {[
-              { key: "home", label: t("navbar.home") },
-              { key: "about", label: t("navbar.about") },
-              { key: "tech-stack", label: t("navbar.techstack") },
-              { key: "experience", label: t("navbar.experience") },
-              { key: "projects", label: t("navbar.projects") },
-            ].map((item) => (
-              <li key={item.key}>
-                <a
-                  href={item.key === "home" ? "/" : undefined}
-                  onClick={item.key !== "home" ? (e) => {
-                    e.preventDefault();
-                    const section = document.getElementById(item.key);
-                    if (section) {
-                      section.scrollIntoView({ behavior: "smooth" });
+            {/* Renderiza los enlaces según la ruta actual */}
+            {/^\/(es|en|de|fr)?\/?$/.test(window.location.pathname)
+              ? [
+                { key: "home", label: t("navbar.home") },
+                { key: "about", label: t("navbar.about") },
+                { key: "tech-stack", label: t("navbar.techstack") },
+                { key: "experience", label: t("navbar.experience") },
+                { key: "projects", label: t("navbar.projects") },
+              ].map((item) => (
+                <li key={item.key}>
+                  <a
+                    href={item.key === "home" ? "/" : undefined}
+                    onClick={
+                      item.key !== "home"
+                        ? (e) => {
+                            e.preventDefault();
+                            const section = document.getElementById(item.key);
+                            if (section) {
+                              section.scrollIntoView({ behavior: "smooth" });
+                            }
+                          }
+                        : undefined
                     }
-                  } : undefined}
-                  className="language-selector__button text-white inline-flex items-center border-0 leading-8 gap-2 cursor-pointer 
+                    className="language-selector__button text-white inline-flex items-center border-0 leading-8 gap-2 cursor-pointer 
                       relative after:absolute after:-bottom-3 after:left-0 after:h-[2px] 
                       after:w-0 after:bg-white after:transition-all after:duration-300 
                       hover:after:w-full"
-                >
-                  <Matter text={item.label} size="16|16" />
-                </a>
-              </li>
-            ))}
+                  >
+                    <Matter text={item.label} size="16|16" />
+                  </a>
+                </li>
+              ))
+              : [
+                { key: "home", label: t("navbar.home") },
+              ].map((item) => (
+                <li key={item.key}>
+                  <a
+                    href="/"
+                    className="language-selector__button text-white inline-flex items-center border-0 leading-8 gap-2 cursor-pointer 
+                      relative after:absolute after:-bottom-3 after:left-0 after:h-[2px] 
+                      after:w-0 after:bg-white after:transition-all after:duration-300 
+                      hover:after:w-full"
+                  >
+                    <Matter text={item.label} size="16|16" />
+                  </a>
+                </li>
+              ))}
           </ul>
+          {/* Selector de idioma visible solo en escritorio */}
           <LanguageSelector className="hidden md:flex ml-3 md:ml-8" />
         </div>
-
       </div>
     </nav>
   );

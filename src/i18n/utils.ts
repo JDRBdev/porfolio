@@ -1,9 +1,11 @@
 import { ui, defaultLang } from './ui';
 
+// Define un tipo que representa los idiomas disponibles (en, es, fr, de)
 export type AvailableLang = keyof typeof ui;
 
 /**
- * Recursively creates dot-notated key paths from a nested object type.
+ * Tipo utilitario recursivo que genera las claves de traducción
+ * en formato de notación con punto: por ejemplo 'home.title'
  */
 type DotNestedKeys<T> = {
   [K in keyof T & string]: T[K] extends Record<string, any>
@@ -11,10 +13,11 @@ type DotNestedKeys<T> = {
     : `${K}`;
 }[keyof T & string];
 
+// Tipo para representar claves válidas dentro del archivo de idioma por defecto
 export type TranslationKey = DotNestedKeys<typeof ui[typeof defaultLang]>;
 
 /**
- * Gets language from URL path, like `/es/page`
+ * Extrae el idioma desde la URL (por ejemplo: /es/pagina)
  */
 export function getLangFromUrl(url: URL): AvailableLang {
   const [, lang] = url.pathname.split('/');
@@ -22,19 +25,22 @@ export function getLangFromUrl(url: URL): AvailableLang {
 }
 
 /**
- * Utility to safely get a value from an object using dot-notation.
+ * Accede de forma segura a un valor dentro de un objeto usando notación con punto.
+ * Ejemplo: get(obj, 'home.title') devolverá obj.home.title
  */
 function get(obj: any, path: string, fallback?: string): string {
   return path
     .split('.')
-    .reduce((acc, part) => (acc && acc[part] !== undefined ? acc[part] : undefined), obj) ?? fallback ?? path;
+    .reduce((acc, part) => (acc && acc[part] !== undefined ? acc[part] : undefined), obj)
+    ?? fallback ?? path;
 }
 
 /**
- * Returns a translation function `t('key')` for a given language.
+ * Retorna una función de traducción `t('clave')` para el idioma dado.
  */
 export function useTranslations(lang: AvailableLang) {
   return function t(key: TranslationKey): string {
+    // Busca la traducción en el idioma actual y si no existe, en el idioma por defecto.
     return get(ui[lang], key, get(ui[defaultLang], key, key));
   };
 }
