@@ -41,7 +41,12 @@
     }
   },
   "projects": {
-    "title": "Projects"
+    "title": "Projects",
+    "gymtinajo": {
+      "title": "Tinajo Gym",
+      "description_summary": "See more",
+      "description": "This project is a website dedicated to booking gym classes. It manages both the client and administrator interfaces, allows client registration, and manages reservations as well as news or announcements for the organization."
+    }
   },
   "footer": {
     "builtWith": "Built with",

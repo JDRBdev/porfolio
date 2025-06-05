@@ -41,7 +41,12 @@
     }
   },
   "projects": {
-    "title": "Projekte"
+    "title": "Projekte",
+    "gymtinajo": {
+      "title": "Fitnessstudio Tinajo",
+      "description_summary": "Mehr anzeigen",
+      "description": "Dieses Projekt ist eine Website zur Buchung von Fitnesskursen. Sie verwaltet sowohl die Benutzeroberfläche für Kunden als auch für Administratoren, ermöglicht die Registrierung von Kunden sowie die Verwaltung von Buchungen, Nachrichten und Ankündigungen des Unternehmens."
+    }
   },
   "footer": {
     "builtWith": "Erstellt mit",

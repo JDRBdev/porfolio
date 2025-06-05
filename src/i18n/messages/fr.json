@@ -41,7 +41,12 @@
     }
   },
   "projects": {
-    "title": "Projets"
+    "title": "Projets",
+    "gymtinajo": {
+      "title": "Salle de sport Tinajo",
+      "description_summary": "Voir plus",
+      "description": "Ce projet est un site web dédié à la réservation de cours de gym, gérant à la fois l’interface client et celle de l’administrateur. Il permet d’enregistrer des clients, de gérer les réservations ainsi que les actualités ou annonces de l’établissement."
+    }
   },
   "footer": {
     "builtWith": "Développé avec",

@@ -31,6 +31,21 @@ const t = useTranslations(lang);
   />
   <div class={`grid gap-8 justify-items-center ${1 === 1 ? "grid-cols-1" : "lg:grid-cols-2"}`}>
     <div>
+      <Matter
+        text={t("projects.gymtinajo.title")}
+        size="20|24"
+        className="text-white font-semibold! px-4"
+      />
+      <details class="px-4 pt-2 max-w-[700px]">
+        <summary class="cursor-pointer text-white text-base md:text-lg font-semibold">
+          {t("projects.gymtinajo.description_summary") ?? "Ver más información"}
+        </summary>
+        <Matter
+          text={t("projects.gymtinajo.description")}
+          size="16|16"
+          className="text-white pt-2"
+        />
+      </details>
       <Image
         src={"/images/GymTinajo.avif"}
         alt={"Gym Tinajo Project"}

@@ -41,7 +41,12 @@
     }
   },
   "projects": {
-    "title": "Proyectos"
+    "title": "Proyectos",
+    "gymtinajo": {
+      "title": "Gimnasio Tinajo",
+      "description_summary": "Ver más",
+      "description": "Este proyecto es una web dedicada para realizar reservas de clases de gimnasio, se encarga tanto de la interfaz del cliente como la del administrador, permite registrar clientes y gestionar las reservas y noticias o anuncios de la corporación."
+    }
   },
   "footer": {
     "builtWith": "Desarrollado con",
