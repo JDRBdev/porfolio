@@ -30,8 +30,8 @@ export function Navbar({ className = "" }) {
 
   return (
     <nav
-      className={`fixed w-full z-20 top-0 max-w-[1512px] transition-all duration-300 ${
-        scrolled ? "md:bg-white/10 md:backdrop-blur-sm md:py-6 rounded-b-xl" : "py-6"
+      className={`fixed w-full z-20 top-0 max-w-[1512px] transition-all duration-300 md:pt-10 ${
+        scrolled ? "bg-white/10 backdrop-blur-sm md:py-6 rounded-b-xl" : "py-3"
       }`}
     >
       <div className="flex flex-col md:flex-wrap gap-4 md:gap-0 items-center mx-auto p-4 w-full justify-center">
@@ -47,10 +47,11 @@ export function Navbar({ className = "" }) {
             <Menu />
           </button>
         </div>
+        <LanguageSelector className="md:hidden"/>
         <div
           className={`items-start md:items-center w-full md:flex md:w-auto md:order-1 h-18 ${
             isOpen
-              ? "flex max-md:min-h-[300px] max-md:max-w-[300px] max-md:border-2 max-md:border-white rounded-md max-md:bg-white/10 max-md:backdrop-blur-sm p-4"
+              ? "flex max-md:min-h-[250px] max-md:max-w-[300px] max-md:border-2 max-md:border-white rounded-md max-md:bg-white/10 max-md:backdrop-blur-sm p-4"
               : "hidden max-h-0"
           }`}
           id="navbar-sticky"
@@ -82,9 +83,10 @@ export function Navbar({ className = "" }) {
                 </a>
               </li>
             ))}
-            <LanguageSelector className="ml-3 md:m-0" />
           </ul>
+          <LanguageSelector className="hidden md:flex ml-3 md:ml-8" />
         </div>
+
       </div>
     </nav>
   );
