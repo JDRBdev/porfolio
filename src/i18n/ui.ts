@@ -13,7 +13,7 @@ export const languages = {
 };
 
 // Idioma por defecto
-export const defaultLang = 'en';
+export const defaultLang = 'es';
 
 // Objeto que contiene los textos traducidos por idioma
 export const ui = {

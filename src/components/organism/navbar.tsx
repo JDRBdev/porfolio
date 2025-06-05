@@ -3,6 +3,7 @@ import { LanguageSelector } from "../atoms/language-selector";
 import { useLanguage } from "../../hooks/useLanguage";
 import { Matter } from "../atoms/text/matter";
 import Menu from "../atoms/icons/menu";
+import Code from "../atoms/icons/code";
 
 // Componente Navbar que muestra la barra de navegación principal
 export function Navbar({ className = "" }) {
@@ -40,32 +41,28 @@ export function Navbar({ className = "" }) {
         scrolled ? "bg-white/10 backdrop-blur-sm md:py-6 rounded-b-xl" : "py-3"
       }`}
     >
-      <div className="flex flex-col md:flex-wrap gap-4 md:gap-0 items-center mx-auto p-4 w-full justify-center">
-        {/* Botón para abrir/cerrar el menú en móvil */}
-        <div className="flex md:order-2 space-x-3 md:space-x-0 ltr:space-x">
-          <button
-            onClick={toggleMenu}
-            type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 md:hidden focus:outline-none border-white border-2 rounded-full px-3 py-1 bg-white/10 backdrop-blur-sm"
-            aria-controls="navbar-sticky"
-            aria-expanded={isOpen}
-          >
-            <span className="sr-only">Open main menu</span>
-            <Menu />
-          </button>
-        </div>
+      <div className="flex flex-wrap md:gap-0 items-center mx-auto p-4 w-full md:justify-center">
         {/* Selector de idioma visible solo en móvil */}
-        <LanguageSelector className="md:hidden"/>
+        <div className="flex flex-row w-full md:hidden">
+          <a href="/" className="text-white flex justify-start z-1">
+            <div className="flex w-8 items-center">
+                <Code className="size-8" />
+            </div>
+          </a>
+          <div className="flex w-full justify-center -ml-8">
+            <LanguageSelector className="" />
+          </div>
+        </div>
         {/* Menú de navegación */}
         <div
           className={`items-start md:items-center w-full md:flex md:w-auto md:order-1 h-18 ${
-            isOpen
-              ? "flex max-md:min-h-[250px] max-md:max-w-[300px] max-md:border-2 max-md:border-white rounded-md max-md:bg-white/10 max-md:backdrop-blur-sm p-4"
-              : "hidden max-h-0"
+        isOpen
+          ? "flex max-md:min-h-[250px] max-md:max-w-[300px] max-md:border-2 max-md:border-white rounded-md max-md:bg-white/10 max-md:backdrop-blur-sm p-4"
+          : "hidden max-h-0"
           }`}
           id="navbar-sticky"
         >
-          <ul className="flex flex-col md:p-0 font-medium md:space-x-8 ltr:space-x md:flex-row md:mt-0 md:border-0 items-center w-full justify-between gap-5 md:gap-0">
+          <ul className="hidden md:flex md:p-0 font-medium md:space-x-8 ltr:space-x md:flex-row md:mt-0 md:border-0 items-center w-full justify-between gap-5 md:gap-0">
             {/* Renderiza los enlaces según la ruta actual */}
             {/^\/(es|en|de|fr)?\/?$/.test(window.location.pathname)
               ? [
