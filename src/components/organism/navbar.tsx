@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { LanguageSelector } from "../atoms/language-selector";
 import { useLanguage } from "../../hooks/useLanguage";
 import { Matter } from "../atoms/text/matter";
-import { Caslon } from "../atoms/text/caslon";
 import Menu from "../atoms/icons/menu";
 
 export function Navbar({ className = "" }) {
