@@ -15,13 +15,12 @@ const t = useTranslations(lang);
 
 <Layout
   className="onest-regular flex flex-col w-full h-fit mx-auto max-w-9xl onHover items-center overflow-x-hidden"
-  client:load
 >
   <Navbar client:only />
   <section class="mt-[150px] justify-items-center px-10 flex flex-col mx-auto w-full">
     <Header />
   </section>
-    <TechStack client:load />
+    <TechStack/>
   <section class="mt-[150px] justify-items-center px-10 flex flex-col mx-auto w-full">
     <Experience />
     <Projects/>
