@@ -46,6 +46,11 @@
       "title": "Fitnessstudio Tinajo",
       "description_summary": "Mehr anzeigen",
       "description": "Dieses Projekt ist eine Website zur Buchung von Fitnesskursen. Sie verwaltet sowohl die Benutzeroberfläche für Kunden als auch für Administratoren, ermöglicht die Registrierung von Kunden sowie die Verwaltung von Buchungen, Nachrichten und Ankündigungen des Unternehmens."
+    },
+    "weatherApp": {
+      "title": "Wetter-App",
+      "description_summary": "Mehr anzeigen",
+      "description": "Eine Webanwendung, die das aktuelle Wetter und Vorhersagen mithilfe der WeatherApi-API anzeigt. Sie ermöglicht es den Benutzern, nach Städten zu suchen und detaillierte Wetterinformationen anzuzeigen."
     }
   },
   "footer": {

@@ -46,6 +46,11 @@
       "title": "Salle de sport Tinajo",
       "description_summary": "Voir plus",
       "description": "Ce projet est un site web dédié à la réservation de cours de gym, gérant à la fois l’interface client et celle de l’administrateur. Il permet d’enregistrer des clients, de gérer les réservations ainsi que les actualités ou annonces de l’établissement."
+    },
+    "weatherApp": {
+      "title": "Application Météo",
+      "description_summary": "Voir plus",
+      "description": "Application web qui affiche la météo actuelle et les prévisions en utilisant l'API WeatherApi. Elle permet aux utilisateurs de rechercher par ville et de voir des informations détaillées sur la météo."
     }
   },
   "footer": {
