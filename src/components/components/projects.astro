@@ -19,6 +19,7 @@ import SectionLayout from "../atoms/section-layout.astro";
 import SocialPill from "../atoms/social-pill.astro";
 import Github from "../atoms/icons/github.astro";
 import Typescript from "../atoms/icons/typescript.astro";
+import Web from "../atoms/icons/web.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -54,7 +55,7 @@ const t = useTranslations(lang);
         height={600}
         class={"w-full md:max-w-[700px]"}
       />
-      <div class="px-4 justify-between flex">
+      <div class="px-4 justify-between flex gap-2">
         <div class="flex flex-wrap gap-2">
           <Html5 className="size-8 md:size-10"/>
           <Css className="size-8 md:size-10"/>
@@ -94,7 +95,7 @@ const t = useTranslations(lang);
         height={600}
         class={"w-full md:max-w-[700px]"}
       />
-      <div class="px-4 justify-between flex">
+      <div class="px-4 justify-between flex gap-2">
         <div class="flex flex-wrap gap-2">
           <Html5 className="size-8 md:size-10"/>
           <Css className="size-8 md:size-10"/>
@@ -103,9 +104,12 @@ const t = useTranslations(lang);
           <React className="size-8 md:size-10"/>
           <Typescript className="size-8 md:size-10"/>
         </div>
-        <div>
+        <div class="flex gap-2 h-9">
           <SocialPill href="https://github.com/JDRBdev/WeatherApp">
             <Github className="size-6"/>
+          </SocialPill>
+          <SocialPill href="https://weather-app-wheat-five-18.vercel.app/">
+            <Web className="size-6"/>
           </SocialPill>
         </div>
       </div>
