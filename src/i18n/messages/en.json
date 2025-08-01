@@ -2,14 +2,15 @@
   "navbar": {
     "home": "Home",
     "about": "About Me",
-    "techstack": "Tech Stack",
+    "techstack": "Skills",
     "experience": "Experience",
     "projects": "Projects",
+    "certifications": "Certifications",
     "languages": "Language"
   },
   "header": {
     "title": "Hi, I'm",
-    "subtitle": "A passionate <span class='font-bold text-white'>web developer</span>, eager to <span class='font-bold text-white'>learn and contribute</span> my knowledge and skills by creating <span class='font-bold text-white'>solutions to digitalize</span> businesses and ideas."
+    "subtitle": "A passionate <span class='font-bold text-white'>web developer</span>, eager to <span class='font-bold text-white'>learn and contribute</span> my knowledge and skills by creating <span class='font-bold text-white'>solutions to digitize</span> businesses and ideas."
   },
   "typewriter": {
     "web_developer": "Web Developer",
@@ -17,7 +18,7 @@
     "programmer": "Programmer"
   },
   "techstack": {
-    "title": "Tech Stack",
+    "title": "Skills",
     "tools": "Tools"
   },
   "habilities": {
@@ -32,50 +33,57 @@
     "marketec360": {
       "date": "March 2025",
       "title": "Frontend Developer",
-      "description": "Frontend developer at Marketec360, where I have worked on the development of web applications using modern technologies such as React, TypeScript, and Tailwind CSS. I have collaborated on large-scale projects, improving user experience and building responsive and accessible interfaces."
+      "description": "Frontend Developer at Marketec360, where I worked on developing web applications using modern technologies like React, TypeScript, and Tailwind CSS. I collaborated on large-scale projects, improving user experience and designing responsive and accessible interfaces."
     },
     "searching": {
       "date": "Currently",
-      "title": "Looking for new opportunities",
-      "description": "I am currently looking for new job opportunities where I can apply my skills and continue to grow professionally. I am open to challenging projects that allow me to learn and contribute to the team's success."
+      "title": "Seeking new opportunities",
+      "description": "I am currently seeking new job opportunities where I can apply my skills and continue growing professionally. I am open to challenging projects that allow me to learn and contribute to the success of the team."
     }
   },
   "projects": {
     "title": "Projects",
     "gymtinajo": {
       "title": "Tinajo Gym",
-      "description_summary": "See more",
-      "description": "This project is a website dedicated to booking gym classes. It manages both the client and administrator interfaces, allows client registration, and manages reservations as well as news or announcements for the organization."
+      "description_summary": "View more",
+      "description": "This project is a website dedicated to booking gym classes, handling both client and admin interfaces. It allows client registration and the management of bookings and news or announcements from the organization."
     },
     "weatherApp": {
       "title": "Weather App",
-      "description_summary": "See more",
-      "description": "A web application that displays current weather and forecasts using the WeatherApi API. It allows users to search by city and view detailed weather information."
+      "description_summary": "View more",
+      "description": "A web application that shows the current weather and forecasts using the WeatherApi. Users can search by city and view detailed weather information."
+    }
+  },
+  "certifications": {
+    "title": "Certifications",
+    "responsiveCertification": {
+      "title": "Responsive Design",
+      "alt": "Certificate in responsive design by FreeCodeCamp"
     }
   },
   "footer": {
     "builtWith": "Built with",
-    "followMe": "Follow me",
+    "followMe": "Follow Me",
     "legal": "Legal",
     "privacyPolicy": "Privacy Policy",
     "termsAndConditions": "Terms and Conditions",
     "allRightsReserved": "All rights reserved."
   },
-    "privacy": {
+  "privacy": {
     "title": "Privacy Policy",
     "lastUpdate": "Last updated: June 4, 2025",
     "intro": "This privacy policy explains how user information is collected, used, and protected when visiting this website.",
     "section1": {
       "title": "1. Information Collected",
-      "content": "Personal data you provide through the contact form (such as your name and email address). Data automatically collected through tools like Google Analytics (for example, your IP address, browser, pages visited, and browsing time)."
+      "content": "Personal data you provide through the contact form (such as your name and email address). Data automatically collected through tools like Google Analytics (e.g., your IP address, browser, pages visited, and browsing time)."
     },
     "section2": {
       "title": "2. Use of Information",
-      "content": "The information collected is used exclusively to respond to requests sent through the form and to improve the user experience on the site."
+      "content": "The collected information is used solely to respond to requests submitted through the form and to improve the user experience on the site."
     },
     "section3": {
-      "title": "3. Sharing Data with Third Parties",
-      "content": "Your personal information is not sold, exchanged, or shared with third parties, except for the use of analytics services such as Google Analytics."
+      "title": "3. Data Sharing with Third Parties",
+      "content": "Your personal information is not sold, traded, or shared with third parties, except for the use of analytics services like Google Analytics."
     },
     "section4": {
       "title": "4. Cookies",
@@ -83,24 +91,24 @@
     },
     "section5": {
       "title": "5. User Rights",
-      "content": "You have the right to access, rectify, or delete your personal data at any time. To do so, you can write to: [youremail@example.com]"
+      "content": "You have the right to access, rectify, or delete your personal data at any time. To do so, you can write to: [yourmail@example.com]"
     },
     "section6": {
-      "title": "6. Changes to this Policy",
-      "content": "This policy may be updated occasionally. It is recommended to check it regularly."
+      "title": "6. Policy Changes",
+      "content": "This policy may be updated occasionally. It is recommended to review it regularly."
     }
-    },
+  },
   "terms": {
     "title": "Terms and Conditions",
     "lastUpdate": "Last updated: June 4, 2025",
     "intro": "By accessing this website, you agree to the following terms and conditions. If you do not agree with any of them, please do not use the site.",
     "section1": {
       "title": "1. Intellectual Property",
-      "content": "All content on this site (texts, images, designs, code, etc.) is the property of the portfolio author, unless otherwise indicated. Reproduction without prior authorization is not permitted."
+      "content": "All content on this site (texts, images, designs, code, etc.) is the property of the portfolio's author unless otherwise stated. Reproduction without prior authorization is not allowed."
     },
     "section2": {
-      "title": "2. Use of the Site",
-      "content": "This site is for informational and professional purposes. It is prohibited to use it for illegal activities or those that infringe the rights of third parties."
+      "title": "2. Site Usage",
+      "content": "This site is for informational and professional purposes. It is prohibited to use it for illegal activities or those that infringe the rights of others."
     },
     "section3": {
       "title": "3. External Links",
@@ -112,7 +120,7 @@
     },
     "section5": {
       "title": "5. Modifications",
-      "content": "The terms set forth here may change without prior notice. Continued use of the site implies acceptance of such changes."
+      "content": "The terms stated here may change without prior notice. Continued use of the site implies acceptance of such changes."
     }
   }
 }

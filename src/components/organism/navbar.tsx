@@ -71,6 +71,7 @@ export function Navbar({ className = "" }) {
                 { key: "tech-stack", label: t("navbar.techstack") },
                 { key: "experience", label: t("navbar.experience") },
                 { key: "projects", label: t("navbar.projects") },
+                { key: "certifications", label: t("navbar.certifications") },
               ].map((item) => (
                 <li key={item.key}>
                   <a

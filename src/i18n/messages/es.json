@@ -5,6 +5,7 @@
     "techstack": "Conocimientos",
     "experience": "Experiencia",
     "projects": "Proyectos",
+    "certifications": "Certificados",
     "languages": "Idioma"
   },
   "header": {
@@ -51,6 +52,13 @@
       "title": "Weather App",
       "description_summary": "Ver más",
       "description": "Aplicación web que muestra el clima actual y pronósticos utilizando la API de WeatherApi. Permite a los usuarios buscar por ciudad y ver información detallada del clima."
+    }
+  },
+  "certifications": {
+    "title": "Certificados",
+    "responsiveCertification": {
+      "title": "Diseño responsivo",
+      "alt": "Certificado en diseño responsivo por FreeCodeCamp"
     }
   },
   "footer": {
