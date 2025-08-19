@@ -1,0 +1,6 @@
+Copyright (c) 2025 José David Rodríguez Betancor
+Todos los derechos reservados / All rights reserved
+
+Este repositorio y su contenido no pueden ser copiados, modificados, distribuidos ni utilizados de ninguna forma sin el permiso expreso del titular de los derechos de autor.
+
+This repository and its contents may not be copied, modified, distributed, or used in any way without the express permission of the copyright holder.
