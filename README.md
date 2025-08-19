@@ -1,48 +1,85 @@
-# Astro Starter Kit: Basics
+<img src="https://cdn.jsdelivr.net/gh/hjnilsson/country-flags/svg/es.svg" width="25"/> 
+Portafolio de José David Rodríguez Betancor
 
-```sh
-npm create astro@latest -- --template basics
-```
+👨‍💻 Sobre mí
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Soy Desarrollador Fullstack apasionado, con ganas de aprender y mantenerme al día con los avances en Inteligencia Artificial y tecnología.
+Me motiva crear soluciones digitales útiles y escalables, aplicando buenas prácticas y buscando siempre la innovación. 🚀
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+🌍 Visita mi portafolio online: jdrb.dev
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+🛠️ Tecnologías usadas en el portafolio
 
-## 🚀 Project Structure
+⚡ Astro – Framework ultrarrápido para sitios web modernos
 
-Inside of your Astro project, you'll see the following folders and files:
+⚛️ React – Componentes dinámicos y reutilizables
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+🎨 TailwindCSS – Estilos modernos y responsivos
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+📘 TypeScript – Tipado estático para mayor robustez
 
-## 🧞 Commands
+📌 Proyectos destacados
 
-All commands are run from the root of the project, from a terminal:
+🔹 Gym Tinajo
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Web desarrollada con Laravel, Bootstrap, PHP, JS y MySQL.
+👉 Permite a los usuarios reservar actividades y acceder al portal de eventos de la organización.
 
-## 👀 Want to learn more?
+🔹 Weather App
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Aplicación construida con Astro, React, TypeScript y TailwindCSS.
+👉 Permite consultar el clima y datos meteorológicos de cualquier lugar del mundo.
+
+📬 Contacto
+
+🌐 LinkedIn: José David Rodríguez Betancor
+
+⭐ Si te gusta mi trabajo, ¡no dudes en dejar una estrella en el repo!
+
+<br><br><br>
+<img src="https://cdn.jsdelivr.net/gh/hjnilsson/country-flags/svg/gb.svg" width="25"/> 
+Portfolio of José David Rodríguez Betancor
+
+👨‍💻 About Me
+
+I am a Fullstack Developer passionate about learning and staying up to date with the latest advancements in Artificial Intelligence and technology.
+My motivation is to create useful and scalable digital solutions, applying best practices while always seeking innovation. 🚀
+
+🌍 Check out my portfolio online: jdrb.dev
+
+🛠️ Technologies used in the portfolio
+
+⚡ Astro – Ultra-fast framework for modern websites
+
+⚛️ React – Dynamic and reusable components
+
+🎨 TailwindCSS – Modern and responsive styling
+
+📘 TypeScript – Static typing for stronger code
+
+📌 Featured Projects
+
+🔹 Gym Tinajo
+
+Website built with Laravel, Bootstrap, PHP, JS, and MySQL.
+👉 Allows users to book activities and access the organization’s events portal.
+
+🔹 Weather App
+
+Application built with Astro, React, TypeScript, and TailwindCSS.
+👉 Provides weather and meteorological data from any location in the world.
+
+📬 Contact
+
+🌐 LinkedIn: José David Rodríguez Betancor
+
+⭐ If you like my work, don’t forget to leave a star on the repo!
+
+<br>
+# Derechos de autor / Copyright
+
+© 2025 José David Rodríguez Betancor. Todos los derechos reservados.  
+© 2025 José David Rodríguez Betancor. All rights reserved.
+
+Este proyecto no puede ser reproducido, copiado ni distribuido sin autorización.  
+This project may not be reproduced, copied, or distributed without permission.
