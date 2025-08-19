@@ -5,15 +5,16 @@
     "techstack": "Compétences",
     "experience": "Expérience",
     "projects": "Projets",
+    "certifications": "Certificats",
     "languages": "Langue"
   },
   "header": {
     "title": "Bonjour, je suis",
-    "subtitle": "Passionné par le <span class='font-bold text-white'>développement web</span>, désireux <span class='font-bold text-white'>d'apprendre et de partager</span> mes connaissances et compétences en créant <span class='font-bold text-white'>des solutions pour digitaliser</span> des entreprises et des idées."
+    "subtitle": "Un passionné du <span class='font-bold text-white'>développement web</span>, motivé pour <span class='font-bold text-white'>apprendre et contribuer</span> avec mes connaissances et compétences en créant <span class='font-bold text-white'>des solutions pour digitaliser</span> les entreprises et les idées."
   },
   "typewriter": {
     "web_developer": "Développeur Web",
-    "web_designer": "Designer Web",
+    "web_designer": "Web Designer",
     "programmer": "Programmeur"
   },
   "techstack": {
@@ -31,88 +32,95 @@
     "title": "Expérience",
     "marketec360": {
       "date": "Mars 2025",
-      "title": "Développeur frontend",
-      "description": "Développeur frontend chez Marketec360, où j'ai travaillé sur le développement d'applications web en utilisant des technologies modernes telles que React, TypeScript et Tailwind CSS. J'ai collaboré à des projets d'envergure, améliorant l'expérience utilisateur et concevant des interfaces réactives et accessibles."
+      "title": "Développeur Frontend",
+      "description": "Développeur frontend chez Marketec360, où j’ai travaillé sur le développement d’applications web en utilisant des technologies modernes telles que React, TypeScript et Tailwind CSS. J’ai participé à des projets d’envergure, amélioré l’expérience utilisateur et conçu des interfaces réactives et accessibles."
     },
     "searching": {
       "date": "Actuellement",
       "title": "À la recherche de nouvelles opportunités",
-      "description": "Je suis actuellement à la recherche de nouvelles opportunités professionnelles où je pourrai appliquer mes compétences et continuer à évoluer. Je suis ouvert à des projets stimulants qui me permettront d'apprendre et de contribuer au succès de l'équipe."
+      "description": "Je suis actuellement à la recherche de nouvelles opportunités professionnelles où je pourrais appliquer mes compétences et continuer à évoluer. Je suis ouvert à des projets stimulants qui me permettront d’apprendre et de contribuer au succès de l’équipe."
     }
   },
   "projects": {
     "title": "Projets",
     "gymtinajo": {
-      "title": "Salle de sport Tinajo",
+      "title": "Gymnase Tinajo",
       "description_summary": "Voir plus",
-      "description": "Ce projet est un site web dédié à la réservation de cours de gym, gérant à la fois l’interface client et celle de l’administrateur. Il permet d’enregistrer des clients, de gérer les réservations ainsi que les actualités ou annonces de l’établissement."
+      "description": "Ce projet est un site web destiné à réserver des cours de gym, couvrant l’interface client ainsi que celle de l’administrateur. Il permet l’enregistrement des clients et la gestion des réservations ainsi que des actualités ou annonces de l’établissement."
     },
     "weatherApp": {
       "title": "Application Météo",
       "description_summary": "Voir plus",
-      "description": "Application web qui affiche la météo actuelle et les prévisions en utilisant l'API WeatherApi. Elle permet aux utilisateurs de rechercher par ville et de voir des informations détaillées sur la météo."
+      "description": "Application web qui affiche la météo actuelle et les prévisions en utilisant l’API WeatherApi. Les utilisateurs peuvent rechercher par ville et voir des informations météorologiques détaillées."
+    }
+  },
+  "certifications": {
+    "title": "Certificats",
+    "responsiveCertification": {
+      "title": "Design Responsive",
+      "alt": "Certificat en design responsive délivré par FreeCodeCamp"
     }
   },
   "footer": {
     "builtWith": "Développé avec",
     "followMe": "Suivez-moi",
     "legal": "Mentions légales",
-    "privacyPolicy": "Politique de confidentialité",
-    "termsAndConditions": "Termes et conditions",
+    "privacyPolicy": "Politique de Confidentialité",
+    "termsAndConditions": "Conditions Générales",
     "allRightsReserved": "Tous droits réservés."
   },
   "privacy": {
-    "title": "Politique de confidentialité",
+    "title": "Politique de Confidentialité",
     "lastUpdate": "Dernière mise à jour : 4 juin 2025",
-    "intro": "Cette politique de confidentialité explique comment les informations des utilisateurs visitant ce site web sont collectées, utilisées et protégées.",
+    "intro": "Cette politique de confidentialité explique comment les informations des utilisateurs sont collectées, utilisées et protégées lors de la visite de ce site web.",
     "section1": {
       "title": "1. Informations collectées",
-      "content": "Données personnelles que vous fournissez via le formulaire de contact (comme votre nom et votre adresse e-mail). Données collectées automatiquement via des outils comme Google Analytics (par exemple, votre adresse IP, navigateur, pages visitées et temps de navigation)."
+      "content": "Données personnelles fournies via le formulaire de contact (comme votre nom et votre adresse e-mail). Données collectées automatiquement via des outils comme Google Analytics (ex. : adresse IP, navigateur, pages visitées, durée de navigation)."
     },
     "section2": {
       "title": "2. Utilisation des informations",
-      "content": "Les informations collectées sont utilisées exclusivement pour répondre aux demandes envoyées via le formulaire et pour améliorer l'expérience utilisateur sur le site."
+      "content": "Les informations collectées sont utilisées uniquement pour répondre aux demandes envoyées via le formulaire et pour améliorer l’expérience utilisateur sur le site."
     },
     "section3": {
       "title": "3. Partage des données avec des tiers",
-      "content": "Vos informations personnelles ne sont ni vendues, ni échangées, ni partagées avec des tiers, sauf pour l'utilisation de services d'analyse comme Google Analytics."
+      "content": "Vos informations personnelles ne sont ni vendues, ni échangées, ni partagées avec des tiers, sauf pour l’utilisation de services d’analyse comme Google Analytics."
     },
     "section4": {
       "title": "4. Cookies",
       "content": "Ce site peut utiliser des cookies pour collecter des données statistiques anonymes. Vous pouvez désactiver les cookies dans les paramètres de votre navigateur."
     },
     "section5": {
-      "title": "5. Droits de l'utilisateur",
-      "content": "Vous avez le droit d'accéder, de rectifier ou de supprimer vos données personnelles à tout moment. Pour cela, vous pouvez écrire à : [votreemail@exemple.com]"
+      "title": "5. Droits de l’utilisateur",
+      "content": "Vous avez le droit d’accéder, de rectifier ou de supprimer vos données personnelles à tout moment. Pour cela, vous pouvez écrire à : [votreemail@exemple.com]"
     },
     "section6": {
       "title": "6. Modifications de cette politique",
-      "content": "Cette politique peut être mise à jour occasionnellement. Il est recommandé de la consulter régulièrement."
+      "content": "Cette politique peut être mise à jour de temps à autre. Il est recommandé de la consulter régulièrement."
     }
   },
   "terms": {
-    "title": "Conditions générales d'utilisation",
+    "title": "Conditions Générales",
     "lastUpdate": "Dernière mise à jour : 4 juin 2025",
-    "intro": "En accédant à ce site web, vous acceptez les présentes conditions générales d'utilisation. Si vous n'êtes pas d'accord avec l'une d'entre elles, veuillez ne pas utiliser le site.",
+    "intro": "En accédant à ce site web, vous acceptez les conditions suivantes. Si vous n’êtes pas d’accord avec l’une d’elles, veuillez ne pas utiliser le site.",
     "section1": {
       "title": "1. Propriété intellectuelle",
-      "content": "Tout le contenu de ce site (textes, images, designs, code, etc.) est la propriété de l'auteur du portfolio, sauf indication contraire. Sa reproduction n'est pas autorisée sans autorisation préalable."
+      "content": "Tout le contenu de ce site (textes, images, designs, code, etc.) est la propriété de l’auteur du portfolio, sauf mention contraire. Toute reproduction sans autorisation préalable est interdite."
     },
     "section2": {
       "title": "2. Utilisation du site",
-      "content": "Ce site a des fins informatives et professionnelles. Il est interdit de l'utiliser pour des activités illégales ou portant atteinte aux droits de tiers."
+      "content": "Ce site est destiné à un usage informatif et professionnel. Toute utilisation à des fins illégales ou portant atteinte aux droits de tiers est interdite."
     },
     "section3": {
       "title": "3. Liens externes",
-      "content": "Le site peut contenir des liens vers d'autres sites web. Je ne suis pas responsable du contenu ou des politiques de confidentialité de ces sites."
+      "content": "Le site peut contenir des liens vers d’autres sites web. Je ne suis pas responsable du contenu ni des politiques de confidentialité de ces sites."
     },
     "section4": {
-      "title": "4. Exclusion de responsabilité",
-      "content": "Ce site est fourni \"tel quel\", sans garantie de disponibilité, d'exactitude ou de fonctionnement ininterrompu."
+      "title": "4. Clause de non-responsabilité",
+      "content": "Ce site est fourni \"tel quel\", sans garantie de disponibilité, d’exactitude ou de fonctionnement ininterrompu."
     },
     "section5": {
       "title": "5. Modifications",
-      "content": "Les conditions exposées ici peuvent être modifiées sans préavis. L'utilisation continue du site implique l'acceptation de ces modifications."
+      "content": "Les conditions présentées ici peuvent être modifiées sans préavis. L’utilisation continue du site implique l’acceptation de ces changements."
     }
   }
 }
