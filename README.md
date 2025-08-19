@@ -5,7 +5,7 @@
 Soy Desarrollador Fullstack apasionado, con ganas de aprender y mantenerme al día con los avances en Inteligencia Artificial y tecnología.
 Me motiva crear soluciones digitales útiles y escalables, aplicando buenas prácticas y buscando siempre la innovación. 🚀
 
-🌍 Visita mi portafolio online: jdrb.dev
+🌍 Visita mi portafolio online: https://jdrb.dev
 
 📌 Proyectos destacados
 🔹 Gym Tinajo
