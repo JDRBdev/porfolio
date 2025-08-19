@@ -74,3 +74,12 @@ Application built with Astro, React, TypeScript, and TailwindCSS.
 🌐 LinkedIn: José David Rodríguez Betancor
 
 ⭐ If you like my work, don’t forget to leave a star on the repo!
+
+<br>
+# Derechos de autor / Copyright
+
+© 2025 José David Rodríguez Betancor. Todos los derechos reservados.  
+© 2025 José David Rodríguez Betancor. All rights reserved.
+
+Este proyecto no puede ser reproducido, copiado ni distribuido sin autorización.  
+This project may not be reproduced, copied, or distributed without permission.
