@@ -38,8 +38,7 @@ Aplicación construida con Astro, React, TypeScript y TailwindCSS.
 
 ⭐ Si te gusta mi trabajo, ¡no dudes en dejar una estrella en el repo!
 
-
-
+<br><br><br>
 <img src="https://cdn.jsdelivr.net/gh/hjnilsson/country-flags/svg/gb.svg" width="25"/> 
 Portfolio of José David Rodríguez Betancor
 
