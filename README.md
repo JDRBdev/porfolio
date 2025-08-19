@@ -18,6 +18,7 @@ Me motiva crear soluciones digitales útiles y escalables, aplicando buenas prá
 📘 TypeScript – Tipado estático para mayor robustez
 
 📌 Proyectos destacados
+
 🔹 Gym Tinajo
 
 Web desarrollada con Laravel, Bootstrap, PHP, JS y MySQL.
@@ -56,6 +57,7 @@ My motivation is to create useful and scalable digital solutions, applying best 
 📘 TypeScript – Static typing for stronger code
 
 📌 Featured Projects
+
 🔹 Gym Tinajo
 
 Website built with Laravel, Bootstrap, PHP, JS, and MySQL.
