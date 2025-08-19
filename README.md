@@ -1,4 +1,4 @@
-🌐 Portafolio de José David Rodríguez Betancor
+🇪🇸 Portafolio de José David Rodríguez Betancor
 
 👨‍💻 Sobre mí
 
@@ -37,7 +37,9 @@ Aplicación construida con Astro, React, TypeScript y TailwindCSS.
 
 ⭐ Si te gusta mi trabajo, ¡no dudes en dejar una estrella en el repo!
 
-🌐 Portfolio of José David Rodríguez Betancor
+
+
+🇬🇧 Portfolio of José David Rodríguez Betancor
 
 👨‍💻 About Me
 
