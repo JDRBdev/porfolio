@@ -8,6 +8,7 @@ Me motiva crear soluciones digitales útiles y escalables, aplicando buenas prá
 🌍 Visita mi portafolio online: https://jdrb.dev
 
 📌 Proyectos destacados
+
 🔹 Gym Tinajo
 
 Web desarrollada con Laravel, Bootstrap, PHP, JS y MySQL.
@@ -18,12 +19,6 @@ Web desarrollada con Laravel, Bootstrap, PHP, JS y MySQL.
 Aplicación construida con Astro, React, TypeScript y TailwindCSS.
 👉 Permite consultar el clima y datos meteorológicos de cualquier lugar del mundo.
 
-📫 Contacto
-
-💻 GitHub: JDRBdev
-
 🌐 LinkedIn: José David Rodríguez Betancor
-
-📩 Email: (puedo incluirlo si quieres hacerlo público)
 
 ⭐ Si te gusta mi trabajo, ¡no dudes en dejar una estrella en el repo!
