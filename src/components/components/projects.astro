@@ -65,9 +65,12 @@ const t = useTranslations(lang);
           <Javascript className="size-8 md:size-10"/>
           <Mysql className="size-8 md:size-10"/>
         </div>
-        <div>
+        <div class="flex gap-2 h-9">
           <SocialPill href="https://github.com/JDRBdev/GymTinajo">
             <Github className="size-6"/>
+          </SocialPill>
+          <SocialPill href="https://gymtinajo.alwaysdata.net/">
+            <Web className="size-6"/>
           </SocialPill>
         </div>
       </div>
@@ -90,7 +93,7 @@ const t = useTranslations(lang);
       </details>
       <Image
         src={"/images/weatherApp.avif"}
-        alt={"Gym Tinajo Project"}
+        alt={"Weather App Project"}
         width={600}
         height={600}
         class={"w-full md:max-w-[700px]"}
