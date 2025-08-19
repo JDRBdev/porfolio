@@ -34,8 +34,6 @@ Aplicación construida con Astro, React, TypeScript y TailwindCSS.
 
 🌐 LinkedIn: José David Rodríguez Betancor
 
-💻 GitHub: JDRBdev
-
 ⭐ Si te gusta mi trabajo, ¡no dudes en dejar una estrella en el repo!
 
 <br><br><br>
@@ -74,7 +72,5 @@ Application built with Astro, React, TypeScript, and TailwindCSS.
 📬 Contact
 
 🌐 LinkedIn: José David Rodríguez Betancor
-
-💻 GitHub: JDRBdev
 
 ⭐ If you like my work, don’t forget to leave a star on the repo!
