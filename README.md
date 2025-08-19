@@ -1,4 +1,4 @@
-🇪🇸 Portafolio de José David Rodríguez Betancor
+<img src="https://cdn.jsdelivr.net/gh/hjnilsson/country-flags/svg/es.svg" width="25"/> Portafolio de José David Rodríguez Betancor
 
 👨‍💻 Sobre mí
 
@@ -39,7 +39,7 @@ Aplicación construida con Astro, React, TypeScript y TailwindCSS.
 
 
 
-🇬🇧 Portfolio of José David Rodríguez Betancor
+<img src="https://cdn.jsdelivr.net/gh/hjnilsson/country-flags/svg/gb.svg" width="25"/> Portfolio of José David Rodríguez Betancor
 
 👨‍💻 About Me
 
