@@ -46,19 +46,24 @@
     "gymtinajo": {
       "title": "Gimnasio Tinajo",
       "description_summary": "Ver más",
-      "description": "Este proyecto es una web dedicada para realizar reservas de clases de gimnasio, se encarga tanto de la interfaz del cliente como la del administrador, permite registrar clientes y gestionar las reservas y noticias o anuncios de la corporación."
+      "description": "Este proyecto es una web dedicada para realizar reservas de clases de gimnasio, se encarga tanto de la interfaz del cliente como la del administrador, permite registrar clientes y gestionar las reservas y noticias o anuncios de la corporación.",
+      "githubAriaLabel": "Repositorio de GitHub para Gimnasio Tinajo",
+      "liveWebsiteAriaLabel": "Sitio web en vivo para Gimnasio Tinajo"
     },
     "weatherApp": {
       "title": "Weather App",
       "description_summary": "Ver más",
-      "description": "Aplicación web que muestra el clima actual y pronósticos utilizando la API de WeatherApi. Permite a los usuarios buscar por ciudad y ver información detallada del clima."
+      "description": "Aplicación web que muestra el clima actual y pronósticos utilizando la API de WeatherApi. Permite a los usuarios buscar por ciudad y ver información detallada del clima.",
+      "githubAriaLabel": "Repositorio de GitHub para Weather App",
+      "liveWebsiteAriaLabel": "Sitio web en vivo para Weather App"
     }
   },
   "certifications": {
     "title": "Certificados",
     "responsiveCertification": {
       "title": "Diseño responsivo",
-      "alt": "Certificado en diseño responsivo por FreeCodeCamp"
+      "alt": "Certificado en diseño responsivo por FreeCodeCamp",
+      "ariaLabel": "Certificado de FreeCodeCamp en Diseño Responsivo"
     }
   },
   "footer": {

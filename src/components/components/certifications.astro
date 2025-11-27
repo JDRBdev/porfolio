@@ -26,7 +26,7 @@ const t = useTranslations(lang);
             size="20|24"
             className="text-white font-semibold! self-center"
         />
-        <SocialPill href="https://www.freecodecamp.org/certification/jdrbdev/responsive-web-design">
+        <SocialPill href="https://www.freecodecamp.org/certification/jdrbdev/responsive-web-design" ariaLabel={t("certifications.responsiveCertification.ariaLabel")}>
             <Web className="size-6"/>
         </SocialPill>
     </div>
@@ -39,53 +39,3 @@ const t = useTranslations(lang);
     />
   </div>
 </div>
-
-<!-- Splide CSS -->
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
-/>
-
-<!-- Splide JS con AutoScroll -->
-<script type="module">
-  import Splide from "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/+esm";
-  import { AutoScroll } from "https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.4.0/+esm";
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const splide = new Splide(".splide", {
-      type: "loop",
-      direction: "ltr",
-      drag: "free",
-      focus: "center",
-      perPage: 1,
-      gap: "2rem",
-      pagination: false,
-      arrows: false,
-      autoScroll: {
-        speed: 1.5,
-        pauseOnHover: true,
-        pauseOnFocus: false,
-      },
-    });
-
-    splide.mount({ AutoScroll });
-  });
-</script>
-
-<style>
-  .splide__slide {
-    color: white;
-    border-radius: 1rem;
-    justify-items: center;
-    font-size: 1.25rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  @media (max-width: 768px) {
-    .splide__list {
-      gap: 1rem !important;
-    }
-  }
-</style>

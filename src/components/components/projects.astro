@@ -1,25 +1,23 @@
 ---
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
-import { Caslon } from "../atoms/text/caslon";
-import AstroIcon from "../atoms/icons/astro-icon.astro";
-import Bootstrap from "../atoms/icons/bootstrap.astro";
-import Tailwindcss from "../atoms/icons/tailwindcss.astro";
-import Nextjs from "../atoms/icons/nextjs.astro";
-import Html5 from "../atoms/icons/html5.astro";
-import Css from "../atoms/icons/css.astro";
-import Javascript from "../atoms/icons/javascript.astro";
-import Python from "../atoms/icons/python.astro";
-import Mysql from "../atoms/icons/mysql.astro";
-import Php from "../atoms/icons/php.astro";
-import Laravel from "../atoms/icons/laravel.astro";
-import React from "../atoms/icons/react.astro";
-import { Poppins } from "../atoms/text/poppins";
+import { Caslon } from "@atoms/text/caslon";
+import AstroIcon from "@atoms/icons/astro-icon.astro";
+import Bootstrap from "@atoms/icons/bootstrap.astro";
+import Tailwindcss from "@atoms/icons/tailwindcss.astro";
+import Html5 from "@atoms/icons/html5.astro";
+import Css from "@atoms/icons/css.astro";
+import Javascript from "@atoms/icons/javascript.astro";
+import Mysql from "@atoms/icons/mysql.astro";
+import Php from "@atoms/icons/php.astro";
+import Laravel from "@atoms/icons/laravel.astro";
+import React from "@atoms/icons/react.astro";
+import { Poppins } from "@atoms/text/poppins";
 import Image from "astro/components/Image.astro";
-import SectionLayout from "../atoms/section-layout.astro";
-import SocialPill from "../atoms/social-pill.astro";
-import Github from "../atoms/icons/github.astro";
-import Typescript from "../atoms/icons/typescript.astro";
-import Web from "../atoms/icons/web.astro";
+import SectionLayout from "@atoms/section-layout.astro";
+import SocialPill from "@atoms/social-pill.astro";
+import Github from "@atoms/icons/github.astro";
+import Typescript from "@atoms/icons/typescript.astro";
+import Web from "@atoms/icons/web.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -66,10 +64,10 @@ const t = useTranslations(lang);
           <Mysql className="size-8 md:size-10"/>
         </div>
         <div class="flex gap-2 h-9">
-          <SocialPill href="https://github.com/JDRBdev/GymTinajo">
+          <SocialPill href="https://github.com/JDRBdev/GymTinajo" ariaLabel={t("projects.gymtinajo.githubAriaLabel")}>
             <Github className="size-6"/>
           </SocialPill>
-          <SocialPill href="https://gymtinajo.alwaysdata.net/">
+          <SocialPill href="https://gymtinajo.alwaysdata.net/" ariaLabel={t("projects.gymtinajo.liveWebsiteAriaLabel")}>
             <Web className="size-6"/>
           </SocialPill>
         </div>
@@ -108,10 +106,10 @@ const t = useTranslations(lang);
           <Typescript className="size-8 md:size-10"/>
         </div>
         <div class="flex gap-2 h-9">
-          <SocialPill href="https://github.com/JDRBdev/WeatherApp">
+          <SocialPill href="https://github.com/JDRBdev/WeatherApp" ariaLabel={t("projects.weatherApp.githubAriaLabel")}>
             <Github className="size-6"/>
           </SocialPill>
-          <SocialPill href="https://weather-app-wheat-five-18.vercel.app/">
+          <SocialPill href="https://weather-app-wheat-five-18.vercel.app/" ariaLabel={t("projects.weatherApp.liveWebsiteAriaLabel")}>
             <Web className="size-6"/>
           </SocialPill>
         </div>
