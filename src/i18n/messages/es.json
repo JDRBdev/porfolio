@@ -1,4 +1,7 @@
 {
+  "commons": {
+    "iconoAriaLabel": "Icono de "
+  },
   "navbar": {
     "home": "Inicio",
     "about": "Sobre mí",
