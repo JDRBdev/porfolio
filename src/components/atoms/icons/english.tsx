@@ -7,6 +7,8 @@ export default function English({ className }: IconInterface) {
       id="flag-icons-sh"
       viewBox="0 0 512 512"
       className={className}
+      role="img"
+      aria-roledescription="English Icon"
     >
       <path fill="#012169" d="M0 0h512v512H0z" />
       <path

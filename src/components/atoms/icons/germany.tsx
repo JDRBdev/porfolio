@@ -7,6 +7,8 @@ export default function German({ className }: IconInterface) {
       id="flag-icons-de"
       viewBox="0 0 512 512"
       className={className}
+      role="img"
+      aria-roledescription="German Icon"
     >
       <path fill="#fc0" d="M0 341.3h512V512H0z" />
       <path fill="#000001" d="M0 0h512v170.7H0z" />

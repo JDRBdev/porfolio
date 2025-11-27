@@ -16,6 +16,8 @@ const CodeIcon: React.FC<Props> = ({ className }) => (
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
+    role="img"
+    aria-roledescription="Code Icon"
   >
     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
     <path d="M7 8l-4 4l4 4" />

@@ -7,6 +7,8 @@ export default function Spain({ className }: IconInterface) {
       id="flag-icons-es"
       viewBox="0 0 512 512"
       className={className}
+      role="img"
+      aria-roledescription="Spain Icon"
     >
       <path fill="#AA151B" d="M0 0h512v512H0z" />
       <path fill="#F1BF00" d="M0 128h512v256H0z" />
