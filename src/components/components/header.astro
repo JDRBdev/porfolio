@@ -39,7 +39,7 @@ const t = useTranslations(lang);
     />
     <div class="flex flex-wrap gap-3 mt-2 w-full">
       <SocialPill href="https://github.com/JDRBdev" newTab>
-        <Github className="size-6"/>
+        <Github className="size-6" ariaLabel={t("commons.githubAriaLabel")}/>
         <Poppins
           text="Github"
           size="16|16"
@@ -47,7 +47,7 @@ const t = useTranslations(lang);
         />
       </SocialPill>
       <SocialPill href="https://www.linkedin.com/in/josé-david-rodríguez-betancor-8019ba369" newTab>
-        <Linkedin className="size-6 rounded-xl"/>
+        <Linkedin className="size-6 rounded-xl" ariaLabel={t("commons.linkedinAriaLabel")}/>
         <Poppins
           text="Linkedin"
           size="16|16"
@@ -55,7 +55,7 @@ const t = useTranslations(lang);
         />
       </SocialPill>
       <SocialPill href="https://mail.google.com/mail/?view=cm&to=rodriguezbetancorjosedavid@gmail.com" newTab>
-        <Email className="size-6"/>
+        <Email className="size-6" ariaLabel={t("commons.emailAriaLabel")}/>
         <Poppins
           text="email"
           size="16|16"
@@ -63,7 +63,7 @@ const t = useTranslations(lang);
         />
       </SocialPill>
       <SocialPill href="/files/CV_José_David_Rodríguez_Betancor.pdf" download>
-        <Curriculum className="size-6"/>
+        <Curriculum className="size-6" ariaLabel={t("commons.curriculumAriaLabel")}/>
         <Poppins
           text="CV"
           size="16|16"

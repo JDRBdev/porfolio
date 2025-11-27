@@ -106,7 +106,6 @@ const toolsTechs = [
       text={t("techstack.tools")}
       size="16|32"
       className="text-white text-xl md:text-2xl text-center"
-      tag="h3"
     />
     <div class="splide splide-tools w-full cursor-pointer">
       <div class="splide__track">
@@ -135,7 +134,7 @@ const toolsTechs = [
     // Carrusel Frontend - se mueve a la derecha (dirección ltr)
     const frontendSplide = new Splide('.splide-frontend', {
       type: 'loop',
-      role: 'icon',
+      role: 'region',
       drag: 'free',
       focus: 'center',
       gap: '2rem',
@@ -154,6 +153,7 @@ const toolsTechs = [
     // Carrusel Backend - se mueve a la izquierda (dirección rtl)
     const backendSplide = new Splide('.splide-backend', {
       type: 'loop',
+      role: 'region',
       drag: 'free',
       focus: 'center',
       direction: 'ltr',
@@ -173,6 +173,7 @@ const toolsTechs = [
     // Carrusel Tools - se mueve más rápido
     const toolsSplide = new Splide('.splide-tools', {
       type: 'loop',
+      role: 'region',
       drag: 'free',
       focus: 'center',
       gap: '2rem',

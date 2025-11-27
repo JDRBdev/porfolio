@@ -3,7 +3,6 @@ export interface IconInterface {
   stroke?: string;
   fill?: string;
   isHovered?: boolean;
-  role: "img";
   ariaLabel: string;
 }
 export interface ImagesInterface {

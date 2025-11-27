@@ -1,6 +1,13 @@
 {
   "commons": {
-    "iconoAriaLabel": "Icono de "
+    "iconoAriaLabel": "Icono de ",
+    "githubAriaLabel": "Enlace de GitHub",
+    "linkedinAriaLabel": "Enlace de LinkedIn",
+    "emailAriaLabel": "Enlace de correo electrónico",
+    "curriculumAriaLabel": "Descargar currículum",
+    "workAriaLabel": "Icono de experiencia laboral",
+    "searchingAriaLabel": "Icono de búsqueda de empleo",
+    "codeAriaLabel": "Icono de código fuente"
   },
   "navbar": {
     "home": "Inicio",
