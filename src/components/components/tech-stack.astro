@@ -58,7 +58,7 @@ const toolsTechs = [
     />
     <div class="splide splide-frontend w-full cursor-pointer">
       <div class="splide__track">
-        <ul class="splide__list h-52! items-center!">
+        <ul class="splide__list h-52! items-center! flex">
           {
             frontendTechs.map((tech) => (
               <li class="splide__slide h-[96px]! w-[100px]! md:w-[300px]! lg:w-[400px]! flex flex-col items-center gap-2 group relative">
@@ -84,7 +84,7 @@ const toolsTechs = [
     />
     <div class="splide splide-backend w-full cursor-pointer">
       <div class="splide__track">
-        <ul class="splide__list h-52! items-center!">
+        <ul class="splide__list h-52! items-center! flex">
           {
             backendTechs.map((tech) => (
               <li class="splide__slide h-[96px]! w-[100px]! md:w-[300px]! lg:w-[400px]! flex flex-col items-center gap-2 group relative">
@@ -110,7 +110,7 @@ const toolsTechs = [
     />
     <div class="splide splide-tools w-full cursor-pointer">
       <div class="splide__track">
-        <ul class="splide__list h-52! items-center!">
+        <ul class="splide__list h-52! items-center! flex">
           {
             toolsTechs.map((tech) => (
               <li class="splide__slide h-[96px]! w-[100px]! md:w-[300px]! lg:w-[400px]! flex flex-col items-center gap-2 group relative">
@@ -126,3 +126,75 @@ const toolsTechs = [
     </div>
   </div>
 </div>
+
+<script>
+  import Splide from "@splidejs/splide";
+  import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
+
+  function initSplides() {
+    // Carrusel Frontend - se mueve a la derecha (dirección ltr)
+    const frontendSplide = new Splide('.splide-frontend', {
+      type: 'loop',
+      drag: 'free',
+      focus: 'center',
+      gap: '2rem',
+      perPage: 3,
+      arrows: false,
+      pagination: false,
+      autoScroll: {
+        speed: 1,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+      }
+    });
+
+    frontendSplide.mount({ AutoScroll });
+
+    // Carrusel Backend - se mueve a la izquierda (dirección rtl)
+    const backendSplide = new Splide('.splide-backend', {
+      type: 'loop',
+      drag: 'free',
+      focus: 'center',
+      direction: 'ltr',
+      gap: '2rem',
+      perPage: 3,
+      arrows: false,
+      pagination: false,
+      autoScroll: {
+        speed: -1,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+      }
+    });
+
+    backendSplide.mount({ AutoScroll });
+
+    // Carrusel Tools - se mueve más rápido
+    const toolsSplide = new Splide('.splide-tools', {
+      type: 'loop',
+      drag: 'free',
+      focus: 'center',
+      gap: '2rem',
+      perPage: 3,
+      arrows: false,
+      pagination: false,
+      autoScroll: {
+        speed: 1,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+      }
+    });
+
+    toolsSplide.mount({ AutoScroll });
+  }
+
+  // Wait for DOM to be ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initSplides);
+  } else {
+    initSplides();
+  }
+
+  // Also run on Astro page transitions
+  document.addEventListener('astro:page-load', initSplides);
+</script>
