@@ -61,8 +61,8 @@ const toolsTechs = [
         <ul class="splide__list h-52! items-center! flex">
           {
             frontendTechs.map((tech) => (
-              <li class="splide__slide h-[96px]! w-[100px]! md:w-[300px]! lg:w-[400px]! flex flex-col items-center gap-2 group relative" aria-roledescription={t(`commons.iconoAriaLabel`) + tech.name} role="img">
-                <tech.component className="w-full! h-full! max-h-[96px]! object-cover transition-transform duration-300 group-hover:scale-110" />
+              <li class="splide__slide h-[96px]! w-[100px]! md:w-[300px]! lg:w-[400px]! flex flex-col items-center gap-2 group relative">
+                <tech.component className="w-full! h-full! max-h-[96px]! object-cover transition-transform duration-300 group-hover:scale-110" ariaLabel={t(`commons.iconoAriaLabel`) + tech.name} role="img"/>
                 <span class="absolute bottom-full mb-6 hidden group-hover:block border-white border-2 bg-white/10 backdrop-blur-sm text-white text-sm px-2 py-1 rounded whitespace-nowrap">
                   {tech.name}
                 </span>
@@ -87,8 +87,8 @@ const toolsTechs = [
         <ul class="splide__list h-52! items-center! flex">
           {
             backendTechs.map((tech) => (
-              <li class="splide__slide h-[96px]! w-[100px]! md:w-[300px]! lg:w-[400px]! flex flex-col items-center gap-2 group relative" aria-roledescription={t(`commons.iconoAriaLabel`) + tech.name} role="img">
-                <tech.component className="w-full! h-full! max-h-[96px]! object-cover transition-transform duration-300 group-hover:scale-110" />
+              <li class="splide__slide h-[96px]! w-[100px]! md:w-[300px]! lg:w-[400px]! flex flex-col items-center gap-2 group relative">
+                <tech.component className="w-full! h-full! max-h-[96px]! object-cover transition-transform duration-300 group-hover:scale-110" ariaLabel={t(`commons.iconoAriaLabel`) + tech.name} role="img" />
                 <span class="absolute bottom-full mb-6 hidden group-hover:block border-white border-2 bg-white/10 backdrop-blur-sm text-white text-sm px-2 py-1 rounded whitespace-nowrap">
                   {tech.name}
                 </span>
@@ -113,8 +113,8 @@ const toolsTechs = [
         <ul class="splide__list h-52! items-center! flex">
           {
             toolsTechs.map((tech) => (
-              <li class="splide__slide h-[96px]! w-[100px]! md:w-[300px]! lg:w-[400px]! flex flex-col items-center gap-2 group relative" aria-roledescription={t(`commons.iconoAriaLabel`) + tech.name} role="img">
-                <tech.component className="w-full! h-full! max-h-[96px]! object-cover transition-transform duration-300 group-hover:scale-110" />
+              <li class="splide__slide h-[96px]! w-[100px]! md:w-[300px]! lg:w-[400px]! flex flex-col items-center gap-2 group relative">
+                <tech.component className="w-full! h-full! max-h-[96px]! object-cover transition-transform duration-300 group-hover:scale-110" ariaLabel={t(`commons.iconoAriaLabel`) + tech.name} role="img" />
                 <span class="absolute bottom-full mb-6 hidden group-hover:block border-white border-2 bg-white/10 backdrop-blur-sm text-white text-sm px-2 py-1 rounded whitespace-nowrap">
                   {tech.name}
                 </span>

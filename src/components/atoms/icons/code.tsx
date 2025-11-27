@@ -1,10 +1,6 @@
-import React from 'react';
+import type { IconInterface } from "@interfaces/common";
 
-interface Props {
-  className?: string;
-}
-
-const CodeIcon: React.FC<Props> = ({ className }) => (
+const CodeIcon: React.FC<IconInterface> = ({ className, role, ariaLabel }) => (
   <svg
     className={`icon icon-tabler icons-tabler-outline icon-tabler-code ${className || ''}`}
     xmlns="http://www.w3.org/2000/svg"
@@ -16,8 +12,8 @@ const CodeIcon: React.FC<Props> = ({ className }) => (
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
-    role="img"
-    aria-roledescription="Code Icon"
+    role={role}
+    aria-label={ariaLabel}
   >
     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
     <path d="M7 8l-4 4l4 4" />

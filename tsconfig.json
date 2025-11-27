@@ -18,6 +18,7 @@
       "@molecules/*": ["components/molecules/*"],
       "@organisms/*": ["components/organisms/*"],
       "@icons/*": ["components/atoms/icons/*"],
+      "@interfaces/*": ["interfaces/*"],
       "@layouts/*": ["layouts/*"],
       "@styles/*": ["styles/*"],
       "@i18n/*": ["i18n/*"],

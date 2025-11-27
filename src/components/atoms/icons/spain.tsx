@@ -1,14 +1,14 @@
-import type { IconInterface } from "../../../interfaces/common";
+import type { IconInterface } from "@interfaces/common";
 
-export default function Spain({ className }: IconInterface) {
+export default function Spain({ className, role, ariaLabel }: IconInterface) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       id="flag-icons-es"
       viewBox="0 0 512 512"
       className={className}
-      role="img"
-      aria-roledescription="Spain Icon"
+      role={role}
+      aria-label={ariaLabel}
     >
       <path fill="#AA151B" d="M0 0h512v512H0z" />
       <path fill="#F1BF00" d="M0 128h512v256H0z" />

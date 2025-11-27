@@ -1,8 +1,11 @@
 ---
 export interface Props {
   className?: string;
+  role: "img";
+  ariaLabel: any;
 }
-const { className } = Astro.props;
+
+const { className, role, ariaLabel } = Astro.props;
 ---
 
 <svg
@@ -17,8 +20,8 @@ const { className } = Astro.props;
   stroke-linecap="round"
   stroke-linejoin="round"
   class="icon icon-tabler icons-tabler-outline icon-tabler-world-www"
-  role="img"
-  aria-roledescription="Web Icon"
+  role={role}
+  aria-label={ariaLabel}
   ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
     d="M19.5 7a9 9 0 0 0 -7.5 -4a8.991 8.991 0 0 0 -7.484 4"></path><path
     d="M11.5 3a16.989 16.989 0 0 0 -1.826 4"></path><path
