@@ -104,3 +104,26 @@
 #language-checkbox:checked ~ .language-selector__list-container {
   display: block;
 }
+
+/* Splide styles */
+.splide__slide {
+  color: white;
+  border-radius: 1rem;
+  justify-items: center;
+  font-size: 1.25rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .splide-frontend,
+  .splide-backend,
+  .splide-tools {
+    .splide__list {
+      gap: 2rem;
+    }
+  }
+}

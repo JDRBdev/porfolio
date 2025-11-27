@@ -127,14 +127,9 @@ const toolsTechs = [
   </div>
 </div>
 
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
-/>
-
-<script type="module">
-  import Splide from "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/+esm";
-  import { AutoScroll } from "https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.4.0/+esm";
+<script is:inline type="module">
+  import Splide from "../../../node_modules/@splidejs/splide";
+  import {AutoScroll} from "../../../node_modules/@splidejs/splide-extension-auto-scroll";
 
   document.addEventListener("DOMContentLoaded", () => {
     // Configuración para el carrusel de Frontend (derecha)
@@ -196,27 +191,3 @@ const toolsTechs = [
     splideTools.mount({ AutoScroll });
   });
 </script>
-
-<style>
-  .splide__slide {
-    color: white;
-    border-radius: 1rem;
-    justify-items: center;
-    font-size: 1.25rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  /* Estilos responsivos */
-  @media (max-width: 768px) {
-    .splide-frontend,
-    .splide-backend,
-    .splide-tools {
-      .splide__list {
-        gap: 2rem;
-      }
-    }
-  }
-</style>
