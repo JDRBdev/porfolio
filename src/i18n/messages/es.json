@@ -9,6 +9,9 @@
     "searchingAriaLabel": "Icono de búsqueda de empleo",
     "codeAriaLabel": "Icono de código fuente"
   },
+  "meta": {
+    "description": "Portafolio de Jose David Rodriguez Betancor, desarrollador web frontend apasionado por crear soluciones digitales innovadoras y funcionales."
+  },
   "navbar": {
     "home": "Inicio",
     "about": "Sobre mí",

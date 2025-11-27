@@ -45,7 +45,7 @@ export function Navbar({ className = "" }) {
         <div className="flex flex-row w-full md:hidden">
           <a href="/" className="text-white flex justify-start z-1">
             <div className="flex w-8 items-center">
-                <Code className="size-8" />
+                <Code className="size-8" ariaLabel={t("commons.codeAriaLabel")}/>
             </div>
           </a>
           <div className="flex w-full justify-center -ml-8">
@@ -74,7 +74,7 @@ export function Navbar({ className = "" }) {
               ].map((item) => (
                 <li key={item.key}>
                   <a
-                    href={item.key === "home" ? "/" : undefined}
+                    href={item.key === "home" ? "/" : `#${item.key}`}
                     onClick={
                       item.key !== "home"
                         ? (e) => {
