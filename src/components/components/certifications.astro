@@ -19,23 +19,45 @@ const t = useTranslations(lang);
     className="text-white self-center"
   />
 
-  <div>
-    <div class="flex justify-between px-4 mb-2">
-        <Poppins
-            text={t("certifications.responsiveCertification.title")}
-            size="20|24"
-            className="text-white font-semibold! self-center"
-        />
-        <SocialPill href="https://www.freecodecamp.org/certification/jdrbdev/responsive-web-design" ariaLabel={t("certifications.responsiveCertification.ariaLabel")}>
-            <Web className="size-6" ariaLabel={t("certifications.responsiveCertification.ariaLabel")} />
-        </SocialPill>
+  <div class="flex flex-col md:flex-row gap-12">
+    <div>
+      <div class="flex justify-between px-4 mb-2">
+          <Poppins
+              text={t("certifications.responsiveCertification.title")}
+              size="20|24"
+              className="text-white font-semibold! self-center"
+          />
+          <SocialPill href="https://www.freecodecamp.org/certification/jdrbdev/responsive-web-design" ariaLabel={t("certifications.responsiveCertification.ariaLabel")}>
+              <Web className="size-6" ariaLabel={t("certifications.responsiveCertification.ariaLabel")} />
+          </SocialPill>
+      </div>
+      <Image
+      src={"/images/responsiveCertification.avif"}
+      alt={t("certifications.responsiveCertification.alt")}
+      width={500}
+      height={334}
+      class="w-full max-w-[500px]"
+      />
     </div>
-    <Image
-    src={"/images/responsiveCertification.avif"}
-    alt={t("certifications.responsiveCertification.alt")}
-    width={300}
-    height={300}
-    class="w-full max-w-[500px]"
-    />
+
+    <div>
+      <div class="flex justify-between px-4 mb-2">
+          <Poppins
+              text={t("certifications.typescriptCertification.title")}
+              size="20|24"
+              className="text-white font-semibold! self-center"
+          />
+          <SocialPill href="https://www.udemy.com/certificate/UC-5e4e65f9-7da4-40bb-a7d0-d7449cf79c38/" ariaLabel={t("certifications.typescriptCertification.ariaLabel")}>
+              <Web className="size-6" ariaLabel={t("certifications.typescriptCertification.ariaLabel")} />
+          </SocialPill>
+      </div>
+      <Image
+      src={"/images/typescriptCertification.avif"}
+      alt={t("certifications.typescriptCertification.alt")}
+      width={500}
+      height={334}
+      class="w-full max-w-[500px]"
+      />
+    </div>
   </div>
 </div>

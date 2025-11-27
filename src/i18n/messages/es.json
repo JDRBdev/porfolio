@@ -69,6 +69,13 @@
       "description": "Aplicación web que muestra el clima actual y pronósticos utilizando la API de WeatherApi. Permite a los usuarios buscar por ciudad y ver información detallada del clima.",
       "githubAriaLabel": "Repositorio de GitHub para Weather App",
       "liveWebsiteAriaLabel": "Sitio web en vivo para Weather App"
+    },
+    "tcgstore": {
+      "title": "TCG Store",
+      "description_summary": "Ver más",
+      "description": "Proyecto de tienda en línea para cartas coleccionables (TCG) desarrollado en NextJs con Typescript, React y Tailwind CSS. Incluye funcionalidades de navegación, búsqueda y filtrado de productos. Para el backend, utiliza Clerk para la autenticación de usuarios y Directus como CMS para la gestión de productos e inventario que se almacena en Supabase. Los pagos se procesan mediante Stripe.",
+      "githubAriaLabel": "Repositorio de GitHub para TCG Store",
+      "liveWebsiteAriaLabel": "Sitio web en vivo para TCG Store"
     }
   },
   "certifications": {
@@ -77,6 +84,11 @@
       "title": "Diseño responsivo",
       "alt": "Certificado en diseño responsivo por FreeCodeCamp",
       "ariaLabel": "Certificado de FreeCodeCamp en Diseño Responsivo"
+    },
+    "typescriptCertification": {
+      "title": "TypeScript",
+      "alt": "Certificado en TypeScript por Udemy",
+      "ariaLabel": "Certificado de Udemy en TypeScript"
     }
   },
   "footer": {

@@ -1,4 +1,17 @@
 {
+  "commons": {
+    "iconoAriaLabel": "Icon of ",
+    "githubAriaLabel": "GitHub link",
+    "linkedinAriaLabel": "LinkedIn link",
+    "emailAriaLabel": "Email link",
+    "curriculumAriaLabel": "Download resume",
+    "workAriaLabel": "Work experience icon",
+    "searchingAriaLabel": "Job search icon",
+    "codeAriaLabel": "Source code icon"
+  },
+  "meta": {
+    "description": "Portfolio of Jose David Rodriguez Betancor, a passionate frontend web developer dedicated to creating innovative and functional digital solutions."
+  },
   "navbar": {
     "home": "Home",
     "about": "About Me",
@@ -33,7 +46,7 @@
     "marketec360": {
       "date": "March 2025",
       "title": "Frontend Developer",
-      "description": "Frontend Developer at Marketec360, where I worked on developing web applications using modern technologies like React, TypeScript, and Tailwind CSS. I collaborated on large-scale projects, improving user experience and designing responsive and accessible interfaces."
+      "description": "Frontend developer at Marketec360, where I worked on developing web applications using modern technologies like React, TypeScript, and Tailwind CSS. I collaborated on large-scale projects, improving user experience and designing responsive and accessible interfaces."
     },
     "searching": {
       "date": "Currently",
@@ -46,19 +59,36 @@
     "gymtinajo": {
       "title": "Tinajo Gym",
       "description_summary": "View more",
-      "description": "This project is a website dedicated to booking gym classes, handling both client and admin interfaces. It allows client registration and the management of bookings and news or announcements from the organization."
+      "description": "This project is a website dedicated to booking gym classes, handling both client and admin interfaces. It allows client registration and the management of bookings and news or announcements from the organization.",
+      "githubAriaLabel": "GitHub repository for Tinajo Gym",
+      "liveWebsiteAriaLabel": "Live website for Tinajo Gym"
     },
     "weatherApp": {
       "title": "Weather App",
       "description_summary": "View more",
-      "description": "A web application that shows the current weather and forecasts using the WeatherApi. Users can search by city and view detailed weather information."
+      "description": "A web application that shows the current weather and forecasts using the WeatherApi. Users can search by city and view detailed weather information.",
+      "githubAriaLabel": "GitHub repository for Weather App",
+      "liveWebsiteAriaLabel": "Live website for Weather App"
+    },
+    "tcgstore": {
+      "title": "TCG Store",
+      "description_summary": "View more",
+      "description": "An online store for trading card games (TCG) developed with NextJs, TypeScript, React, and Tailwind CSS. It includes navigation, search, and product filtering features. For the backend, it uses Clerk for user authentication and Directus as a CMS to manage products and inventory stored in Supabase. Payments are processed via Stripe.",
+      "githubAriaLabel": "GitHub repository for TCG Store",
+      "liveWebsiteAriaLabel": "Live website for TCG Store"
     }
   },
   "certifications": {
     "title": "Certifications",
     "responsiveCertification": {
       "title": "Responsive Design",
-      "alt": "Certificate in responsive design by FreeCodeCamp"
+      "alt": "Certificate in responsive design by FreeCodeCamp",
+      "ariaLabel": "FreeCodeCamp certificate in Responsive Design"
+    },
+    "typescriptCertification": {
+      "title": "TypeScript",
+      "alt": "Certificate in TypeScript by Udemy",
+      "ariaLabel": "Udemy certificate in TypeScript"
     }
   },
   "footer": {

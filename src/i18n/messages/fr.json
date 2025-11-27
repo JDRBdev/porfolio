@@ -1,4 +1,17 @@
 {
+  "commons": {
+    "iconoAriaLabel": "Icône de ",
+    "githubAriaLabel": "Lien GitHub",
+    "linkedinAriaLabel": "Lien LinkedIn",
+    "emailAriaLabel": "Lien e-mail",
+    "curriculumAriaLabel": "Télécharger le CV",
+    "workAriaLabel": "Icône d'expérience professionnelle",
+    "searchingAriaLabel": "Icône de recherche d'emploi",
+    "codeAriaLabel": "Icône de code source"
+  },
+  "meta": {
+    "description": "Portfolio de Jose David Rodriguez Betancor, développeur web frontend passionné par la création de solutions numériques innovantes et fonctionnelles."
+  },
   "navbar": {
     "home": "Accueil",
     "about": "À propos de moi",
@@ -46,19 +59,36 @@
     "gymtinajo": {
       "title": "Gymnase Tinajo",
       "description_summary": "Voir plus",
-      "description": "Ce projet est un site web destiné à réserver des cours de gym, couvrant l’interface client ainsi que celle de l’administrateur. Il permet l’enregistrement des clients et la gestion des réservations ainsi que des actualités ou annonces de l’établissement."
+      "description": "Ce projet est un site web destiné à réserver des cours de gym, couvrant l’interface client ainsi que celle de l’administrateur. Il permet l’enregistrement des clients et la gestion des réservations ainsi que des actualités ou annonces de l’établissement.",
+      "githubAriaLabel": "Dépôt GitHub pour Gymnase Tinajo",
+      "liveWebsiteAriaLabel": "Site web en ligne pour Gymnase Tinajo"
     },
     "weatherApp": {
       "title": "Application Météo",
       "description_summary": "Voir plus",
-      "description": "Application web qui affiche la météo actuelle et les prévisions en utilisant l’API WeatherApi. Les utilisateurs peuvent rechercher par ville et voir des informations météorologiques détaillées."
+      "description": "Application web qui affiche la météo actuelle et les prévisions en utilisant l’API WeatherApi. Les utilisateurs peuvent rechercher par ville et voir des informations météorologiques détaillées.",
+      "githubAriaLabel": "Dépôt GitHub pour Application Météo",
+      "liveWebsiteAriaLabel": "Site web en ligne pour Application Météo"
+    },
+    "tcgstore": {
+      "title": "TCG Store",
+      "description_summary": "Voir plus",
+      "description": "Une boutique en ligne pour les cartes à collectionner (TCG) développée avec NextJs, TypeScript, React et Tailwind CSS. Elle inclut des fonctionnalités de navigation, de recherche et de filtrage de produits. Pour le backend, elle utilise Clerk pour l’authentification des utilisateurs et Directus comme CMS pour gérer les produits et l’inventaire stockés dans Supabase. Les paiements sont traités via Stripe.",
+      "githubAriaLabel": "Dépôt GitHub pour TCG Store",
+      "liveWebsiteAriaLabel": "Site web en ligne pour TCG Store"
     }
   },
   "certifications": {
     "title": "Certificats",
     "responsiveCertification": {
       "title": "Design Responsive",
-      "alt": "Certificat en design responsive délivré par FreeCodeCamp"
+      "alt": "Certificat en design responsive délivré par FreeCodeCamp",
+      "ariaLabel": "Certificat FreeCodeCamp en design responsive"
+    },
+    "typescriptCertification": {
+      "title": "TypeScript",
+      "alt": "Certificat en TypeScript délivré par Udemy",
+      "ariaLabel": "Certificat Udemy en TypeScript"
     }
   },
   "footer": {

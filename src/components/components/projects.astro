@@ -10,7 +10,9 @@ import Javascript from "@atoms/icons/javascript.astro";
 import Mysql from "@atoms/icons/mysql.astro";
 import Php from "@atoms/icons/php.astro";
 import Laravel from "@atoms/icons/laravel.astro";
+import Nextjs from "@atoms/icons/nextjs.astro";
 import React from "@atoms/icons/react.astro";
+import Clerk from "@atoms/icons/clerk.astro";
 import { Poppins } from "@atoms/text/poppins";
 import Image from "astro/components/Image.astro";
 import SectionLayout from "@atoms/section-layout.astro";
@@ -18,6 +20,9 @@ import SocialPill from "@atoms/social-pill.astro";
 import Github from "@atoms/icons/github.astro";
 import Typescript from "@atoms/icons/typescript.astro";
 import Web from "@atoms/icons/web.astro";
+import Supabase from "@components/atoms/icons/supabase.astro";
+import Directus from "@components/atoms/icons/directus.astro";
+import Stripe from "@components/atoms/icons/stripe.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -111,6 +116,51 @@ const t = useTranslations(lang);
           </SocialPill>
           <SocialPill href="https://weather-app-wheat-five-18.vercel.app/" ariaLabel={t("projects.weatherApp.liveWebsiteAriaLabel")}>
             <Web className="size-6" ariaLabel={t("projects.weatherApp.liveWebsiteAriaLabel")} />
+          </SocialPill>
+        </div>
+      </div>
+    </div>
+    <div class="col-span-1 lg:col-span-2 flex flex-col">
+      <Poppins
+        text={t("projects.tcgstore.title")}
+        size="20|24"
+        className="text-white font-semibold! px-4"
+      />
+      <details class="px-4 pt-2 max-w-[700px]">
+        <summary class="cursor-pointer text-white text-base md:text-lg font-semibold">
+          {t("projects.tcgstore.description_summary") ?? "Ver más información"}
+        </summary>
+        <Poppins
+          text={t("projects.tcgstore.description")}
+          size="16|16"
+          className="text-white pt-2"
+        />
+      </details>
+      <Image
+        src={"/images/TcgStore.avif"}
+        alt={"TCG Store Project"}
+        width={600}
+        height={600}
+        class={"w-full md:max-w-[700px] rounded-lg sm:rounded-[20px] my-3"}
+      />
+      <div class="px-4 justify-between flex gap-2">
+        <div class="flex flex-wrap gap-2">
+          <Html5 className="size-8 md:size-10" ariaLabel={`${t("commons.iconoAriaLabel")} HTML5`} />
+          <Css className="size-8 md:size-10" ariaLabel={`${t("commons.iconoAriaLabel")} CSS`} />
+          <Tailwindcss className="size-8 md:size-10" ariaLabel={`${t("commons.iconoAriaLabel")} Tailwind CSS`} />
+          <React className="size-8 md:size-10" ariaLabel={`${t("commons.iconoAriaLabel")} React`} />
+          <Nextjs className="size-8 md:size-10" ariaLabel={`${t("commons.iconoAriaLabel")} Next.js`} />
+          <Clerk className="size-8 md:size-10" ariaLabel={`${t("commons.iconoAriaLabel")} Clerk`} />
+          <Supabase className="size-8 md:size-10" ariaLabel={`${t("commons.iconoAriaLabel")} Supabase`} />
+          <Directus className="size-8 md:size-10" ariaLabel={`${t("commons.iconoAriaLabel")} Directus`} />
+          <Stripe className="size-8 md:size-10" ariaLabel={`${t("commons.iconoAriaLabel")} Stripe`} />
+        </div>
+        <div class="flex gap-2 h-9">
+          <SocialPill href="https://github.com/JDRBdev/TCG_Shop" ariaLabel={t("projects.tcgstore.githubAriaLabel")}>
+            <Github className="size-6" ariaLabel={t("projects.tcgstore.githubAriaLabel")} />
+          </SocialPill>
+          <SocialPill href="https://tcg-shop-iota.vercel.app/es" ariaLabel={t("projects.tcgstore.liveWebsiteAriaLabel")}>
+            <Web className="size-6" ariaLabel={t("projects.tcgstore.liveWebsiteAriaLabel")} />
           </SocialPill>
         </div>
       </div>
