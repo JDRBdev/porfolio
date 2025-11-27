@@ -4,7 +4,7 @@ import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 import Web from "../atoms/icons/web.astro";
 import SocialPill from "../atoms/social-pill.astro";
 import { Caslon } from "../atoms/text/caslon";
-import { Matter } from "../atoms/text/matter";
+import { Poppins } from "../atoms/text/poppins";
 import Image from "astro/components/Image.astro";
 
 // Obtener idioma y traducciones
@@ -21,7 +21,7 @@ const t = useTranslations(lang);
 
   <div>
     <div class="flex justify-between px-4 mb-2">
-        <Matter
+        <Poppins
             text={t("certifications.responsiveCertification.title")}
             size="20|24"
             className="text-white font-semibold! self-center"

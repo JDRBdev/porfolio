@@ -1,4 +1,4 @@
-// src/components/atoms/text/Matter.tsx
+// src/components/atoms/text/Poppins.tsx
 import React, { type JSX } from "react";
 import DOMPurify from "isomorphic-dompurify";
 
@@ -25,7 +25,7 @@ interface Props {
   className?: string;
 }
 
-export const Matter: React.FC<Props> = ({
+export const Poppins: React.FC<Props> = ({
   text,
   size,
   style = "400",
@@ -60,11 +60,9 @@ export const Matter: React.FC<Props> = ({
   const getStyleClass = (): string => {
     switch (style) {
       case "400":
-        return "matter";
-      case "500":
-        return "matter-medium";
+        return "poppins";
       default:
-        return "matter";
+        return "poppins";
     }
   };
 

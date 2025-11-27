@@ -13,7 +13,7 @@ import Mysql from "../atoms/icons/mysql.astro";
 import Php from "../atoms/icons/php.astro";
 import Laravel from "../atoms/icons/laravel.astro";
 import React from "../atoms/icons/react.astro";
-import { Matter } from "../atoms/text/matter";
+import { Poppins } from "../atoms/text/poppins";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -50,7 +50,7 @@ const toolsTechs = [
 
   <!-- Carrusel 1: Frontend (se mueve a la derecha) -->
   <div class="flex flex-col gap-4">
-    <Matter
+    <Poppins
       text="Frontend"
       size="16|32"
       className="text-white text-xl md:text-2xl text-center"
@@ -76,7 +76,7 @@ const toolsTechs = [
 
   <!-- Carrusel 2: Backend (se mueve a la izquierda) -->
   <div class="flex flex-col gap-4">
-    <Matter
+    <Poppins
       text="Backend"
       size="16|32"
       className="text-white text-xl md:text-2xl text-center"
@@ -102,7 +102,7 @@ const toolsTechs = [
 
   <!-- Carrusel 3: Herramientas (se mueve más rápido y en zigzag) -->
   <div class="flex flex-col gap-4">
-    <Matter
+    <Poppins
       text={t("techstack.tools")}
       size="16|32"
       className="text-white text-xl md:text-2xl text-center"

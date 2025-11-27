@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import { LanguageSelector } from "../atoms/language-selector";
 import { useLanguage } from "../../hooks/useLanguage";
-import { Matter } from "../atoms/text/matter";
-import Menu from "../atoms/icons/menu";
+import { Poppins } from "../atoms/text/poppins";
 import Code from "../atoms/icons/code";
 
 // Componente Navbar que muestra la barra de navegación principal
@@ -92,7 +91,7 @@ export function Navbar({ className = "" }) {
                       after:w-0 after:bg-white after:transition-all after:duration-300 
                       hover:after:w-full"
                   >
-                    <Matter text={item.label} size="16|16" />
+                    <Poppins text={item.label} size="16|16" />
                   </a>
                 </li>
               ))
@@ -107,7 +106,7 @@ export function Navbar({ className = "" }) {
                       after:w-0 after:bg-white after:transition-all after:duration-300 
                       hover:after:w-full"
                   >
-                    <Matter text={item.label} size="16|16" />
+                    <Poppins text={item.label} size="16|16" />
                   </a>
                 </li>
               ))}

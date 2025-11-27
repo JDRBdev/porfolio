@@ -1,7 +1,7 @@
 ---
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 import { Caslon } from "../atoms/text/caslon";
-import { Matter } from "../atoms/text/matter";
+import { Poppins } from "../atoms/text/poppins";
 import Code from "../atoms/icons/code";
 import SectionLayout from "../atoms/section-layout.astro";
 
@@ -16,7 +16,7 @@ const t = useTranslations(lang);
                 <div class="mb-6 md:mb-0">
                     <a class="flex gap-2" href="/">
                         <Code className="size-5 md:size-6 self-center md:self-start"/>
-                        <Matter
+                        <Poppins
                             text="José David Rodríguez Betancor"
                             size="16|20"
                             className="font-semibold whitespace-nowrap text-white uppercase leading-7!"
@@ -25,7 +25,7 @@ const t = useTranslations(lang);
                 </div>
                 <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                     <div>
-                    <Matter
+                    <Poppins
                         text={t("footer.builtWith")}
                         size="16|16"
                         className="mb-2 font-semibold text-white uppercase"
@@ -34,7 +34,7 @@ const t = useTranslations(lang);
                     <ul class="text-white font-medium">
                         <li class="mb-2">
                         <a href="https://astro.build/" target="_blank" rel="noopener noreferrer">
-                            <Matter 
+                            <Poppins 
                                 text="Astro"
                                 size="14|16"
                                 className="mt-4 w-fit relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
@@ -43,7 +43,7 @@ const t = useTranslations(lang);
                         </li>
                         <li>
                         <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">
-                            <Matter
+                            <Poppins
                                 text="Tailwind CSS"
                                 size="14|16"
                                 className="mt-4 w-fit relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
@@ -53,7 +53,7 @@ const t = useTranslations(lang);
                     </ul>
                     </div>
                     <div>
-                    <Matter
+                    <Poppins
                         text={t("footer.followMe")}
                         size="16|16"
                         className="mb-2 font-semibold text-white uppercase"
@@ -67,7 +67,7 @@ const t = useTranslations(lang);
                             rel="noopener noreferrer"
                         
                         >
-                            <Matter
+                            <Poppins
                                 text="Github"
                                 className="mt-4 w-fit relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
                                 size="14|16"
@@ -79,7 +79,7 @@ const t = useTranslations(lang);
                             target="_blank"
                             rel="noopener noreferrer" 
                         >
-                            <Matter
+                            <Poppins
                                 text="Linkedin"
                                 size="14|16"
                                 className="mt-4 w-fit relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
@@ -89,7 +89,7 @@ const t = useTranslations(lang);
                     </ul>
                     </div>
                     <div>
-                    <Matter
+                    <Poppins
                         text={t("footer.legal")}
                         size="16|16"
                         className="mb-2 font-semibold text-white uppercase"
@@ -98,7 +98,7 @@ const t = useTranslations(lang);
                     <ul class="text-white font-medium">
                         <li class="mb-2">
                         <a href="politica-de-privacidad" class="">
-                            <Matter 
+                            <Poppins 
                                 text={t("footer.privacyPolicy")}
                                 size="14|16"
                                 className="mt-4 w-fit relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
@@ -107,7 +107,7 @@ const t = useTranslations(lang);
                         </li>
                         <li>
                         <a href="terminos-condiciones" class="">
-                            <Matter
+                            <Poppins
                                 text={t("footer.termsAndConditions")}
                                 size="14|16"
                                 className="mt-4 w-fit relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"

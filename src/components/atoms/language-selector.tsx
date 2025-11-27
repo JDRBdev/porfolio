@@ -2,7 +2,7 @@
 import React from "react";
 import { languages } from "../../i18n/ui"; // Diccionario de idiomas disponibles
 import { useLanguage } from "../../hooks/useLanguage"; // Hook personalizado para manejar el idioma actual
-import { Matter } from "./text/matter"; // Componente para mostrar texto con estilo
+import { Poppins } from "./text/poppins"; // Componente para mostrar texto con estilo
 
 // Componente funcional que renderiza el selector de idioma
 export function LanguageSelector({ className = "" }) {
@@ -44,8 +44,8 @@ export function LanguageSelector({ className = "" }) {
             <span
               className={`tracking-widest bg-white/10 text-white peer-checked:bg-black/10 p-3 ${roundedClass}`}
             >
-              {/* Texto del idioma usando componente Matter */}
-              <Matter
+              {/* Texto del idioma usando componente Poppins */}
+              <Poppins
                 text={label}
                 size="14|16"
                 className="text-white"

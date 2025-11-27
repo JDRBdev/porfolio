@@ -7,7 +7,7 @@ import Github from "../atoms/icons/github.astro";
 import Linkedin from "../atoms/icons/linkedin.astro";
 import SectionLayout from "../atoms/section-layout.astro";
 import SocialPill from "../atoms/social-pill.astro";
-import { Matter } from "../atoms/text/matter";
+import { Poppins } from "../atoms/text/poppins";
 import TypewriterText from "../atoms/type-writer-text";
 import { Image } from "astro:assets";
 const lang = getLangFromUrl(Astro.url);
@@ -24,7 +24,7 @@ const t = useTranslations(lang);
         <small
           class="font-semibold text-gray-500 dark:text-gray-400 content-end"
         >
-          <Matter text={t("header.title")} size="16|32" className="leading-2" />
+          <Poppins text={t("header.title")} size="16|32" className="leading-2" />
         </small>
       </h1>
       <TypewriterText
@@ -32,7 +32,7 @@ const t = useTranslations(lang);
         client:load
       />
     </div>
-    <Matter
+    <Poppins
       text={t("header.subtitle")}
       size="16|20"
       className="text-white/70 leading-6!"
@@ -40,7 +40,7 @@ const t = useTranslations(lang);
     <div class="flex flex-wrap gap-3 mt-2 w-full">
       <SocialPill href="https://github.com/JDRBdev" newTab>
         <Github className="size-6"/>
-        <Matter
+        <Poppins
           text="Github"
           size="16|16"
           className="text-white pr-1"
@@ -48,7 +48,7 @@ const t = useTranslations(lang);
       </SocialPill>
       <SocialPill href="https://www.linkedin.com/in/josé-david-rodríguez-betancor-8019ba369" newTab>
         <Linkedin className="size-6 rounded-xl"/>
-        <Matter
+        <Poppins
           text="Linkedin"
           size="16|16"
           className="text-white pr-1"
@@ -56,7 +56,7 @@ const t = useTranslations(lang);
       </SocialPill>
       <SocialPill href="https://mail.google.com/mail/?view=cm&to=rodriguezbetancorjosedavid@gmail.com" newTab>
         <Email className="size-6"/>
-        <Matter
+        <Poppins
           text="email"
           size="16|16"
           className="text-white pr-1"
@@ -64,7 +64,7 @@ const t = useTranslations(lang);
       </SocialPill>
       <SocialPill href="/files/CV_José_David_Rodríguez_Betancor.pdf" download>
         <Curriculum className="size-6"/>
-        <Matter
+        <Poppins
           text="CV"
           size="16|16"
           className="text-white pr-1"

@@ -13,7 +13,7 @@ import Mysql from "../atoms/icons/mysql.astro";
 import Php from "../atoms/icons/php.astro";
 import Laravel from "../atoms/icons/laravel.astro";
 import React from "../atoms/icons/react.astro";
-import { Matter } from "../atoms/text/matter";
+import { Poppins } from "../atoms/text/poppins";
 import Image from "astro/components/Image.astro";
 import SectionLayout from "../atoms/section-layout.astro";
 import SocialPill from "../atoms/social-pill.astro";
@@ -33,7 +33,7 @@ const t = useTranslations(lang);
   />
   <div class="grid gap-8 justify-items-center grid-cols-1 lg:grid-cols-2">
     <div>
-      <Matter
+      <Poppins
         text={t("projects.gymtinajo.title")}
         size="20|24"
         className="text-white font-semibold! px-4"
@@ -42,7 +42,7 @@ const t = useTranslations(lang);
         <summary class="cursor-pointer text-white text-base md:text-lg font-semibold">
           {t("projects.gymtinajo.description_summary") ?? "Ver más información"}
         </summary>
-        <Matter
+        <Poppins
           text={t("projects.gymtinajo.description")}
           size="16|16"
           className="text-white pt-2"
@@ -76,7 +76,7 @@ const t = useTranslations(lang);
       </div>
     </div>
     <div>
-      <Matter
+      <Poppins
         text={t("projects.weatherApp.title")}
         size="20|24"
         className="text-white font-semibold! px-4"
@@ -85,7 +85,7 @@ const t = useTranslations(lang);
         <summary class="cursor-pointer text-white text-base md:text-lg font-semibold">
           {t("projects.weatherApp.description_summary") ?? "Ver más información"}
         </summary>
-        <Matter
+        <Poppins
           text={t("projects.weatherApp.description")}
           size="16|16"
           className="text-white pt-2"
