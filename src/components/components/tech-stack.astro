@@ -132,7 +132,6 @@ const toolsTechs = [
     // Carrusel Frontend - se mueve a la derecha (dirección ltr)
     const frontendSplide = new Splide('.splide-frontend', {
       type: 'loop',
-      role: 'region',
       drag: 'free',
       focus: 'center',
       gap: '2rem',
@@ -151,7 +150,6 @@ const toolsTechs = [
     // Carrusel Backend - se mueve a la izquierda (dirección rtl)
     const backendSplide = new Splide('.splide-backend', {
       type: 'loop',
-      role: 'region',
       drag: 'free',
       focus: 'center',
       direction: 'ltr',
@@ -171,7 +169,6 @@ const toolsTechs = [
     // Carrusel Tools - se mueve más rápido
     const toolsSplide = new Splide('.splide-tools', {
       type: 'loop',
-      role: 'region',
       drag: 'free',
       focus: 'center',
       gap: '2rem',
@@ -194,6 +191,10 @@ const toolsTechs = [
   } else {
     initSplides();
   }
+
+  document.querySelectorAll('.splide__slide').forEach(el => {
+    el.removeAttribute('role');
+  });
 
   // Also run on Astro page transitions
   document.addEventListener('astro:page-load', initSplides);
