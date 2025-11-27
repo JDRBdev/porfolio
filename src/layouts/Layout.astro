@@ -16,6 +16,9 @@ const lang = getLangFromUrl(Astro.url);
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preload" href="/fonts/Poppins-Regular.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="/fonts/LibreCaslonText-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <!-- Preconnect hints to reduce critical path latency -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
     <meta name="generator" content="{Astro.generator}" />
     <title>Jose David Rodriguez Betancor</title>
   </head>
