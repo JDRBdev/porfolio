@@ -124,7 +124,7 @@ const toolsTechs = [
   </div>
 </div>
 
-<script defer>
+<script>
   import Splide from "@splidejs/splide";
   import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 
@@ -185,21 +185,11 @@ const toolsTechs = [
     toolsSplide.mount({ AutoScroll });
   }
 
-  // Defer initialization using requestIdleCallback to avoid blocking critical path
-  function deferredInit() {
-    if ('requestIdleCallback' in window) {
-      requestIdleCallback(() => initSplides(), { timeout: 2000 });
-    } else {
-      // Fallback for browsers without requestIdleCallback
-      setTimeout(initSplides, 0);
-    }
-  }
-
   // Wait for DOM to be ready
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', deferredInit);
+    document.addEventListener('DOMContentLoaded', initSplides);
   } else {
-    deferredInit();
+    initSplides();
   }
 
   document.querySelectorAll('.splide__slide').forEach(el => {
@@ -207,5 +197,5 @@ const toolsTechs = [
   });
 
   // Also run on Astro page transitions
-  document.addEventListener('astro:page-load', deferredInit);
+  document.addEventListener('astro:page-load', initSplides);
 </script>
