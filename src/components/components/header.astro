@@ -9,7 +9,7 @@ import SectionLayout from "../atoms/section-layout.astro";
 import SocialPill from "../atoms/social-pill.astro";
 import { Matter } from "../atoms/text/matter";
 import TypewriterText from "../atoms/type-writer-text";
-import Image from "astro/components/Image.astro";
+import { Image } from "astro:assets";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
@@ -80,6 +80,8 @@ const t = useTranslations(lang);
       height={500}
       class="w-full max-w-[350px]"
       style="mask-image: linear-gradient(black 50%, transparent)"
+      fetchpriority="high"
+      loading="eager"
     />
     <Habilities />
   </div>
