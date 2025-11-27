@@ -127,11 +127,11 @@ const toolsTechs = [
   </div>
 </div>
 
-<script is:inline type="module">
+<script>
   import Splide from "@splidejs/splide";
-  import {AutoScroll} from "@splidejs/splide-extension-auto-scroll";
+  import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 
-  document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("astro:page-load", () => {
     // Configuración para el carrusel de Frontend (derecha)
     const splideFrontend = new Splide(".splide-frontend", {
       type: "loop",
