@@ -27,10 +27,9 @@ const t = useTranslations(lang);
           <Poppins text={t("header.title")} size="16|32" className="leading-2" />
         </small>
       </h1>
-      <TypewriterText
-        className="md:min-w-[380px] min-w-[150px] leading-4 md:leading-8"
-        client:load
-      />
+      <div class="md:min-w-[380px] min-w-[150px] min-h-[56px] flex items-end">
+        <TypewriterText className="w-full top-[5%] md:top-[20%] relative" client:load />
+      </div>
     </div>
     <Poppins
       text={t("header.subtitle")}
