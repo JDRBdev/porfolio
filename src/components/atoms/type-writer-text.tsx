@@ -1,7 +1,7 @@
 /* átomo encargado de mostrar con una animación de escritura las capacidades */
 
 import Typewriter from "typewriter-effect";
-import { useLanguage } from "../../hooks/useLanguage";
+import { useLanguage } from "@hooks/useLanguage";
 
 function TypewriterText({ className = "" }) {
   const { lang, t } = useLanguage();

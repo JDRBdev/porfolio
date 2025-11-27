@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { defaultLang, languages } from "../i18n/ui";
-import type { AvailableLang } from "../i18n/utils";
-import { useTranslations } from "../i18n/utils";
+import { defaultLang, languages } from "@i18n/ui";
+import type { AvailableLang } from "@i18n/utils";
+import { useTranslations } from "@i18n/utils";
 
 /**
  * Hook personalizado para manejar el idioma de la aplicación.

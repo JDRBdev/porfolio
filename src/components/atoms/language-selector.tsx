@@ -1,7 +1,7 @@
 // Importa React y dependencias necesarias
 import React from "react";
-import { languages } from "../../i18n/ui"; // Diccionario de idiomas disponibles
-import { useLanguage } from "../../hooks/useLanguage"; // Hook personalizado para manejar el idioma actual
+import { languages } from "@i18n/ui"; // Diccionario de idiomas disponibles
+import { useLanguage } from "@hooks/useLanguage"; // Hook personalizado para manejar el idioma actual
 import { Poppins } from "./text/poppins"; // Componente para mostrar texto con estilo
 
 // Componente funcional que renderiza el selector de idioma

@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import { LanguageSelector } from "../atoms/language-selector";
-import { useLanguage } from "../../hooks/useLanguage";
-import { Poppins } from "../atoms/text/poppins";
-import Code from "../atoms/icons/code";
+import { LanguageSelector } from "@atoms/language-selector";
+import { useLanguage } from "@hooks/useLanguage";
+import { Poppins } from "@atoms/text/poppins";
+import Code from "@atoms/icons/code";
 
 // Componente Navbar que muestra la barra de navegación principal
 export function Navbar({ className = "" }) {

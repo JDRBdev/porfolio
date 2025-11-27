@@ -1,10 +1,9 @@
 ---
-import { getLangFromUrl, useTranslations } from "../../i18n/utils";
-import { Caslon } from "../atoms/text/caslon";
-import { Poppins } from "../atoms/text/poppins";
-import Code from "../atoms/icons/code";
-import SectionLayout from "../atoms/section-layout.astro";
-
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import { Caslon } from "@atoms/text/caslon";
+import { Poppins } from "@atoms/text/poppins";
+import Code from "@atoms/icons/code";
+import SectionLayout from "@atoms/section-layout.astro";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---

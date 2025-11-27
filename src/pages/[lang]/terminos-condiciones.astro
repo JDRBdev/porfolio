@@ -1,10 +1,10 @@
 ---
-import "../../styles/global.css";
-import Layout from "../../layouts/Layout.astro";
-import { Navbar } from "../../components/organism/navbar";
-import { getLangFromUrl, useTranslations } from "../../i18n/utils";
-import Footer from "../../components/components/footer.astro";
-import TerminosCondicionesContent from "../../components/components/terminos-condiciones-content.astro";
+import "@styles/global.css";
+import Layout from "@layouts/Layout.astro";
+import { Navbar } from "@components/organism/navbar";
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import Footer from "@components/components/footer.astro";
+import TerminosCondicionesContent from "@components/components/terminos-condiciones-content.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);

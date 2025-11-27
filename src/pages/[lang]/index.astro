@@ -1,14 +1,14 @@
 ---
-import "../../styles/global.css";
-import Layout from "../../layouts/Layout.astro";
-import { Navbar } from "../../components/organism/navbar";
-import { getLangFromUrl, useTranslations } from "../../i18n/utils";
-import Header from "../../components/components/header.astro";
-import TechStack from "../../components/components/tech-stack.astro";
-import Experience from "../../components/components/experience.astro";
-import Projects from "../../components/components/projects.astro";
-import Footer from "../../components/components/footer.astro";
-import Certifications from "../../components/components/certifications.astro";
+import "@styles/global.css";
+import Layout from "@layouts/Layout.astro";
+import { Navbar } from "@components/organism/navbar";
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import Header from "@components/components/header.astro";
+import TechStack from "@components/components/tech-stack.astro";
+import Experience from "@components/components/experience.astro";
+import Projects from "@components/components/projects.astro";
+import Footer from "@components/components/footer.astro";
+import Certifications from "@components/components/certifications.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);

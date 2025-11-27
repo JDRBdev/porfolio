@@ -1,14 +1,14 @@
 ---
-import { getLangFromUrl, useTranslations } from "../../i18n/utils";
-import Habilities from "../atoms/habilities.astro";
-import Curriculum from "../atoms/icons/curriculum.astro";
-import Email from "../atoms/icons/email.astro";
-import Github from "../atoms/icons/github.astro";
-import Linkedin from "../atoms/icons/linkedin.astro";
-import SectionLayout from "../atoms/section-layout.astro";
-import SocialPill from "../atoms/social-pill.astro";
-import { Poppins } from "../atoms/text/poppins";
-import TypewriterText from "../atoms/type-writer-text";
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import Habilities from "@atoms/habilities.astro";
+import Curriculum from "@atoms/icons/curriculum.astro";
+import Email from "@atoms/icons/email.astro";
+import Github from "@atoms/icons/github.astro";
+import Linkedin from "@atoms/icons/linkedin.astro";
+import SectionLayout from "@atoms/section-layout.astro";
+import SocialPill from "@atoms/social-pill.astro";
+import { Poppins } from "@atoms/text/poppins";
+import TypewriterText from "@atoms/type-writer-text";
 import { Image } from "astro:assets";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);

@@ -1,8 +1,8 @@
 ---
-import { getLangFromUrl, useTranslations } from "../../i18n/utils";
-import SearchingJob from "../atoms/icons/searching-job.astro"
-import WorkingBag from "../atoms/icons/working-bag.astro"
-import { Caslon } from "../atoms/text/caslon"
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import SearchingJob from "@atoms/icons/searching-job.astro"
+import WorkingBag from "@atoms/icons/working-bag.astro"
+import { Caslon } from "@atoms/text/caslon"
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
