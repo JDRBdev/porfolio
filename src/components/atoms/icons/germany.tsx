@@ -1,13 +1,12 @@
 import type { IconInterface } from "@interfaces/common";
 
-export default function German({ className, role, ariaLabel }: IconInterface) {
+export default function German({ className, ariaLabel }: IconInterface) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       id="flag-icons-de"
       viewBox="0 0 512 512"
       className={className}
-      role={role}
       aria-label={ariaLabel}
     >
       <path fill="#fc0" d="M0 341.3h512V512H0z" />

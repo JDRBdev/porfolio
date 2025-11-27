@@ -1,11 +1,10 @@
 ---
 export interface Props {
   className?: string;
-  role: "img";
   ariaLabel: any;
 }
 
-const { className, role, ariaLabel } = Astro.props;
+const { className, ariaLabel } = Astro.props;
 ---
 
 <svg
@@ -15,7 +14,6 @@ const { className, role, ariaLabel } = Astro.props;
   width="180"
   height="180"
   preserveAspectRatio="xMidYMid"
-  role={role}
   aria-label={ariaLabel}
 >
   <mask
